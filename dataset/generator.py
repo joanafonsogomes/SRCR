@@ -152,13 +152,15 @@ def genVacinacoes():
         vacinacao1["idUtente"] = utente["id"]
         vacinacao1["tipo"] = random.choice(vacinas)
         vacinacao1["data"] = utente["fases"][0]
-        vacinacao1["toma1"] = True
+        vacinacao1["dose"] = 1
+        vacinacao1["toma1"] = datetime.today() > vacinacao1["data"]
         vacinacao2 = {}
         vacinacao2["idstaff"] = vacinacao1["idstaff"]
         vacinacao2["idUtente"] = utente["id"]
         vacinacao2["tipo"] = vacinacao1["tipo"]
         vacinacao2["data"] = utente["fases"][1]
-        vacinacao2["toma1"] = False
+        vacinacao2["dose"] = 2
+        vacinacao2["toma1"] = datetime.today() > vacinacao2["data"]
         listaVacinacoes.append(vacinacao1)
         listaVacinacoes.append(vacinacao2)
 
@@ -226,9 +228,10 @@ with open('dataset.pl', 'a') as dataset:
 
     dataset.write("\n")
     for vacinacao in listaVacinacoes:
-        dataset.write("vacinacao('{0}','{1}','{2}','{3}','{4}').\n".format(
+        dataset.write("vacinacao('{0}','{1}','{2}','{3}',{4},'{5}').\n".format(
         vacinacao["idstaff"],
         vacinacao["idUtente"],
         vacinacao["data"].date(),
         vacinacao["tipo"],
+        vacinacao["dose"],
         vacinacao["toma1"]))

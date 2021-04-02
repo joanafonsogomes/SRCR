@@ -1,327 +1,327 @@
-utente('U0','Liduina Branco','30399981952','F','1996-01-29','LiduinaBranco36@hotmail.com',920445729,'Rua Francisco Teixeira Azurem 4800-004 Guimaraes','Oficial de Justiça',[],'2021-06-02','2021-06-19','C2').
-utente('U1','Adao Soares','09341758628','M','1953-04-10','AdaoSoares201@hotmail.com',966256015,'Rua Candido dos Reis 4700-004 Braga','Veterinário',[],'2021-04-12','2021-05-06','C3').
-utente('U2','Lucina Valente','10310524956','F','1979-02-23','LucinaValente@gmail.com',928149257,'Praceta Joaquim Chaves 4700-008 Braga','Operador de telemarketing',['Obesidade'],'2021-06-13','2021-07-06','C3').
-utente('U3','Siria Fernandes','41046018510','F','1952-09-15','SiriaFernandes27@outlook.com',911214222,'Avenida 1 de Maio Dume 4700-008 Braga','DevOps',[],'2021-04-21','2021-05-13','C1').
-utente('U4','Tude Marques','22316564120','M','1976-02-16','TudeMarques@outlook.com',918960765,'Largo de Sao Martinho Dume 4700-008 Braga','Designer de interiores',[],'2021-07-25','2021-08-14','C2').
-utente('U5','Leccio Moura','48217299852','M','1944-02-25','LeccioMoura362@gmail.com',912659501,'Rua da Gloria Azurem 4800-004 Guimaraes','Analista financeiro',[],'2021-05-05','2021-05-28','C2').
-utente('U6','Gildo Anjos','72593722987','M','1969-12-21','GildoAnjos1969@gmail.com',914268614,'Rua Bernardim Ribeiro Dume 4700-004 Braga','Personal stylist',[],'2021-07-16','2021-08-08','C4').
-utente('U7','Zilia Freitas','68589291738','F','2001-05-31','ZiliaFreitas2001@gmail.com',939921484,'Calcada de Sao Martinho Real 4700-004 Braga','Assistente pessoal',['Neoplasia maligna ativa'],'2021-07-02','2021-07-26','C1').
-utente('U8','Ursiao Barros','25724264041','M','2001-07-23','UrsiaoBarros@outlook.com',934932964,'Rua de Sao Joao 4705-001 Arentim','Profissional de help desk',[],'2021-06-09','2021-07-03','C4').
-utente('U9','Clemencia Correia','53431297325','F','2000-08-14','ClemenciaCorreia151@hotmail.com',930513837,'Caminho de Casas Novas Dume 4700-005 Braga','Técnico de Enfermagem',[],'2021-06-30','2021-07-23','C4').
-utente('U10','Lino Domingues','33255970505','M','1954-09-15','LinoDomingues@gmail.com',917817042,'Avenida do Brasil Gaviao 4760-001 Vila Nova de Famalicao','Nutricionista',[],'2021-04-16','2021-05-06','C2').
-utente('U11','Aldonio Loureiro','13390173496','M','2004-10-04','AldonioLoureiro2004@outlook.com',924726674,'Rua de Sao Paulo 4700-004 Braga','Torneiro mecânico',[],'2021-06-13','2021-07-05','C1').
-utente('U12','Iria Faria','16610177162','F','1973-08-21','IriaFaria@outlook.com',925831730,'Avenida do Brasil Gaviao 4760-001 Vila Nova de Famalicao','Designer',[],'2021-06-07','2021-06-25','C3').
-utente('U13','Melinda Marques','53078462496','F','1972-02-20','MelindaMarques116@outlook.com',965026452,'Rua dos Caixoteiros 4705-001 Arentim','Terapeuta',[],'2021-07-15','2021-08-05','C4').
-utente('U14','Luena Teixeira','84242649938','F','1939-11-26','LuenaTeixeira@gmail.com',964927706,'Rua do Rego Dume 4700-008 Braga','Desenhista',[],'2021-02-15','2021-03-07','C3').
-utente('U15','Laercio Pinto','90112404299','M','1999-09-07','LaercioPinto139@hotmail.com',916577057,'Rua Bernardim Ribeiro Dume 4700-004 Braga','Farmacêutico',[],'2021-07-13','2021-08-04','C2').
-utente('U16','Samaritano Neto','66764205586','M','1960-07-26','SamaritanoNeto1960@outlook.com',911359484,'Rua do Real 4705-001 Arentim','Profissional de Relações Públicas',[],'2021-06-30','2021-07-21','C3').
-utente('U17','Erika Neves','84625370241','F','1954-05-24','ErikaNeves368@hotmail.com',934929160,'Rua da Liberdade 4705-001 Arentim','Auxiliar de expedição',[],'2021-05-01','2021-05-20','C3').
-utente('U18','Lorenzo Nogueira','11557052980','M','1982-09-29','LorenzoNogueira@hotmail.com',960704737,'Avenida do Brasil Gaviao 4760-001 Vila Nova de Famalicao','Designer de moda',['Insuficiência cardíaca', 'Doenca coronária'],'2021-02-20','2021-03-09','C2').
-utente('U19','Aparecida Barbosa','27845586689','F','1976-04-12','AparecidaBarbosa1976@outlook.com',918209857,'Rua Vitorino Nemesio Dume 4700-004 Braga','Coach',[],'2021-06-26','2021-07-13','C4').
-utente('U20','Heladia Anjos','04308967568','F','1984-06-12','HeladiaAnjos1984@gmail.com',964283218,'Rua Pedreiro de Macedo Dume 4700-004 Braga','Teólogo',[],'2021-07-15','2021-08-03','C3').
-utente('U21','Dorino Vieira','85239846814','M','1976-09-21','DorinoVieira1976@hotmail.com',933539038,'Rua do Cordeiro Dume 4700-005 Braga','Designer',[],'2021-07-02','2021-07-19','C2').
-utente('U22','Clemencia Lopes','79683463258','F','2002-03-08','ClemenciaLopes2002@gmail.com',931985332,'Travessa do Cruzeiro Dume 4700-005 Braga','Gestor ambiental',[],'2021-07-04','2021-07-21','C3').
-utente('U23','Elvino Leal','74583228373','M','2006-04-30','ElvinoLeal@gmail.com',927994539,'Rua do Regedor 4775-001 Cambeses','Designer',[],'2021-07-11','2021-08-03','C4').
-utente('U24','Patricio Gomes','42323973929','M','1981-01-20','PatricioGomes1981@gmail.com',917632119,'Rotunda Bernardino Machado Antas 4760-001 Vila Nova de Famalicao','Profissional de Linguística',[],'2021-07-14','2021-08-01','C2').
-utente('U25','Genesio Marques','48826417503','M','1952-04-18','GenesioMarques@outlook.com',932353595,'Rua da Ponte Seca 4705-001 Arentim','Assistente pessoal',[],'2021-04-26','2021-05-20','C1').
-utente('U26','Olga Melo','19610372133','F','1981-07-01','OlgaMelo@outlook.com',920853046,'Praceta do Viajante Azurem 4800-004 Guimaraes','Neurologista',[],'2021-06-02','2021-06-22','C3').
-utente('U27','Janice Morais','26183798058','F','1956-12-10','JaniceMorais@gmail.com',961925089,'Rua Paulo Vi 4700-004 Braga','Clínico geral',[],'2021-06-07','2021-06-29','C4').
-utente('U28','Lavinia Batista','88591187570','F','1950-05-26','LaviniaBatista@outlook.com',967910412,'Cangosta do Boular 4700-004 Braga','Roteirizador',[],'2021-04-13','2021-05-07','C2').
-utente('U29','Franklin Campos','21241969406','M','2005-05-31','FranklinCampos@gmail.com',922555034,'Largo do Rego Dume 4700-008 Braga','Enfermeiro',[],'2021-07-09','2021-07-29','C2').
-utente('U30','Danilo Pinto','44302048359','M','1996-01-18','DaniloPinto341@hotmail.com',917664898,'Rua de Sao Sebastiao 4700-004 Braga','Engenheiro de software',[],'2021-07-27','2021-08-13','C2').
-utente('U31','Aleixa Fernandes','77962227382','F','1959-01-11','AleixaFernandes@hotmail.com',933953700,'Avenida do Cavado 4700-008 Braga','Operador de caixa',[],'2021-06-25','2021-07-13','C1').
-utente('U32','Torquato Araujo','36328283873','M','1998-06-21','TorquatoAraujo1998@hotmail.com',960458054,'Rua Bernardim Ribeiro Dume 4700-004 Braga','Web designer',[],'2021-07-29','2021-08-17','C1').
-utente('U33','Acucena Coelho','36298095757','F','1995-02-14','AcucenaCoelho@hotmail.com',923205604,'Avenida dos Descobrimentos Calendario 4760-001 Vila Nova de Famalicao','Engenheiro de controle e automação',[],'2021-06-27','2021-07-18','C1').
-utente('U34','Catalina Coelho','65624159485','F','1960-09-10','CatalinaCoelho@outlook.com',936759362,'Rua Pedreiro de Macedo Dume 4700-004 Braga','Auxiliar de produção',[],'2021-07-24','2021-08-17','C1').
-utente('U35','Ursicino Fernandes','95806539583','M','1989-02-25','UrsicinoFernandes@hotmail.com',931632585,'Rua Comendador Padre David de Oliveira Martins 4705-001 Arentim','Clínico geral',[],'2021-06-23','2021-07-14','C2').
-utente('U36','Colete Ribeiro','21254560524','F','2007-04-20','ColeteRibeiro349@outlook.com',923170002,'Avenida dos Descobrimentos Calendario 4760-001 Vila Nova de Famalicao','Recepcionista',[],'2021-07-15','2021-08-02','C1').
-utente('U37','Tirsa Branco','78788907948','F','1956-06-08','TirsaBranco1956@gmail.com',930771263,'Rua da Ponte Seca 4705-001 Arentim','Padeiro',[],'2021-06-10','2021-06-30','C4').
-utente('U38','Azuil Valente','60568743009','M','1997-09-03','AzuilValente@hotmail.com',932674772,'Travessa do Cruzeiro Dume 4700-005 Braga','Auxiliar administrativo',[],'2021-06-21','2021-07-13','C3').
-utente('U39','Teodemiro Sa','53417963899','M','1955-06-06','TeodemiroSa44@outlook.com',937803460,'Rua de Sao Geraldo 4700-004 Braga','Podólogo',[],'2021-05-17','2021-06-07','C3').
-utente('U40','Franklino Branco','55457489940','M','2011-02-09','FranklinoBranco@gmail.com',932802049,'Rua Doutor Jose Regio Dume 4700-004 Braga','Urologista',[],'2021-06-20','2021-07-14','C2').
-utente('U41','Gildasio Neto','08350206734','M','1987-03-15','GildasioNeto@outlook.com',922532357,'Rua da Cangosta 4705-001 Arentim','Marinheiro',[],'2021-06-15','2021-07-04','C2').
-utente('U42','SusanaFrancisco Pereira','32013045502','M','1968-06-05','SusanaFranciscoPereira@outlook.com',960593680,'Rua Almada Negreiros Dume 4700-004 Braga','Psiquiatra',[],'2021-06-14','2021-07-03','C2').
-utente('U43','Arquiminio Cardoso','29711431748','M','1996-08-19','ArquiminioCardoso@hotmail.com',927688637,'Rua de Remelhe Dume 4700-008 Braga','Nutricionista',[],'2021-07-28','2021-08-18','C2').
-utente('U44','Palmira Antunes','83847392906','F','2005-09-26','PalmiraAntunes138@outlook.com',924419877,'Travessa Cimo de Vila Dume 4700-005 Braga','Webmaster',[],'2021-06-02','2021-06-25','C4').
-utente('U45','Assunta Neto','37996723234','F','1939-09-29','AssuntaNeto136@outlook.com',922238524,'Caminho de Fontelas 4775-001 Cambeses','Headhunter',[],'2021-02-09','2021-03-04','C1').
-utente('U46','Febe Guerreiro','36179622999','F','1956-09-26','FebeGuerreiro@outlook.com',923730302,'Rua da Ponte de Pau 4775-001 Cambeses','Roteirizador',[],'2021-07-30','2021-08-21','C3').
-utente('U47','Teresinha Baptista','96078611284','F','1961-04-12','TeresinhaBaptista@gmail.com',932276299,'Rua Joao de Deus 4700-004 Braga','Trader',[],'2021-07-09','2021-08-01','C4').
-utente('U48','Emidia Araujo','92093000269','F','1946-10-05','EmidiaAraujo@hotmail.com',922689227,'Rua Doutor Jose Regio Dume 4700-004 Braga','Engenheiro mecânico',['Insuficiência hepática'],'2021-05-27','2021-06-18','C4').
-utente('U49','Aquila Lopes','57174597956','F','1991-08-19','AquilaLopes1991@hotmail.com',923742605,'Rua do Rego Dume 4700-008 Braga','Maestro',[],'2021-07-16','2021-08-02','C2').
-utente('U50','SusanaFrancisco Raposo','39999631447','M','1997-06-09','SusanaFranciscoRaposo@outlook.com',914346279,'Caminho de Casas Novas Dume 4700-005 Braga','Profissional de Facilities',['Doenca coronária'],'2021-03-15','2021-04-08','C2').
-utente('U51','Violeta Freitas','56547094121','F','2004-07-30','VioletaFreitas@outlook.com',928627244,'Rua da Cangosta 4705-001 Arentim','Bartender',[],'2021-07-26','2021-08-14','C2').
-utente('U52','Tacio Leite','12256521761','M','1999-04-22','TacioLeite@outlook.com',939051727,'Avenida 1 de Maio Dume 4700-008 Braga','Contador',['Insuficiência hepática'],'2021-06-06','2021-06-29','C2').
-utente('U53','Acucena Ramos','39297521976','F','1944-03-05','AcucenaRamos@outlook.com',963785386,'Rua Doutor Mario Dias Azurem 4800-004 Guimaraes','Juiz',[],'2021-04-23','2021-05-10','C4').
-utente('U54','Antonina Pereira','53157054577','F','1961-11-15','AntoninaPereira@outlook.com',937318758,'Rua Jose Albino Costa e Silva Azurem 4800-004 Guimaraes','Controller',[],'2021-06-28','2021-07-21','C2').
-utente('U55','Palmiro Gaspar','29497963991','M','1982-02-23','PalmiroGaspar1982@hotmail.com',963049046,'Rua da Liberdade 4705-001 Arentim','Roteirizador',[],'2021-06-06','2021-06-24','C1').
-utente('U56','Gregorio Marques','10091482290','M','1945-11-18','GregorioMarques@outlook.com',925594695,'Rua da Pedreira 4700-004 Braga','Profissional de Relações Públicas',[],'2021-04-06','2021-04-29','C3').
-utente('U57','Laureana Vieira','95532999180','F','2011-02-19','LaureanaVieira198@hotmail.com',910201669,'Rua do Cordeiro Dume 4700-005 Braga','Psicólogo',['Neoplasia maligna ativa', 'Doenca renal crónica'],'2021-07-21','2021-08-08','C3').
-utente('U58','Dirio Paiva','67203488137','M','1964-02-16','DirioPaiva@outlook.com',924728993,'Rua da Ponte Seca 4705-001 Arentim','Advogado trabalhista',[],'2021-06-24','2021-07-18','C1').
-utente('U59','Teresca Fernandes','86003471239','F','1956-10-10','TerescaFernandes@outlook.com',963133489,'Travessa do Rego 4700-008 Braga','Designer de interiores',[],'2021-07-27','2021-08-20','C3').
-utente('U60','Yolanda Nascimento','27036135327','F','1966-11-17','YolandaNascimento115@gmail.com',967863021,'Rua Quinta de Cabanas Sao Vicente 4700-004 Braga','Cardiologista',[],'2021-07-26','2021-08-19','C2').
-utente('U61','Socorro Cardoso','85671859781','M','1960-07-02','SocorroCardoso@outlook.com',967782274,'Travessa da Bela Vista 4775-001 Cambeses','Administrador',[],'2021-06-26','2021-07-18','C2').
-utente('U62','Americo Marques','58124886792','M','2003-02-26','AmericoMarques@outlook.com',925068488,'Rua Jose da Carolina 4705-001 Arentim','Biomédico',[],'2021-07-15','2021-08-06','C3').
-utente('U63','Graca Henriques','13875370936','F','2011-05-09','GracaHenriques@outlook.com',965707421,'Largo de Remelhe Dume 4700-008 Braga','Técnico de Enfermagem',[],'2021-06-13','2021-07-02','C2').
-utente('U64','Gabinio Silva','39188882166','M','2005-10-04','GabinioSilva@gmail.com',923352466,'Rua Monte de Baixo 4705-001 Arentim','Advogado trabalhista',[],'2021-06-06','2021-06-30','C1').
-utente('U65','Urbina Costa','99918317881','F','1964-12-21','UrbinaCosta1964@outlook.com',920454433,'Lugar Cimo de Vila 4700-005 Braga','Engenheiro elétrico',[],'2021-06-20','2021-07-11','C3').
-utente('U66','Lorina Sousa','89879929627','F','2007-03-08','LorinaSousa@outlook.com',961620123,'Rua de Sao Sebastiao 4700-004 Braga','Designer de interiores',[],'2021-06-19','2021-07-12','C1').
-utente('U67','Lorenzo Castro','63433982323','M','1976-12-06','LorenzoCastro1976@gmail.com',911111461,'Caminho do Carvalhedo 4700-005 Braga','Oficial de Justiça',['Doenca coronária'],'2021-03-16','2021-04-07','C2').
-utente('U68','Gracio Lourenco','77997777124','M','2010-06-13','GracioLourenco184@gmail.com',922764707,'Travessa do Cruzeiro Dume 4700-005 Braga','Urologista',[],'2021-06-20','2021-07-07','C4').
-utente('U69','Dante Paiva','80268376273','M','1998-01-03','DantePaiva1998@hotmail.com',969619486,'Rua Vitorino Nemesio Dume 4700-004 Braga','Cirurgião plástico',[],'2021-07-03','2021-07-22','C3').
-utente('U70','Turgo Branco','95701262935','M','1994-06-04','TurgoBranco@hotmail.com',915401721,'Rua 25 de Abril 4775-001 Cambeses','Biomédico',[],'2021-06-19','2021-07-09','C3').
-utente('U71','Francilia Faria','05332352761','F','1976-03-19','FranciliaFaria@outlook.com',924791082,'Travessa Cimo de Vila Dume 4700-005 Braga','Psiquiatra',[],'2021-06-02','2021-06-19','C2').
-utente('U72','Aria Lourenco','65397097650','F','1959-05-10','AriaLourenco@outlook.com',932043808,'Avenida dos Descobrimentos Calendario 4760-001 Vila Nova de Famalicao','Operador de caixa',[],'2021-07-29','2021-08-17','C4').
-utente('U73','Reinaldo Rocha','77653813672','M','1963-10-27','ReinaldoRocha@gmail.com',922063387,'Praca da Autarquia 4775-001 Cambeses','Auxiliar de cozinha',[],'2021-07-06','2021-07-26','C4').
-utente('U74','Roberta Vieira','98184985922','F','1984-08-05','RobertaVieira178@gmail.com',927265618,'Rua do Rego Dume 4700-008 Braga','Operador de telemarketing',[],'2021-07-27','2021-08-14','C4').
-utente('U75','Oscar Jesus','25692218678','F','1974-04-17','OscarJesus@gmail.com',931056095,'Rua Jose Albino Costa e Silva Azurem 4800-004 Guimaraes','Programador',[],'2021-06-04','2021-06-26','C3').
-utente('U76','Lila Rocha','71706439513','F','1986-03-27','LilaRocha@hotmail.com',922621023,'Travessa Cimo de Vila Dume 4700-005 Braga','Químico',[],'2021-06-28','2021-07-16','C2').
-utente('U77','Xico Lopes','29925295825','M','1974-08-18','XicoLopes207@hotmail.com',912212738,'Rua Antonio Dias de Azevedo Antas 4760-001 Vila Nova de Famalicao','Torneiro mecânico',[],'2021-06-08','2021-07-01','C3').
-utente('U78','Ximena Matias','01407235415','F','1982-03-15','XimenaMatias@gmail.com',939986984,'Rua Doutor Manuel Jose de Oliveira Machado Dume 4700-005 Braga','Profissional de Facilities',[],'2021-06-02','2021-06-22','C1').
-utente('U79','Anabela Sa','74073140919','F','1988-12-24','AnabelaSa153@outlook.com',925685915,'Rua Conego Insuelas Dume 4700-005 Braga','Oficial de Justiça',[],'2021-07-22','2021-08-12','C3').
-utente('U80','Laureano Paiva','59730693445','M','1993-08-30','LaureanoPaiva@gmail.com',961837886,'Largo da Confeiteira Dume 4700-005 Braga','Policial militar',[],'2021-06-16','2021-07-09','C1').
-utente('U81','Darnela Torres','64449176223','F','2009-05-30','DarnelaTorres172@gmail.com',938367254,'Rua Doutor Manuel Jose de Oliveira Machado Dume 4700-005 Braga','Bancário',[],'2021-07-28','2021-08-14','C2').
-utente('U82','Braulio Martins','60734085392','M','1966-05-12','BraulioMartins372@hotmail.com',939714565,'Estrada Nacional 101 Dume 4700-005 Braga','Mecânico de carro',[],'2021-06-23','2021-07-10','C2').
-utente('U83','Dejanira Martins','51883646293','F','1956-12-18','DejaniraMartins@gmail.com',938741112,'Caminho de Fontelas 4775-001 Cambeses','Neurologista',[],'2021-07-15','2021-08-03','C1').
-utente('U84','Vicencia Leite','33804911009','F','1963-05-23','VicenciaLeite@gmail.com',912855751,'Rua do Carvalhal Dume 4700-005 Braga','Economista',[],'2021-07-11','2021-08-04','C3').
-utente('U85','Gabinio Costa','77275107114','M','1962-09-05','GabinioCosta@hotmail.com',931431870,'Calcada de Gondomar 4705-001 Arentim','Militar',[],'2021-07-25','2021-08-15','C2').
-utente('U86','Sena Matos','01826643482','F','2009-08-05','SenaMatos73@gmail.com',926918143,'Lugar do Crasto 4700-008 Braga','Proctologista',[],'2021-06-02','2021-06-25','C4').
-utente('U87','Letizia Cardoso','11612122470','F','1998-08-22','LetiziaCardoso22@gmail.com',910553860,'Rua do Carvalhal Dume 4700-005 Braga','Técnico em edificações',[],'2021-07-14','2021-08-01','C4').
-utente('U88','Dagmar Simoes','80243232391','M','1942-09-25','DagmarSimoes@outlook.com',915966383,'Largo de Sao Martinho Dume 4700-008 Braga','Fotógrafo',[],'2021-05-29','2021-06-16','C3').
-utente('U89','Guido Goncalves','96016155967','M','1943-02-25','GuidoGoncalves@outlook.com',928388980,'Caminho de Fontelas 4775-001 Cambeses','Técnico em edificações',[],'2021-04-07','2021-04-27','C2').
-utente('U90','Ingeburga Cunha','60062529475','F','1940-06-01','IngeburgaCunha117@gmail.com',921561081,'Rua do Senhor da Cruz 4775-001 Cambeses','Profissional de Facilities',[],'2021-03-07','2021-03-26','C4').
-utente('U91','Gomes Batista','70875334398','M','1973-12-21','GomesBatista@hotmail.com',930820430,'Rua de Sao Sebastiao 4700-004 Braga','Psicólogo',[],'2021-07-22','2021-08-13','C3').
-utente('U92','Adner Antunes','60304217889','F','2001-11-09','AdnerAntunes@outlook.com',935637686,'Travessa Cimo de Vila Dume 4700-005 Braga','Auxiliar de limpeza',[],'2021-06-22','2021-07-13','C2').
-utente('U93','Amara Abreu','97150832848','F','1997-06-06','AmaraAbreu328@gmail.com',916581406,'Avenida do Brasil Antas 4760-001 Vila Nova de Famalicao','Desenvolvedor',[],'2021-07-05','2021-07-23','C2').
-utente('U94','Nadia Neves','19241859553','F','1985-03-14','NadiaNeves@hotmail.com',964202774,'Estrada Nacional 101 Dume 4700-005 Braga','Pizzaiolo',[],'2021-06-04','2021-06-26','C4').
-utente('U95','Josefo Freitas','34801614714','M','1962-03-17','JosefoFreitas1962@hotmail.com',936509890,'Travessa do Rego 4700-008 Braga','Cabeleireiro',['Obesidade', 'Insuficiência hepática'],'2021-05-14','2021-06-07','C2').
-utente('U96','Lorenzo Neto','37580258324','M','2004-07-08','LorenzoNeto@gmail.com',913172697,'Rua da Igreja Velha 4705-001 Arentim','Analista administrativo',[],'2021-06-17','2021-07-09','C2').
-utente('U97','Lino Figueiredo','67662432738','M','2011-12-16','LinoFigueiredo33@hotmail.com',928062744,'Rua da Calcada Padre Jose Fernandes Ribeiro Azurem 4800-004 Guimaraes','Advogado',[],'2021-07-26','2021-08-16','C4').
-utente('U98','Lourenca Vieira','65893633787','F','1971-09-21','LourencaVieira54@outlook.com',917337983,'Estrada Nacional 101 Dume 4700-005 Braga','Médico',[],'2021-07-19','2021-08-10','C2').
-utente('U99','Lira Martins','57050137468','F','1965-06-30','LiraMartins@gmail.com',928931443,'Rua da Gloria Azurem 4800-004 Guimaraes','Analista de sistemas',[],'2021-06-30','2021-07-20','C3').
+utente('U0','Nicolau Costa','68016758867','F','1986-12-27','NicolauCosta19@gmail.com',911079343,'Rua Joao de Deus 4700-004 Braga','Taquígrafo',[],'2021-06-25','2021-07-14','C1').
+utente('U1','Teresca Pinheiro','61767763875','F','2012-04-11','TerescaPinheiro@gmail.com',927253210,'Rua da Igreja Velha 4705-001 Arentim','Agricultor',[],'2021-07-02','2021-07-23','C2').
+utente('U2','Andreo Paiva','16687043998','M','2004-04-12','AndreoPaiva@gmail.com',925405497,'Largo de Sao Sebastiao 4700-008 Braga','Terapeuta ocupacional',[],'2021-07-02','2021-07-26','C1').
+utente('U3','Vilma Faria','72782123508','F','1993-06-29','VilmaFaria@outlook.com',924618873,'Rua Jose Antonio Gomes Santos 4775-001 Cambeses','Roteirista',[],'2021-06-05','2021-06-26','C1').
+utente('U4','Zardilaque Vieira','93305240248','M','1982-07-17','ZardilaqueVieira@outlook.com',927231172,'Rua dos Caixoteiros 4705-001 Arentim','Assistente de marketing',[],'2021-07-01','2021-07-18','C4').
+utente('U5','Sarina Ferreira','17880555097','F','1982-10-11','SarinaFerreira@outlook.com',924114598,'Rua de Sao Joao 4705-001 Arentim','Auditor fiscal',[],'2021-07-30','2021-08-18','C2').
+utente('U6','Herenio Gomes','73718143855','M','1984-11-04','HerenioGomes1984@hotmail.com',969296151,'Calcada de Gondomar 4705-001 Arentim','Esteticista',[],'2021-06-26','2021-07-18','C1').
+utente('U7','Priscila Barros','33256893394','F','2002-06-12','PriscilaBarros@outlook.com',925061545,'Rua 25 de Abril 4775-001 Cambeses','Auditor fiscal',['Insuficiência renal'],'2021-02-15','2021-03-05','C2').
+utente('U8','Adriano Magalhaes','03540112185','M','2009-07-05','AdrianoMagalhaes@gmail.com',914692069,'Travessa das Oliveiras 4705-001 Arentim','Engenheiro de materiais',[],'2021-07-01','2021-07-25','C1').
+utente('U9','Sidonio Andrade','50766424264','M','1991-08-10','SidonioAndrade67@gmail.com',927452070,'Avenida do Cavado Dume 4700-008 Braga','Estilista',[],'2021-06-08','2021-07-02','C3').
+utente('U10','Taisa Almeida','68579112504','F','2012-08-30','TaisaAlmeida@gmail.com',967415995,'Travessa das Oliveiras 4705-001 Arentim','Técnico em Segurança do Trabalho',[],'2021-07-01','2021-07-24','C1').
+utente('U11','Sancha Reis','82544984982','F','2004-08-03','SanchaReis2004@gmail.com',965356738,'Lugar da Ordem 4700-008 Braga','Business partner',[],'2021-06-24','2021-07-13','C4').
+utente('U12','Uziel Miranda','02848846092','F','1940-11-27','UzielMiranda@hotmail.com',914287535,'Rua de Goa Azurem 4800-004 Guimaraes','Coach',[],'2021-02-15','2021-03-04','C3').
+utente('U13','Tiberio Marques','33625145290','M','2009-05-07','TiberioMarques@hotmail.com',969717860,'Travessa da Carreira 4775-001 Cambeses','Militar',[],'2021-07-24','2021-08-10','C4').
+utente('U14','Zilda Lourenco','25801520216','F','1942-07-01','ZildaLourenco87@outlook.com',929758857,'Rua do Campo das Cartas Fermentoes 4800-004 Guimaraes','Auditor fiscal',[],'2021-04-24','2021-05-15','C1').
+utente('U15','Abelamio Fonseca','51192544659','M','2007-10-06','AbelamioFonseca@gmail.com',937855381,'Rua Jose Albino Costa e Silva Azurem 4800-004 Guimaraes','Veterinário',['Insuficiência cardíaca'],'2021-07-02','2021-07-20','C4').
+utente('U16','Guido Maia','53426328569','M','1965-01-08','GuidoMaia@hotmail.com',912832670,'Largo de Sao Martinho Dume 4700-008 Braga','Urologista',[],'2021-06-12','2021-07-03','C2').
+utente('U17','Severino Macedo','96991622775','M','1996-02-01','SeverinoMacedo1996@hotmail.com',937759475,'Rua da Ponte de Pau 4775-001 Cambeses','Endocrinologista',[],'2021-07-25','2021-08-18','C4').
+utente('U18','Nelson Correia','50543276210','M','1941-08-20','NelsonCorreia1941@gmail.com',933597832,'Avenida do Brasil Gaviao 4760-001 Vila Nova de Famalicao','DevOps',[],'2021-05-13','2021-06-02','C3').
+utente('U19','Aneide Anjos','65150058001','F','2007-11-30','AneideAnjos2007@gmail.com',911813071,'Rua Francisco Teixeira Azurem 4800-004 Guimaraes','Profissional de Facilities',[],'2021-07-21','2021-08-14','C4').
+utente('U20','Quaiela Vieira','01537646331','F','1998-03-02','QuaielaVieira1998@hotmail.com',911192026,'Rua do Rego Dume 4700-008 Braga','Cozinheiro',[],'2021-06-05','2021-06-25','C4').
+utente('U21','Tercio Teixeira','78896639964','M','2006-10-07','TercioTeixeira2006@hotmail.com',961509405,'Rua da Calcada Padre Jose Fernandes Ribeiro Azurem 4800-004 Guimaraes','Engenheiro ambiental',[],'2021-07-15','2021-08-02','C2').
+utente('U22','Hersilia Nogueira','73482998326','F','2002-09-27','HersiliaNogueira@outlook.com',934189803,'Rua Joao Goncalves 4800-004 Guimaraes','Bioquímico',[],'2021-07-19','2021-08-05','C2').
+utente('U23','Honorato Pacheco','82848724404','M','1992-08-04','HonoratoPacheco@outlook.com',964496511,'Rua Francisco Ribeiro de Castro Azurem 4800-004 Guimaraes','Designer',['Obesidade'],'2021-07-07','2021-07-29','C2').
+utente('U24','Airiza Guerreiro','13251043094','F','1965-05-22','AirizaGuerreiro390@gmail.com',921920397,'Rua Bernardim Ribeiro Dume 4700-004 Braga','Médico',[],'2021-07-11','2021-08-02','C2').
+utente('U25','Taisa Simoes','97892571866','F','2002-09-28','TaisaSimoes@gmail.com',930402047,'Rua do Campo das Cartas Fermentoes 4800-004 Guimaraes','Auxiliar de limpeza',[],'2021-07-05','2021-07-28','C3').
+utente('U26','Placido Matias','22760424698','M','1961-03-31','PlacidoMatias@gmail.com',912572372,'Praceta Joaquim Chaves 4700-008 Braga','Engenheiro químico',[],'2021-07-05','2021-07-23','C1').
+utente('U27','Fidelio Miranda','82820317971','M','1958-06-04','FidelioMiranda@hotmail.com',924544628,'Rua da Ponte Seca 4705-001 Arentim','Professor',[],'2021-06-13','2021-06-30','C3').
+utente('U28','Marcolina Valente','08802067372','F','1972-10-07','MarcolinaValente1972@outlook.com',920811904,'Praca dos Combatentes 4775-001 Cambeses','Dentista',[],'2021-06-02','2021-06-23','C2').
+utente('U29','Emidio Vieira','38718183561','M','1966-07-11','EmidioVieira@hotmail.com',921022179,'Rua do Campo das Cartas Fermentoes 4800-004 Guimaraes','Cenógrafo',[],'2021-07-29','2021-08-17','C2').
+utente('U30','Carmen Melo','03734825522','F','1960-05-01','CarmenMelo101@hotmail.com',916975997,'Avenida dos Descobrimentos Antas 4760-001 Vila Nova de Famalicao','Pizzaiolo',[],'2021-07-24','2021-08-13','C3').
+utente('U31','Luca Gaspar','37361479627','F','1994-12-26','LucaGaspar@hotmail.com',930232226,'Rua Doutor Jose Regio Dume 4700-004 Braga','Produtor de vídeo',[],'2021-07-18','2021-08-11','C2').
+utente('U32','Benedito Carvalho','76495162047','M','1968-08-17','BeneditoCarvalho307@gmail.com',920811983,'Rua Francisco Teixeira Azurem 4800-004 Guimaraes','Neurologista',[],'2021-07-10','2021-08-03','C3').
+utente('U33','Umbelino Neves','85215796477','M','1956-10-14','UmbelinoNeves@gmail.com',928073431,'Rua Joao Penha 4700-004 Braga','Engenheiro de software',[],'2021-06-16','2021-07-08','C3').
+utente('U34','Iag Barbosa','79343985215','F','1993-10-02','IagBarbosa@gmail.com',923532505,'Rua Antonio Aleixo Dume 4700-004 Braga','Profissional de Relações Públicas',[],'2021-07-12','2021-08-04','C2').
+utente('U35','Encarnacao Maia','98030724489','M','1949-05-23','EncarnacaoMaia152@gmail.com',960871924,'Rua Comendador Padre David de Oliveira Martins 4705-001 Arentim','Geógrafo',[],'2021-05-20','2021-06-11','C3').
+utente('U36','Melquisedeque Gomes','82095998850','M','1993-12-27','MelquisedequeGomes@gmail.com',932442149,'Rua da Igreja Velha 4705-001 Arentim','Desembargador',[],'2021-06-25','2021-07-19','C4').
+utente('U37','Paloma Freitas','96322984678','F','1955-07-05','PalomaFreitas@gmail.com',929206415,'Rua Francisco Augusto Alvim 4700-004 Braga','Social Media',[],'2021-05-10','2021-06-03','C4').
+utente('U38','Lolia Silva','33887968687','F','1991-11-25','LoliaSilva@gmail.com',912508207,'Largo da Confeiteira Dume 4700-005 Braga','Engenheiro de materiais',[],'2021-06-16','2021-07-04','C3').
+utente('U39','Adalia Moura','43419988701','F','1987-12-28','AdaliaMoura@gmail.com',969906455,'Rua Francisco Augusto Alvim 4700-004 Braga','Analista administrativo',[],'2021-06-04','2021-06-24','C4').
+utente('U40','Joao Morais','57860873067','M','1995-08-18','JoaoMorais1995@hotmail.com',919289481,'Lugar Cimo de Vila 4700-005 Braga','Técnico em edificações',[],'2021-06-10','2021-06-28','C2').
+utente('U41','Zaira Borges','33816293108','F','1950-09-23','ZairaBorges@outlook.com',962054244,'Caminho da Ponte de Sobre - Moure Dume 4700-008 Braga','Operador de caixa',[],'2021-04-05','2021-04-27','C3').
+utente('U42','Donato Gaspar','11033927220','M','1949-06-26','DonatoGaspar1949@outlook.com',930019280,'Rua do Campo das Cartas Fermentoes 4800-004 Guimaraes','Ator',[],'2021-04-09','2021-05-03','C2').
+utente('U43','Dorabela Fonseca','97937696961','F','1992-02-20','DorabelaFonseca@hotmail.com',963045191,'Rua Comendador Padre David de Oliveira Martins 4705-001 Arentim','Diplomata',[],'2021-06-12','2021-07-03','C3').
+utente('U44','Estefania Pinheiro','42922024438','F','1995-09-23','EstefaniaPinheiro@gmail.com',920656780,'Rua de Sao Lourenco da Ordem 4700-004 Braga','Médico',[],'2021-06-26','2021-07-15','C2').
+utente('U45','Enzo Loureiro','00173102460','M','1959-12-22','EnzoLoureiro134@gmail.com',929321674,'Cangosta do Ruivo Dume 4700-005 Braga','Engenheiro de materiais',['Insuficiência cardíaca'],'2021-06-16','2021-07-06','C1').
+utente('U46','Soeiro Sa','14945329281','M','1944-04-10','SoeiroSa@outlook.com',967699666,'Avenida do Cavado 4700-008 Braga','Cuidador de idosos',[],'2021-05-19','2021-06-09','C3').
+utente('U47','Claudio Nogueira','12347553726','M','1987-11-25','ClaudioNogueira@outlook.com',929569354,'Rua Carlos Paiao 4700-004 Braga','Engenheiro mecânico',[],'2021-06-19','2021-07-11','C1').
+utente('U48','Celto Sa','33338629951','M','2002-11-26','CeltoSa@gmail.com',912164009,'Avenida Rebelo Mesquita Calendario 4760-001 Vila Nova de Famalicao','Assistente financeiro',[],'2021-06-13','2021-07-03','C1').
+utente('U49','Segismundo Brito','48299947320','M','1947-08-12','SegismundoBrito@outlook.com',911878146,'Rua Fernando Pessoa Dume 4700-004 Braga','Psiquiatra',[],'2021-05-21','2021-06-14','C3').
+utente('U50','Silvia Faria','19427529916','F','1976-11-27','SilviaFaria@outlook.com',927066339,'Rua da Cangosta 4705-001 Arentim','Produtor de vídeo',[],'2021-07-23','2021-08-10','C2').
+utente('U51','Tacio Assuncao','08474896100','M','2008-10-22','TacioAssuncao258@hotmail.com',926761917,'Rua da Gloria Azurem 4800-004 Guimaraes','Advogado',[],'2021-07-01','2021-07-25','C3').
+utente('U52','Atina Sa','95598149835','F','1961-09-03','AtinaSa1961@outlook.com',930048140,'Rua de Santo Antonio das Travessas 4700-004 Braga','Piloto de avião',[],'2021-06-25','2021-07-19','C3').
+utente('U53','Aldenora Baptista','23133534547','F','1972-08-31','AldenoraBaptista1972@gmail.com',916435378,'Rua da Veiga de Fora Fermentoes 4800-004 Guimaraes','Oficial de Justiça',[],'2021-07-03','2021-07-25','C2').
+utente('U54','Calisto Fonseca','07123416202','M','1995-10-27','CalistoFonseca@outlook.com',933915155,'Rua 25 de Abril 4775-001 Cambeses','Proctologista',[],'2021-07-06','2021-07-27','C3').
+utente('U55','Ludmila Oliveira','12098248749','F','1996-10-13','LudmilaOliveira1996@outlook.com',969688435,'Rua da Ponte de Pau 4775-001 Cambeses','Despachante',[],'2021-07-09','2021-07-31','C4').
+utente('U56','Galileu Cunha','62086800424','F','1947-12-22','GalileuCunha345@gmail.com',921265770,'Rua do Rego Dume 4700-008 Braga','Contador',[],'2021-05-02','2021-05-23','C4').
+utente('U57','Haroldo Valente','20797364988','M','1960-08-18','HaroldoValente379@outlook.com',961932231,'Rua Paulo Vi 4700-004 Braga','Mecânico de carro',[],'2021-07-11','2021-07-28','C2').
+utente('U58','Trasila Moreira','80439123657','F','1996-03-28','TrasilaMoreira1996@outlook.com',934883567,'Rua Doutor Jose Regio Dume 4700-004 Braga','Fuzileiro naval',['Doenca renal crónica'],'2021-06-22','2021-07-15','C3').
+utente('U59','Barcino Pereira','77133485963','M','1993-01-12','BarcinoPereira@outlook.com',914181266,'Praceta Joaquim Chaves 4700-008 Braga','Bioquímico',[],'2021-06-05','2021-06-22','C1').
+utente('U60','Ilda Amaral','45757262777','F','1955-11-25','IldaAmaral1955@outlook.com',969658680,'Travessa da Bela Vista 4775-001 Cambeses','Biólogo',[],'2021-05-05','2021-05-29','C2').
+utente('U61','Candido Antunes','18892650146','M','2011-10-17','CandidoAntunes2011@gmail.com',935690429,'Rua da Calcada Padre Jose Fernandes Ribeiro Azurem 4800-004 Guimaraes','Agrônomo',[],'2021-06-15','2021-07-04','C3').
+utente('U62','Irma Alves','46844191928','F','1954-01-29','IrmaAlves@hotmail.com',911568100,'Largo de Sao Martinho Dume 4700-008 Braga','Massoterapeuta',['Doenca coronária'],'2021-02-21','2021-03-14','C1').
+utente('U63','Vanessa Coelho','45052139711','F','1948-07-07','VanessaCoelho@hotmail.com',923686217,'Rua Fernando Pessoa Dume 4700-004 Braga','Designer de interiores',[],'2021-04-24','2021-05-17','C2').
+utente('U64','Jetro Andrade','43426548005','M','1994-11-14','JetroAndrade1994@outlook.com',922580478,'Rua Jose Antonio Gomes Santos 4775-001 Cambeses','Neurologista',[],'2021-06-04','2021-06-25','C1').
+utente('U65','Filipa Campos','14372802462','F','1958-01-02','FilipaCampos53@outlook.com',921239677,'Rua dos Caixoteiros 4705-001 Arentim','Chefe de cozinha',[],'2021-07-08','2021-08-01','C2').
+utente('U66','Merrelho Ramos','15283045079','M','1975-07-30','MerrelhoRamos@gmail.com',927582708,'Rua Bernardim Ribeiro Dume 4700-004 Braga','Advogado',[],'2021-07-01','2021-07-21','C3').
+utente('U67','Didia Oliveira','89953963624','F','1998-11-08','DidiaOliveira@outlook.com',912159957,'Rua Joao Goncalves 4800-004 Guimaraes','Nutricionista',[],'2021-07-22','2021-08-11','C2').
+utente('U68','Crispim Mendes','57608891129','F','1948-10-31','CrispimMendes273@outlook.com',929741616,'Largo de Carcavelos Dume 4700-005 Braga','Obstetra',[],'2021-04-26','2021-05-13','C1').
+utente('U69','Agostinho Gomes','70267857946','M','1979-12-20','AgostinhoGomes@outlook.com',921344345,'Avenida dos Descobrimentos Calendario 4760-001 Vila Nova de Famalicao','Advogado criminalista',[],'2021-07-06','2021-07-24','C3').
+utente('U70','Luela Freitas','28996255718','F','1994-12-29','LuelaFreitas@gmail.com',968026807,'Lugar de Senra 4700-008 Braga','Roteirista',[],'2021-06-09','2021-06-30','C1').
+utente('U71','Anabela Machado','55490861844','F','1976-11-10','AnabelaMachado@outlook.com',929549531,'Rua da Calcada Padre Jose Fernandes Ribeiro Azurem 4800-004 Guimaraes','Despachante',[],'2021-07-10','2021-07-28','C3').
+utente('U72','Zoraida Matias','29029733986','F','1993-05-21','ZoraidaMatias4@gmail.com',920040329,'Rotunda Bernardino Machado Antas 4760-001 Vila Nova de Famalicao','Analista de sistemas',[],'2021-07-29','2021-08-21','C2').
+utente('U73','Jacob Silva','37301718717','F','1949-07-05','JacobSilva@outlook.com',916111974,'Travessa Cimo de Vila Dume 4700-005 Braga','Bombeiro civil',[],'2021-05-04','2021-05-21','C2').
+utente('U74','Elina Marques','67971882493','F','2010-11-11','ElinaMarques2010@gmail.com',916183133,'Rotunda Bernardino Machado Antas 4760-001 Vila Nova de Famalicao','Desembargador',['Insuficiência renal'],'2021-03-12','2021-03-31','C2').
+utente('U75','Ilca Alves','29447618240','F','2001-07-10','IlcaAlves@hotmail.com',967151673,'Rua Francisco Augusto Alvim 4700-004 Braga','Controller',[],'2021-06-07','2021-06-28','C1').
+utente('U76','Quirino Antunes','86105267952','M','1963-11-24','QuirinoAntunes1963@outlook.com',918157311,'Rua Francisco Ribeiro de Castro Azurem 4800-004 Guimaraes','Jovem Aprendiz',[],'2021-07-20','2021-08-13','C4').
+utente('U77','Anael Domingues','10222999843','M','1986-06-23','AnaelDomingues@hotmail.com',936548888,'Rotunda Bernardino Machado Antas 4760-001 Vila Nova de Famalicao','Maestro',[],'2021-06-26','2021-07-14','C1').
+utente('U78','Lucio Marques','21055707236','M','1978-01-09','LucioMarques1978@hotmail.com',961128736,'Rua de Goa Azurem 4800-004 Guimaraes','Psiquiatra',[],'2021-07-22','2021-08-15','C4').
+utente('U79','Gildasio Andrade','78644821657','M','1963-03-03','GildasioAndrade1963@hotmail.com',925226218,'Rua de Sao Rosendo ( Bispo de Dume ) Dume 4700-008 Braga','Mecânico de carro',[],'2021-06-17','2021-07-06','C1').
+utente('U80','Herenio Ramos','10828129746','M','1957-05-17','HerenioRamos@gmail.com',923914164,'Cangosta do Boular 4700-004 Braga','Promotor de justiça',[],'2021-07-15','2021-08-04','C4').
+utente('U81','Roberta Matos','73754711542','F','1983-04-20','RobertaMatos161@outlook.com',921280179,'Rua da Ponte Seca 4705-001 Arentim','Psicopedagogo',[],'2021-06-18','2021-07-06','C1').
+utente('U82','Izalino Macedo','05309577798','M','1982-04-17','IzalinoMacedo84@gmail.com',911713451,'Rua Joao Penha 4700-004 Braga','Engenheiro elétrico',[],'2021-06-07','2021-06-25','C1').
+utente('U83','Iberina Lima','65121380777','F','1961-11-24','IberinaLima@gmail.com',921425455,'Lugar do Crasto 4700-008 Braga','Advogado trabalhista',[],'2021-07-02','2021-07-21','C2').
+utente('U84','Carmorinda Almeida','61866517105','F','1939-10-04','CarmorindaAlmeida@outlook.com',931822112,'Praceta das Chaos 4775-001 Cambeses','Analista de sistemas',[],'2021-02-12','2021-03-07','C2').
+utente('U85','Everaldo Almeida','54987362895','M','1992-12-09','EveraldoAlmeida@hotmail.com',918265462,'Cangosta do Ruivo Dume 4700-005 Braga','Assistente comercial',[],'2021-07-21','2021-08-09','C4').
+utente('U86','Xenio Raposo','86321458734','M','1976-11-25','XenioRaposo1976@hotmail.com',922321211,'Rua Antonio Alves Rei Dume 4700-004 Braga','Auditor fiscal',[],'2021-06-23','2021-07-12','C3').
+utente('U87','Zoraida Antunes','87755167223','F','1969-07-11','ZoraidaAntunes257@hotmail.com',934692273,'Rua do Cortinhal 4775-001 Cambeses','Engenheiro elétrico',[],'2021-07-02','2021-07-26','C3').
+utente('U88','Betina Barros','86152393716','F','1969-11-02','BetinaBarros1969@gmail.com',920947065,'Rua de Sao Sebastiao 4700-004 Braga','Personal trainer',[],'2021-06-30','2021-07-22','C4').
+utente('U89','Eulogio Gaspar','07567619097','M','1994-12-23','EulogioGaspar1994@gmail.com',916998900,'Cangosta do Boular 4700-004 Braga','Trader',[],'2021-07-12','2021-08-04','C2').
+utente('U90','Anania Costa','33953151318','F','1995-12-23','AnaniaCosta@outlook.com',937400804,'Travessa das Oliveiras 4705-001 Arentim','Técnico em informática',[],'2021-07-24','2021-08-12','C2').
+utente('U91','Salima Cardoso','52025393394','F','1949-01-30','SalimaCardoso1949@gmail.com',912809436,'Rua de Sao Rosendo ( Bispo de Dume ) Dume 4700-008 Braga','Cientista de dados',[],'2021-04-11','2021-05-05','C1').
+utente('U92','Alberta Paiva','44865840891','F','1965-09-23','AlbertaPaiva253@gmail.com',969045439,'Lugar do Crasto 4700-008 Braga','Vigilante',[],'2021-07-28','2021-08-20','C2').
+utente('U93','Baldemar Antunes','44657962748','M','2000-02-29','BaldemarAntunes2000@hotmail.com',962615759,'Travessa General Humberto Delgado Antas 4760-001 Vila Nova de Famalicao','Auxiliar de produção',[],'2021-06-09','2021-07-03','C3').
+utente('U94','Zoe Leite','89362572565','M','1972-12-19','ZoeLeite174@hotmail.com',931980994,'Rua de Francos Azurem 4800-004 Guimaraes','Agrônomo',[],'2021-06-28','2021-07-16','C3').
+utente('U95','Leoberto Anjos','69663435721','M','1958-12-31','LeobertoAnjos195@outlook.com',910659544,'Travessa do Rego 4700-008 Braga','Químico',[],'2021-07-13','2021-07-31','C2').
+utente('U96','Graciana Valente','44179011547','F','2000-02-14','GracianaValente2000@hotmail.com',925323513,'Rua de Francos Azurem 4800-004 Guimaraes','Assistente de marketing',[],'2021-07-14','2021-08-03','C4').
+utente('U97','Acilino Coelho','02929856685','M','1999-09-07','AcilinoCoelho@gmail.com',920507495,'Caminho de Casas Novas Dume 4700-005 Braga','Profissional de Relações Públicas',['Diabetes'],'2021-06-11','2021-07-03','C4').
+utente('U98','Graciliana Correia','57866732909','F','1998-06-05','GracilianaCorreia@gmail.com',931205484,'Rua de Sao Geraldo 4700-004 Braga','Pizzaiolo',[],'2021-07-10','2021-07-27','C2').
+utente('U99','Ruca Simoes','50993551934','F','1962-11-18','RucaSimoes@hotmail.com',919613749,'Rua da Ponte Seca 4705-001 Arentim','Terapeuta ocupacional',[],'2021-07-15','2021-08-03','C3').
 
-staff('S0','Tasia Figueiredo','03459682888','TasiaFigueiredo223@hotmail.com','C3').
-staff('S1','Aloisio Branco','14938759368','AloisioBranco@gmail.com','C1').
-staff('S2','Leandro Freitas','63210414263','LeandroFreitas354@hotmail.com','C3').
-staff('S3','Vitaliano Tavares','05291421840','VitalianoTavares2003@outlook.com','C4').
-staff('S4','Djalma Goncalves','37665239053','DjalmaGoncalves55@outlook.com','C1').
-staff('S5','Evelio Neves','73188432087','EvelioNeves1991@outlook.com','C4').
-staff('S6','Mario Lourenco','86334707299','MarioLourenco160@hotmail.com','C1').
-staff('S7','Laurina Carneiro','48549439238','LaurinaCarneiro341@gmail.com','C3').
-staff('S8','Yasmin Silva','09407977897','YasminSilva@gmail.com','C4').
-staff('S9','Honorato Oliveira','27061021272','HonoratoOliveira@gmail.com','C4').
-staff('S10','Katarina Loureiro','60972825816','KatarinaLoureiro@outlook.com','C4').
-staff('S11','Julinda Almeida','83252065792','JulindaAlmeida@hotmail.com','C2').
-staff('S12','Leonisa Carneiro','58526660661','LeonisaCarneiro@gmail.com','C3').
-staff('S13','Hugo Figueiredo','38397041175','HugoFigueiredo@hotmail.com','C1').
-staff('S14','Aurelia Domingues','56479468342','AureliaDomingues@gmail.com','C4').
-staff('S15','Dercio Soares','95879121367','DercioSoares@outlook.com','C2').
-staff('S16','Estrela Nascimento','33999245109','EstrelaNascimento116@hotmail.com','C3').
-staff('S17','Claudiano Freitas','25717257910','ClaudianoFreitas@hotmail.com','C3').
-staff('S18','Titania Lima','12506344077','TitaniaLima39@outlook.com','C2').
-staff('S19','Junio Pinheiro','30413586996','JunioPinheiro195@gmail.com','C3').
+staff('S0','Anteia Esteves','85039159555','AnteiaEsteves@outlook.com','C3').
+staff('S1','Zoa Coelho','83935395529','ZoaCoelho@hotmail.com','C2').
+staff('S2','Ovidio Ferreira','60680540821','OvidioFerreira1975@gmail.com','C3').
+staff('S3','Neusa Barbosa','22922667801','NeusaBarbosa@hotmail.com','C1').
+staff('S4','Urias Andrade','86862183324','UriasAndrade@hotmail.com','C3').
+staff('S5','Severiano Coelho','86908701762','SeverianoCoelho2011@outlook.com','C2').
+staff('S6','Bertila Torres','88737252706','BertilaTorres@gmail.com','C4').
+staff('S7','Helga Nascimento','92469660089','HelgaNascimento355@hotmail.com','C3').
+staff('S8','Helio Guerreiro','99278701907','HelioGuerreiro1982@gmail.com','C4').
+staff('S9','Helada Mendes','20175334609','HeladaMendes1988@gmail.com','C2').
+staff('S10','Herve Santos','65080208920','HerveSantos@gmail.com','C3').
+staff('S11','Simauro Jesus','30603191197','SimauroJesus1984@hotmail.com','C1').
+staff('S12','Gracinda Batista','03959833986','GracindaBatista@gmail.com','C4').
+staff('S13','Erico Cardoso','67147302201','EricoCardoso@outlook.com','C1').
+staff('S14','Helia Abreu','15419094983','HeliaAbreu@outlook.com','C4').
+staff('S15','Horacio Amaral','17497915659','HoracioAmaral@outlook.com','C2').
+staff('S16','Constancia Maia','38656921348','ConstanciaMaia313@gmail.com','C3').
+staff('S17','Livia Pacheco','93952368539','LiviaPacheco159@hotmail.com','C3').
+staff('S18','Albertina Antunes','28327207639','AlbertinaAntunes@outlook.com','C3').
+staff('S19','Dulcina Loureiro','39600273092','DulcinaLoureiro294@gmail.com','C1').
 
-centro('C1','Centro de saúde de Braga','Rua Carlos Paiao 4700-004 Braga','254786309','suporte@debraga.com').
-centro('C2','Centro de saúde do Carandá','Rua de Sao Frutuoso ( Bispo de Dume ) 4700-008 Braga','228542762','suporte@docarandá.com').
-centro('C3','Centro de saúde do Cávado','Rua de Sao Frutuoso ( Bispo de Dume ) 4700-008 Braga','220977084','suporte@docávado.com').
-centro('C4','Centro de saúde Dr.Paulo Novais','Rua 1 de Maio Antas 4760-001 Vila Nova de Famalicao','223961292','suporte@drpaulonovais.com').
+centro('C1','Centro de saúde de Braga','Rua Bernardim Ribeiro Dume 4700-004 Braga','227552672','suporte@debraga.com').
+centro('C2','Centro de saúde do Carandá','Avenida Central 4775-001 Cambeses','246040908','suporte@docarandá.com').
+centro('C3','Centro de saúde do Cávado','Travessa Cimo de Vila Dume 4700-005 Braga','248761994','suporte@docávado.com').
+centro('C4','Centro de saúde Dr.Paulo Novais','Rua da Veiga de Fora Fermentoes 4800-004 Guimaraes','212747266','suporte@drpaulonovais.com').
 
-vacinacao('S18','U0','2021-06-02','Moderna','True').
-vacinacao('S18','U0','2021-06-19','Moderna','False').
-vacinacao('S0','U1','2021-04-12','Moderna','True').
-vacinacao('S0','U1','2021-05-06','Moderna','False').
-vacinacao('S17','U2','2021-06-13','Pfizer','True').
-vacinacao('S17','U2','2021-07-06','Pfizer','False').
-vacinacao('S1','U3','2021-04-21','Pfizer','True').
-vacinacao('S1','U3','2021-05-13','Pfizer','False').
-vacinacao('S18','U4','2021-07-25','Johnson&Johnson','True').
-vacinacao('S18','U4','2021-08-14','Johnson&Johnson','False').
-vacinacao('S18','U5','2021-05-05','Pfizer','True').
-vacinacao('S18','U5','2021-05-28','Pfizer','False').
-vacinacao('S3','U6','2021-07-16','Pfizer','True').
-vacinacao('S3','U6','2021-08-08','Pfizer','False').
-vacinacao('S4','U7','2021-07-02','Astrazeneca','True').
-vacinacao('S4','U7','2021-07-26','Astrazeneca','False').
-vacinacao('S9','U8','2021-06-09','Moderna','True').
-vacinacao('S9','U8','2021-07-03','Moderna','False').
-vacinacao('S10','U9','2021-06-30','Moderna','True').
-vacinacao('S10','U9','2021-07-23','Moderna','False').
-vacinacao('S11','U10','2021-04-16','Pfizer','True').
-vacinacao('S11','U10','2021-05-06','Pfizer','False').
-vacinacao('S13','U11','2021-06-13','Moderna','True').
-vacinacao('S13','U11','2021-07-05','Moderna','False').
-vacinacao('S16','U12','2021-06-07','Johnson&Johnson','True').
-vacinacao('S16','U12','2021-06-25','Johnson&Johnson','False').
-vacinacao('S3','U13','2021-07-15','Johnson&Johnson','True').
-vacinacao('S3','U13','2021-08-05','Johnson&Johnson','False').
-vacinacao('S17','U14','2021-02-15','Pfizer','True').
-vacinacao('S17','U14','2021-03-07','Pfizer','False').
-vacinacao('S15','U15','2021-07-13','Astrazeneca','True').
-vacinacao('S15','U15','2021-08-04','Astrazeneca','False').
-vacinacao('S0','U16','2021-06-30','Moderna','True').
-vacinacao('S0','U16','2021-07-21','Moderna','False').
-vacinacao('S0','U17','2021-05-01','Astrazeneca','True').
-vacinacao('S0','U17','2021-05-20','Astrazeneca','False').
-vacinacao('S15','U18','2021-02-20','Astrazeneca','True').
-vacinacao('S15','U18','2021-03-09','Astrazeneca','False').
-vacinacao('S3','U19','2021-06-26','Johnson&Johnson','True').
-vacinacao('S3','U19','2021-07-13','Johnson&Johnson','False').
-vacinacao('S2','U20','2021-07-15','Johnson&Johnson','True').
-vacinacao('S2','U20','2021-08-03','Johnson&Johnson','False').
-vacinacao('S18','U21','2021-07-02','Johnson&Johnson','True').
-vacinacao('S18','U21','2021-07-19','Johnson&Johnson','False').
-vacinacao('S19','U22','2021-07-04','Moderna','True').
-vacinacao('S19','U22','2021-07-21','Moderna','False').
-vacinacao('S10','U23','2021-07-11','Johnson&Johnson','True').
-vacinacao('S10','U23','2021-08-03','Johnson&Johnson','False').
-vacinacao('S18','U24','2021-07-14','Johnson&Johnson','True').
-vacinacao('S18','U24','2021-08-01','Johnson&Johnson','False').
-vacinacao('S4','U25','2021-04-26','Pfizer','True').
-vacinacao('S4','U25','2021-05-20','Pfizer','False').
-vacinacao('S16','U26','2021-06-02','Astrazeneca','True').
-vacinacao('S16','U26','2021-06-22','Astrazeneca','False').
-vacinacao('S8','U27','2021-06-07','Moderna','True').
-vacinacao('S8','U27','2021-06-29','Moderna','False').
-vacinacao('S15','U28','2021-04-13','Pfizer','True').
-vacinacao('S15','U28','2021-05-07','Pfizer','False').
-vacinacao('S11','U29','2021-07-09','Astrazeneca','True').
-vacinacao('S11','U29','2021-07-29','Astrazeneca','False').
-vacinacao('S18','U30','2021-07-27','Moderna','True').
-vacinacao('S18','U30','2021-08-13','Moderna','False').
-vacinacao('S1','U31','2021-06-25','Moderna','True').
-vacinacao('S1','U31','2021-07-13','Moderna','False').
-vacinacao('S1','U32','2021-07-29','Johnson&Johnson','True').
-vacinacao('S1','U32','2021-08-17','Johnson&Johnson','False').
-vacinacao('S4','U33','2021-06-27','Pfizer','True').
-vacinacao('S4','U33','2021-07-18','Pfizer','False').
-vacinacao('S4','U34','2021-07-24','Johnson&Johnson','True').
-vacinacao('S4','U34','2021-08-17','Johnson&Johnson','False').
-vacinacao('S11','U35','2021-06-23','Moderna','True').
-vacinacao('S11','U35','2021-07-14','Moderna','False').
-vacinacao('S13','U36','2021-07-15','Astrazeneca','True').
-vacinacao('S13','U36','2021-08-02','Astrazeneca','False').
-vacinacao('S8','U37','2021-06-10','Johnson&Johnson','True').
-vacinacao('S8','U37','2021-06-30','Johnson&Johnson','False').
-vacinacao('S12','U38','2021-06-21','Astrazeneca','True').
-vacinacao('S12','U38','2021-07-13','Astrazeneca','False').
-vacinacao('S16','U39','2021-05-17','Pfizer','True').
-vacinacao('S16','U39','2021-06-07','Pfizer','False').
-vacinacao('S18','U40','2021-06-20','Pfizer','True').
-vacinacao('S18','U40','2021-07-14','Pfizer','False').
-vacinacao('S15','U41','2021-06-15','Johnson&Johnson','True').
-vacinacao('S15','U41','2021-07-04','Johnson&Johnson','False').
-vacinacao('S18','U42','2021-06-14','Astrazeneca','True').
-vacinacao('S18','U42','2021-07-03','Astrazeneca','False').
-vacinacao('S18','U43','2021-07-28','Moderna','True').
-vacinacao('S18','U43','2021-08-18','Moderna','False').
-vacinacao('S14','U44','2021-06-02','Moderna','True').
-vacinacao('S14','U44','2021-06-25','Moderna','False').
-vacinacao('S1','U45','2021-02-09','Johnson&Johnson','True').
-vacinacao('S1','U45','2021-03-04','Johnson&Johnson','False').
-vacinacao('S2','U46','2021-07-30','Pfizer','True').
-vacinacao('S2','U46','2021-08-21','Pfizer','False').
-vacinacao('S9','U47','2021-07-09','Pfizer','True').
-vacinacao('S9','U47','2021-08-01','Pfizer','False').
-vacinacao('S8','U48','2021-05-27','Pfizer','True').
-vacinacao('S8','U48','2021-06-18','Pfizer','False').
-vacinacao('S15','U49','2021-07-16','Johnson&Johnson','True').
-vacinacao('S15','U49','2021-08-02','Johnson&Johnson','False').
-vacinacao('S18','U50','2021-03-15','Astrazeneca','True').
-vacinacao('S18','U50','2021-04-08','Astrazeneca','False').
-vacinacao('S18','U51','2021-07-26','Pfizer','True').
-vacinacao('S18','U51','2021-08-14','Pfizer','False').
-vacinacao('S11','U52','2021-06-06','Pfizer','True').
-vacinacao('S11','U52','2021-06-29','Pfizer','False').
-vacinacao('S10','U53','2021-04-23','Moderna','True').
-vacinacao('S10','U53','2021-05-10','Moderna','False').
-vacinacao('S15','U54','2021-06-28','Moderna','True').
-vacinacao('S15','U54','2021-07-21','Moderna','False').
-vacinacao('S6','U55','2021-06-06','Astrazeneca','True').
-vacinacao('S6','U55','2021-06-24','Astrazeneca','False').
-vacinacao('S2','U56','2021-04-06','Moderna','True').
-vacinacao('S2','U56','2021-04-29','Moderna','False').
-vacinacao('S7','U57','2021-07-21','Astrazeneca','True').
-vacinacao('S7','U57','2021-08-08','Astrazeneca','False').
-vacinacao('S4','U58','2021-06-24','Johnson&Johnson','True').
-vacinacao('S4','U58','2021-07-18','Johnson&Johnson','False').
-vacinacao('S16','U59','2021-07-27','Astrazeneca','True').
-vacinacao('S16','U59','2021-08-20','Astrazeneca','False').
-vacinacao('S11','U60','2021-07-26','Astrazeneca','True').
-vacinacao('S11','U60','2021-08-19','Astrazeneca','False').
-vacinacao('S18','U61','2021-06-26','Astrazeneca','True').
-vacinacao('S18','U61','2021-07-18','Astrazeneca','False').
-vacinacao('S0','U62','2021-07-15','Pfizer','True').
-vacinacao('S0','U62','2021-08-06','Pfizer','False').
-vacinacao('S15','U63','2021-06-13','Pfizer','True').
-vacinacao('S15','U63','2021-07-02','Pfizer','False').
-vacinacao('S13','U64','2021-06-06','Pfizer','True').
-vacinacao('S13','U64','2021-06-30','Pfizer','False').
-vacinacao('S19','U65','2021-06-20','Pfizer','True').
-vacinacao('S19','U65','2021-07-11','Pfizer','False').
-vacinacao('S6','U66','2021-06-19','Johnson&Johnson','True').
-vacinacao('S6','U66','2021-07-12','Johnson&Johnson','False').
-vacinacao('S18','U67','2021-03-16','Johnson&Johnson','True').
-vacinacao('S18','U67','2021-04-07','Johnson&Johnson','False').
-vacinacao('S9','U68','2021-06-20','Johnson&Johnson','True').
-vacinacao('S9','U68','2021-07-07','Johnson&Johnson','False').
-vacinacao('S16','U69','2021-07-03','Moderna','True').
-vacinacao('S16','U69','2021-07-22','Moderna','False').
-vacinacao('S17','U70','2021-06-19','Astrazeneca','True').
-vacinacao('S17','U70','2021-07-09','Astrazeneca','False').
-vacinacao('S11','U71','2021-06-02','Pfizer','True').
-vacinacao('S11','U71','2021-06-19','Pfizer','False').
-vacinacao('S10','U72','2021-07-29','Pfizer','True').
-vacinacao('S10','U72','2021-08-17','Pfizer','False').
-vacinacao('S3','U73','2021-07-06','Astrazeneca','True').
-vacinacao('S3','U73','2021-07-26','Astrazeneca','False').
-vacinacao('S8','U74','2021-07-27','Pfizer','True').
-vacinacao('S8','U74','2021-08-14','Pfizer','False').
-vacinacao('S17','U75','2021-06-04','Astrazeneca','True').
-vacinacao('S17','U75','2021-06-26','Astrazeneca','False').
-vacinacao('S18','U76','2021-06-28','Johnson&Johnson','True').
-vacinacao('S18','U76','2021-07-16','Johnson&Johnson','False').
-vacinacao('S12','U77','2021-06-08','Pfizer','True').
-vacinacao('S12','U77','2021-07-01','Pfizer','False').
-vacinacao('S6','U78','2021-06-02','Pfizer','True').
-vacinacao('S6','U78','2021-06-22','Pfizer','False').
-vacinacao('S17','U79','2021-07-22','Johnson&Johnson','True').
-vacinacao('S17','U79','2021-08-12','Johnson&Johnson','False').
-vacinacao('S4','U80','2021-06-16','Johnson&Johnson','True').
-vacinacao('S4','U80','2021-07-09','Johnson&Johnson','False').
-vacinacao('S15','U81','2021-07-28','Johnson&Johnson','True').
-vacinacao('S15','U81','2021-08-14','Johnson&Johnson','False').
-vacinacao('S15','U82','2021-06-23','Astrazeneca','True').
-vacinacao('S15','U82','2021-07-10','Astrazeneca','False').
-vacinacao('S13','U83','2021-07-15','Astrazeneca','True').
-vacinacao('S13','U83','2021-08-03','Astrazeneca','False').
-vacinacao('S2','U84','2021-07-11','Moderna','True').
-vacinacao('S2','U84','2021-08-04','Moderna','False').
-vacinacao('S18','U85','2021-07-25','Pfizer','True').
-vacinacao('S18','U85','2021-08-15','Pfizer','False').
-vacinacao('S8','U86','2021-06-02','Astrazeneca','True').
-vacinacao('S8','U86','2021-06-25','Astrazeneca','False').
-vacinacao('S10','U87','2021-07-14','Pfizer','True').
-vacinacao('S10','U87','2021-08-01','Pfizer','False').
-vacinacao('S0','U88','2021-05-29','Pfizer','True').
-vacinacao('S0','U88','2021-06-16','Pfizer','False').
-vacinacao('S11','U89','2021-04-07','Johnson&Johnson','True').
-vacinacao('S11','U89','2021-04-27','Johnson&Johnson','False').
-vacinacao('S9','U90','2021-03-07','Moderna','True').
-vacinacao('S9','U90','2021-03-26','Moderna','False').
-vacinacao('S0','U91','2021-07-22','Pfizer','True').
-vacinacao('S0','U91','2021-08-13','Pfizer','False').
-vacinacao('S15','U92','2021-06-22','Johnson&Johnson','True').
-vacinacao('S15','U92','2021-07-13','Johnson&Johnson','False').
-vacinacao('S15','U93','2021-07-05','Pfizer','True').
-vacinacao('S15','U93','2021-07-23','Pfizer','False').
-vacinacao('S8','U94','2021-06-04','Pfizer','True').
-vacinacao('S8','U94','2021-06-26','Pfizer','False').
-vacinacao('S11','U95','2021-05-14','Moderna','True').
-vacinacao('S11','U95','2021-06-07','Moderna','False').
-vacinacao('S18','U96','2021-06-17','Pfizer','True').
-vacinacao('S18','U96','2021-07-09','Pfizer','False').
-vacinacao('S8','U97','2021-07-26','Pfizer','True').
-vacinacao('S8','U97','2021-08-16','Pfizer','False').
-vacinacao('S11','U98','2021-07-19','Moderna','True').
-vacinacao('S11','U98','2021-08-10','Moderna','False').
-vacinacao('S16','U99','2021-06-30','Astrazeneca','True').
-vacinacao('S16','U99','2021-07-20','Astrazeneca','False').
+vacinacao('S13','U0','2021-06-25','Moderna',1,'False').
+vacinacao('S13','U0','2021-07-14','Moderna',2,'False').
+vacinacao('S1','U1','2021-07-02','Astrazeneca',1,'False').
+vacinacao('S1','U1','2021-07-23','Astrazeneca',2,'False').
+vacinacao('S11','U2','2021-07-02','Johnson&Johnson',1,'False').
+vacinacao('S11','U2','2021-07-26','Johnson&Johnson',2,'False').
+vacinacao('S11','U3','2021-06-05','Moderna',1,'False').
+vacinacao('S11','U3','2021-06-26','Moderna',2,'False').
+vacinacao('S6','U4','2021-07-01','Moderna',1,'False').
+vacinacao('S6','U4','2021-07-18','Moderna',2,'False').
+vacinacao('S9','U5','2021-07-30','Pfizer',1,'False').
+vacinacao('S9','U5','2021-08-18','Pfizer',2,'False').
+vacinacao('S3','U6','2021-06-26','Astrazeneca',1,'False').
+vacinacao('S3','U6','2021-07-18','Astrazeneca',2,'False').
+vacinacao('S9','U7','2021-02-15','Astrazeneca',1,'True').
+vacinacao('S9','U7','2021-03-05','Astrazeneca',2,'True').
+vacinacao('S3','U8','2021-07-01','Pfizer',1,'False').
+vacinacao('S3','U8','2021-07-25','Pfizer',2,'False').
+vacinacao('S10','U9','2021-06-08','Astrazeneca',1,'False').
+vacinacao('S10','U9','2021-07-02','Astrazeneca',2,'False').
+vacinacao('S11','U10','2021-07-01','Pfizer',1,'False').
+vacinacao('S11','U10','2021-07-24','Pfizer',2,'False').
+vacinacao('S8','U11','2021-06-24','Pfizer',1,'False').
+vacinacao('S8','U11','2021-07-13','Pfizer',2,'False').
+vacinacao('S18','U12','2021-02-15','Moderna',1,'True').
+vacinacao('S18','U12','2021-03-04','Moderna',2,'True').
+vacinacao('S6','U13','2021-07-24','Astrazeneca',1,'False').
+vacinacao('S6','U13','2021-08-10','Astrazeneca',2,'False').
+vacinacao('S13','U14','2021-04-24','Moderna',1,'False').
+vacinacao('S13','U14','2021-05-15','Moderna',2,'False').
+vacinacao('S14','U15','2021-07-02','Pfizer',1,'False').
+vacinacao('S14','U15','2021-07-20','Pfizer',2,'False').
+vacinacao('S15','U16','2021-06-12','Moderna',1,'False').
+vacinacao('S15','U16','2021-07-03','Moderna',2,'False').
+vacinacao('S12','U17','2021-07-25','Astrazeneca',1,'False').
+vacinacao('S12','U17','2021-08-18','Astrazeneca',2,'False').
+vacinacao('S7','U18','2021-05-13','Johnson&Johnson',1,'False').
+vacinacao('S7','U18','2021-06-02','Johnson&Johnson',2,'False').
+vacinacao('S8','U19','2021-07-21','Johnson&Johnson',1,'False').
+vacinacao('S8','U19','2021-08-14','Johnson&Johnson',2,'False').
+vacinacao('S12','U20','2021-06-05','Pfizer',1,'False').
+vacinacao('S12','U20','2021-06-25','Pfizer',2,'False').
+vacinacao('S5','U21','2021-07-15','Moderna',1,'False').
+vacinacao('S5','U21','2021-08-02','Moderna',2,'False').
+vacinacao('S9','U22','2021-07-19','Pfizer',1,'False').
+vacinacao('S9','U22','2021-08-05','Pfizer',2,'False').
+vacinacao('S5','U23','2021-07-07','Astrazeneca',1,'False').
+vacinacao('S5','U23','2021-07-29','Astrazeneca',2,'False').
+vacinacao('S5','U24','2021-07-11','Astrazeneca',1,'False').
+vacinacao('S5','U24','2021-08-02','Astrazeneca',2,'False').
+vacinacao('S10','U25','2021-07-05','Johnson&Johnson',1,'False').
+vacinacao('S10','U25','2021-07-28','Johnson&Johnson',2,'False').
+vacinacao('S19','U26','2021-07-05','Pfizer',1,'False').
+vacinacao('S19','U26','2021-07-23','Pfizer',2,'False').
+vacinacao('S16','U27','2021-06-13','Johnson&Johnson',1,'False').
+vacinacao('S16','U27','2021-06-30','Johnson&Johnson',2,'False').
+vacinacao('S15','U28','2021-06-02','Astrazeneca',1,'False').
+vacinacao('S15','U28','2021-06-23','Astrazeneca',2,'False').
+vacinacao('S1','U29','2021-07-29','Johnson&Johnson',1,'False').
+vacinacao('S1','U29','2021-08-17','Johnson&Johnson',2,'False').
+vacinacao('S0','U30','2021-07-24','Johnson&Johnson',1,'False').
+vacinacao('S0','U30','2021-08-13','Johnson&Johnson',2,'False').
+vacinacao('S9','U31','2021-07-18','Johnson&Johnson',1,'False').
+vacinacao('S9','U31','2021-08-11','Johnson&Johnson',2,'False').
+vacinacao('S10','U32','2021-07-10','Moderna',1,'False').
+vacinacao('S10','U32','2021-08-03','Moderna',2,'False').
+vacinacao('S4','U33','2021-06-16','Astrazeneca',1,'False').
+vacinacao('S4','U33','2021-07-08','Astrazeneca',2,'False').
+vacinacao('S5','U34','2021-07-12','Astrazeneca',1,'False').
+vacinacao('S5','U34','2021-08-04','Astrazeneca',2,'False').
+vacinacao('S0','U35','2021-05-20','Pfizer',1,'False').
+vacinacao('S0','U35','2021-06-11','Pfizer',2,'False').
+vacinacao('S6','U36','2021-06-25','Pfizer',1,'False').
+vacinacao('S6','U36','2021-07-19','Pfizer',2,'False').
+vacinacao('S8','U37','2021-05-10','Johnson&Johnson',1,'False').
+vacinacao('S8','U37','2021-06-03','Johnson&Johnson',2,'False').
+vacinacao('S2','U38','2021-06-16','Moderna',1,'False').
+vacinacao('S2','U38','2021-07-04','Moderna',2,'False').
+vacinacao('S8','U39','2021-06-04','Moderna',1,'False').
+vacinacao('S8','U39','2021-06-24','Moderna',2,'False').
+vacinacao('S5','U40','2021-06-10','Johnson&Johnson',1,'False').
+vacinacao('S5','U40','2021-06-28','Johnson&Johnson',2,'False').
+vacinacao('S0','U41','2021-04-05','Pfizer',1,'False').
+vacinacao('S0','U41','2021-04-27','Pfizer',2,'False').
+vacinacao('S9','U42','2021-04-09','Moderna',1,'False').
+vacinacao('S9','U42','2021-05-03','Moderna',2,'False').
+vacinacao('S0','U43','2021-06-12','Astrazeneca',1,'False').
+vacinacao('S0','U43','2021-07-03','Astrazeneca',2,'False').
+vacinacao('S9','U44','2021-06-26','Pfizer',1,'False').
+vacinacao('S9','U44','2021-07-15','Pfizer',2,'False').
+vacinacao('S19','U45','2021-06-16','Johnson&Johnson',1,'False').
+vacinacao('S19','U45','2021-07-06','Johnson&Johnson',2,'False').
+vacinacao('S7','U46','2021-05-19','Moderna',1,'False').
+vacinacao('S7','U46','2021-06-09','Moderna',2,'False').
+vacinacao('S13','U47','2021-06-19','Astrazeneca',1,'False').
+vacinacao('S13','U47','2021-07-11','Astrazeneca',2,'False').
+vacinacao('S19','U48','2021-06-13','Pfizer',1,'False').
+vacinacao('S19','U48','2021-07-03','Pfizer',2,'False').
+vacinacao('S2','U49','2021-05-21','Johnson&Johnson',1,'False').
+vacinacao('S2','U49','2021-06-14','Johnson&Johnson',2,'False').
+vacinacao('S1','U50','2021-07-23','Moderna',1,'False').
+vacinacao('S1','U50','2021-08-10','Moderna',2,'False').
+vacinacao('S2','U51','2021-07-01','Johnson&Johnson',1,'False').
+vacinacao('S2','U51','2021-07-25','Johnson&Johnson',2,'False').
+vacinacao('S0','U52','2021-06-25','Johnson&Johnson',1,'False').
+vacinacao('S0','U52','2021-07-19','Johnson&Johnson',2,'False').
+vacinacao('S1','U53','2021-07-03','Johnson&Johnson',1,'False').
+vacinacao('S1','U53','2021-07-25','Johnson&Johnson',2,'False').
+vacinacao('S16','U54','2021-07-06','Pfizer',1,'False').
+vacinacao('S16','U54','2021-07-27','Pfizer',2,'False').
+vacinacao('S8','U55','2021-07-09','Pfizer',1,'False').
+vacinacao('S8','U55','2021-07-31','Pfizer',2,'False').
+vacinacao('S8','U56','2021-05-02','Moderna',1,'False').
+vacinacao('S8','U56','2021-05-23','Moderna',2,'False').
+vacinacao('S9','U57','2021-07-11','Astrazeneca',1,'False').
+vacinacao('S9','U57','2021-07-28','Astrazeneca',2,'False').
+vacinacao('S16','U58','2021-06-22','Astrazeneca',1,'False').
+vacinacao('S16','U58','2021-07-15','Astrazeneca',2,'False').
+vacinacao('S11','U59','2021-06-05','Moderna',1,'False').
+vacinacao('S11','U59','2021-06-22','Moderna',2,'False').
+vacinacao('S15','U60','2021-05-05','Moderna',1,'False').
+vacinacao('S15','U60','2021-05-29','Moderna',2,'False').
+vacinacao('S4','U61','2021-06-15','Johnson&Johnson',1,'False').
+vacinacao('S4','U61','2021-07-04','Johnson&Johnson',2,'False').
+vacinacao('S19','U62','2021-02-21','Astrazeneca',1,'True').
+vacinacao('S19','U62','2021-03-14','Astrazeneca',2,'True').
+vacinacao('S15','U63','2021-04-24','Johnson&Johnson',1,'False').
+vacinacao('S15','U63','2021-05-17','Johnson&Johnson',2,'False').
+vacinacao('S3','U64','2021-06-04','Johnson&Johnson',1,'False').
+vacinacao('S3','U64','2021-06-25','Johnson&Johnson',2,'False').
+vacinacao('S9','U65','2021-07-08','Astrazeneca',1,'False').
+vacinacao('S9','U65','2021-08-01','Astrazeneca',2,'False').
+vacinacao('S7','U66','2021-07-01','Pfizer',1,'False').
+vacinacao('S7','U66','2021-07-21','Pfizer',2,'False').
+vacinacao('S5','U67','2021-07-22','Johnson&Johnson',1,'False').
+vacinacao('S5','U67','2021-08-11','Johnson&Johnson',2,'False').
+vacinacao('S11','U68','2021-04-26','Johnson&Johnson',1,'False').
+vacinacao('S11','U68','2021-05-13','Johnson&Johnson',2,'False').
+vacinacao('S16','U69','2021-07-06','Johnson&Johnson',1,'False').
+vacinacao('S16','U69','2021-07-24','Johnson&Johnson',2,'False').
+vacinacao('S13','U70','2021-06-09','Pfizer',1,'False').
+vacinacao('S13','U70','2021-06-30','Pfizer',2,'False').
+vacinacao('S2','U71','2021-07-10','Pfizer',1,'False').
+vacinacao('S2','U71','2021-07-28','Pfizer',2,'False').
+vacinacao('S9','U72','2021-07-29','Pfizer',1,'False').
+vacinacao('S9','U72','2021-08-21','Pfizer',2,'False').
+vacinacao('S15','U73','2021-05-04','Astrazeneca',1,'False').
+vacinacao('S15','U73','2021-05-21','Astrazeneca',2,'False').
+vacinacao('S9','U74','2021-03-12','Moderna',1,'True').
+vacinacao('S9','U74','2021-03-31','Moderna',2,'True').
+vacinacao('S3','U75','2021-06-07','Astrazeneca',1,'False').
+vacinacao('S3','U75','2021-06-28','Astrazeneca',2,'False').
+vacinacao('S12','U76','2021-07-20','Moderna',1,'False').
+vacinacao('S12','U76','2021-08-13','Moderna',2,'False').
+vacinacao('S19','U77','2021-06-26','Moderna',1,'False').
+vacinacao('S19','U77','2021-07-14','Moderna',2,'False').
+vacinacao('S12','U78','2021-07-22','Pfizer',1,'False').
+vacinacao('S12','U78','2021-08-15','Pfizer',2,'False').
+vacinacao('S11','U79','2021-06-17','Pfizer',1,'False').
+vacinacao('S11','U79','2021-07-06','Pfizer',2,'False').
+vacinacao('S8','U80','2021-07-15','Moderna',1,'False').
+vacinacao('S8','U80','2021-08-04','Moderna',2,'False').
+vacinacao('S3','U81','2021-06-18','Pfizer',1,'False').
+vacinacao('S3','U81','2021-07-06','Pfizer',2,'False').
+vacinacao('S13','U82','2021-06-07','Moderna',1,'False').
+vacinacao('S13','U82','2021-06-25','Moderna',2,'False').
+vacinacao('S9','U83','2021-07-02','Astrazeneca',1,'False').
+vacinacao('S9','U83','2021-07-21','Astrazeneca',2,'False').
+vacinacao('S9','U84','2021-02-12','Pfizer',1,'True').
+vacinacao('S9','U84','2021-03-07','Pfizer',2,'True').
+vacinacao('S6','U85','2021-07-21','Moderna',1,'False').
+vacinacao('S6','U85','2021-08-09','Moderna',2,'False').
+vacinacao('S18','U86','2021-06-23','Johnson&Johnson',1,'False').
+vacinacao('S18','U86','2021-07-12','Johnson&Johnson',2,'False').
+vacinacao('S4','U87','2021-07-02','Pfizer',1,'False').
+vacinacao('S4','U87','2021-07-26','Pfizer',2,'False').
+vacinacao('S6','U88','2021-06-30','Moderna',1,'False').
+vacinacao('S6','U88','2021-07-22','Moderna',2,'False').
+vacinacao('S15','U89','2021-07-12','Johnson&Johnson',1,'False').
+vacinacao('S15','U89','2021-08-04','Johnson&Johnson',2,'False').
+vacinacao('S5','U90','2021-07-24','Astrazeneca',1,'False').
+vacinacao('S5','U90','2021-08-12','Astrazeneca',2,'False').
+vacinacao('S13','U91','2021-04-11','Astrazeneca',1,'False').
+vacinacao('S13','U91','2021-05-05','Astrazeneca',2,'False').
+vacinacao('S5','U92','2021-07-28','Astrazeneca',1,'False').
+vacinacao('S5','U92','2021-08-20','Astrazeneca',2,'False').
+vacinacao('S4','U93','2021-06-09','Moderna',1,'False').
+vacinacao('S4','U93','2021-07-03','Moderna',2,'False').
+vacinacao('S2','U94','2021-06-28','Astrazeneca',1,'False').
+vacinacao('S2','U94','2021-07-16','Astrazeneca',2,'False').
+vacinacao('S9','U95','2021-07-13','Johnson&Johnson',1,'False').
+vacinacao('S9','U95','2021-07-31','Johnson&Johnson',2,'False').
+vacinacao('S6','U96','2021-07-14','Moderna',1,'False').
+vacinacao('S6','U96','2021-08-03','Moderna',2,'False').
+vacinacao('S14','U97','2021-06-11','Moderna',1,'False').
+vacinacao('S14','U97','2021-07-03','Moderna',2,'False').
+vacinacao('S15','U98','2021-07-10','Johnson&Johnson',1,'False').
+vacinacao('S15','U98','2021-07-27','Johnson&Johnson',2,'False').
+vacinacao('S17','U99','2021-07-15','Pfizer',1,'False').
+vacinacao('S17','U99','2021-08-03','Pfizer',2,'False').
