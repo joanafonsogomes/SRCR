@@ -190,7 +190,7 @@ with open('dataset.pl', 'a') as dataset:
 #converter utentes
     for utente in listaUtentes:
         #id nome nsoc genero data_nasc email tlm morada prof doencas fase1 fase2 idcentro
-        dataset.write("utente('{0}','{1}','{2}','{3}','{4}','{5}',{6},'{7}','{8}','{9}','{10}','{11}','{12}').\n".format(utente["id"],
+        dataset.write("utente('{0}','{1}','{2}','{3}','{4}','{5}',{6},'{7}','{8}',{9},'{10}','{11}','{12}').\n".format(utente["id"],
         utente["name"],
         utente["nSocial"],
         utente["genero"],
