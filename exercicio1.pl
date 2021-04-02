@@ -1,10 +1,10 @@
-%---------------------------------
+% ---------------------------------
 % SRCR TP1
-%---------------------------------
-
+% ---------------------------------
 
 % -- INCLUDES --
 :- include('auxiliares.pl').
+:- include('baseconhecimento.pl').
 
 :- set_prolog_flag( discontiguous_warnings,off ).
 :- set_prolog_flag( single_var_warnings,off ).
@@ -16,13 +16,19 @@
 :- dynamic centro/6.
 :- dynamic vacinacao/5.
 
+% -- UTENTES --
+% Valido para a 1F?
+
+
+% Valido para a 2F?
+
 
 %------------------
-% Registrar utentes, staff, centros de saude e vacinações
+% REGISTRAR utentes, staff, centros de saude e vacinações
 %------------------
 
-% UTENTE: Idutente, Nº Segurança_Social, Nome, Data_Nasc, Email, Telefone, Morada, Profissão, [Doenças_Crónicas], #CentroSaúde
-novoUtente(Id,NISS,N,Dn,E,Tlf,M,P,Dc,IdCs) :- novoConhecimento(utente(Id,NISS,Nome,Dn,E,Tlf,M,P,Dc,Cs)).
+% UTENTE: Idutente, Nº Segurança_Social, Nome, Genero, Data_Nasc, Email, Telefone, Morada, Profissão, [Doenças_Crónicas], #CentroSaúde
+novoUtente(Id,NISS,N,G,Dn,E,Tlf,M,P,Dc,IdCs) :- novoConhecimento(utente(Id,NISS,Nome,G,Dn,E,Tlf,M,P,Dc,Cs)).
 
 % STAFF: IdStaff, IdCentro, Nome, Email
 novoStaff(Id,IdCs,N,E) :- novoConhecimento(staff(Id,IdCs,N,E)).
