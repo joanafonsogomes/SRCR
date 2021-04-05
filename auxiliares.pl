@@ -22,4 +22,5 @@ prazoExpirado(data(A,M,D), P) :- calculaPrazo(A,M,D,P,Prazo),
                                 datime(Hoje), !,
                                 comparaDatas(Hoje,Prazo).
 
-% Calcular idade
+% Calcular idade %
+% teste
