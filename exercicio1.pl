@@ -5,16 +5,17 @@
 % -- INCLUDES --
 :- include('auxiliares.pl').
 :- include('baseconhecimento.pl').
+:- include('joana.pl').
 
 :- set_prolog_flag( discontiguous_warnings,off ).
 :- set_prolog_flag( single_var_warnings,off ).
 :- set_prolog_flag( unknown,fail ).
 
 :- op(900,xfy,'::').
-:- dynamic utente/9.
-:- dynamic staff/4.
-:- dynamic centro/6.
-:- dynamic vacinacao/5.
+:- dynamic utente/13.
+:- dynamic staff/5.
+:- dynamic centro/5.
+:- dynamic vacinacao/6.
 
 % -- UTENTES --
 % Valido para a 1F?
