@@ -2,7 +2,7 @@
 % Base de Conhecimento
 %---------------------------------
 
-% UTENTE: Idutente, Nº Segurança_Social, Nome, Data_Nasc, Email, Telefone, Morada, Profissão, [Doenças_Crónicas], #CentroSaúde
+% UTENTE: Idutente, Nº Segurança_Social, Genero, Nome, Data_Nasc, Email, Telefone, Morada, Profissão, [Doenças_Crónicas], IdCentro
 utente('U0','Nicolau Costa','68016758867','F','1986-12-27','NicolauCosta19@gmail.com',911079343,'Rua Joao de Deus 4700-004 Braga','Taquigrafo',[],'2021-06-25','2021-07-14','C1').
 utente('U1','Teresca Pinheiro','61767763875','F','2012-04-11','TerescaPinheiro@gmail.com',927253210,'Rua da Igreja Velha 4705-001 Arentim','Agricultor',[],'2021-07-02','2021-07-23','C2').
 utente('U2','Andreo Paiva','16687043998','M','2004-04-12','AndreoPaiva@gmail.com',925405497,'Largo de Sao Sebastiao 4700-008 Braga','Terapeuta ocupacional',[],'2021-07-02','2021-07-26','C1').
@@ -104,7 +104,7 @@ utente('U97','Acilino Coelho','02929856685','M','1999-09-07','AcilinoCoelho@gmai
 utente('U98','Graciliana Correia','57866732909','F','1998-06-05','GracilianaCorreia@gmail.com',931205484,'Rua de Sao Geraldo 4700-004 Braga','Pizzaiolo',[],'2021-07-10','2021-07-27','C2').
 utente('U99','Ruca Simoes','50993551934','F','1962-11-18','RucaSimoes@hotmail.com',919613749,'Rua da Ponte Seca 4705-001 Arentim','Terapeuta ocupacional',[],'2021-07-15','2021-08-03','C3').
 
-% STAFF: IdStaff, IdCentro, Nome, Email
+% STAFF: IdStaff, Nome, Nº Segurança_Social, Email, IdCentro
 staff('S0','Anteia Esteves','85039159555','AnteiaEsteves@outlook.com','C3').
 staff('S1','Zoa Coelho','83935395529','ZoaCoelho@hotmail.com','C2').
 staff('S2','Ovidio Ferreira','60680540821','OvidioFerreira1975@gmail.com','C3').
@@ -137,8 +137,8 @@ vacinacao('S13','U0','2021-06-25','Moderna',1,'False').
 vacinacao('S13','U0','2021-07-14','Moderna',2,'False').
 vacinacao('S1','U1','2021-07-02','Astrazeneca',1,'False').
 vacinacao('S1','U1','2021-07-23','Astrazeneca',2,'False').
-vacinacao('S11','U2','2021-07-02','Johnson&Johnson',1,'False').
-vacinacao('S11','U2','2021-07-26','Johnson&Johnson',2,'False').
+vacinacao('S11','U2','2021-07-02','Sputnik V',1,'False').
+vacinacao('S11','U2','2021-07-26','Sputnik V',2,'False').
 vacinacao('S11','U3','2021-06-05','Moderna',1,'False').
 vacinacao('S11','U3','2021-06-26','Moderna',2,'False').
 vacinacao('S6','U4','2021-07-01','Moderna',1,'False').
@@ -169,10 +169,10 @@ vacinacao('S15','U16','2021-06-12','Moderna',1,'False').
 vacinacao('S15','U16','2021-07-03','Moderna',2,'False').
 vacinacao('S12','U17','2021-07-25','Astrazeneca',1,'False').
 vacinacao('S12','U17','2021-08-18','Astrazeneca',2,'False').
-vacinacao('S7','U18','2021-05-13','Johnson&Johnson',1,'False').
-vacinacao('S7','U18','2021-06-02','Johnson&Johnson',2,'False').
-vacinacao('S8','U19','2021-07-21','Johnson&Johnson',1,'False').
-vacinacao('S8','U19','2021-08-14','Johnson&Johnson',2,'False').
+vacinacao('S7','U18','2021-05-13','Sputnik V',1,'False').
+vacinacao('S7','U18','2021-06-02','Sputnik V',2,'False').
+vacinacao('S8','U19','2021-07-21','Sputnik V',1,'False').
+vacinacao('S8','U19','2021-08-14','Sputnik V',2,'False').
 vacinacao('S12','U20','2021-06-05','Pfizer',1,'False').
 vacinacao('S12','U20','2021-06-25','Pfizer',2,'False').
 vacinacao('S5','U21','2021-07-15','Moderna',1,'False').
@@ -183,20 +183,20 @@ vacinacao('S5','U23','2021-07-07','Astrazeneca',1,'False').
 vacinacao('S5','U23','2021-07-29','Astrazeneca',2,'False').
 vacinacao('S5','U24','2021-07-11','Astrazeneca',1,'False').
 vacinacao('S5','U24','2021-08-02','Astrazeneca',2,'False').
-vacinacao('S10','U25','2021-07-05','Johnson&Johnson',1,'False').
-vacinacao('S10','U25','2021-07-28','Johnson&Johnson',2,'False').
+vacinacao('S10','U25','2021-07-05','Sputnik V',1,'False').
+vacinacao('S10','U25','2021-07-28','Sputnik V',2,'False').
 vacinacao('S19','U26','2021-07-05','Pfizer',1,'False').
 vacinacao('S19','U26','2021-07-23','Pfizer',2,'False').
-vacinacao('S16','U27','2021-06-13','Johnson&Johnson',1,'False').
-vacinacao('S16','U27','2021-06-30','Johnson&Johnson',2,'False').
+vacinacao('S16','U27','2021-06-13','Sputnik V',1,'False').
+vacinacao('S16','U27','2021-06-30','Sputnik V',2,'False').
 vacinacao('S15','U28','2021-06-02','Astrazeneca',1,'False').
 vacinacao('S15','U28','2021-06-23','Astrazeneca',2,'False').
-vacinacao('S1','U29','2021-07-29','Johnson&Johnson',1,'False').
-vacinacao('S1','U29','2021-08-17','Johnson&Johnson',2,'False').
-vacinacao('S0','U30','2021-07-24','Johnson&Johnson',1,'False').
-vacinacao('S0','U30','2021-08-13','Johnson&Johnson',2,'False').
-vacinacao('S9','U31','2021-07-18','Johnson&Johnson',1,'False').
-vacinacao('S9','U31','2021-08-11','Johnson&Johnson',2,'False').
+vacinacao('S1','U29','2021-07-29','Sputnik V',1,'False').
+vacinacao('S1','U29','2021-08-17','Sputnik V',2,'False').
+vacinacao('S0','U30','2021-07-24','Sputnik V',1,'False').
+vacinacao('S0','U30','2021-08-13','Sputnik V',2,'False').
+vacinacao('S9','U31','2021-07-18','Sputnik V',1,'False').
+vacinacao('S9','U31','2021-08-11','Sputnik V',2,'False').
 vacinacao('S10','U32','2021-07-10','Moderna',1,'False').
 vacinacao('S10','U32','2021-08-03','Moderna',2,'False').
 vacinacao('S4','U33','2021-06-16','Astrazeneca',1,'False').
@@ -207,14 +207,14 @@ vacinacao('S0','U35','2021-05-20','Pfizer',1,'False').
 vacinacao('S0','U35','2021-06-11','Pfizer',2,'False').
 vacinacao('S6','U36','2021-06-25','Pfizer',1,'False').
 vacinacao('S6','U36','2021-07-19','Pfizer',2,'False').
-vacinacao('S8','U37','2021-05-10','Johnson&Johnson',1,'False').
-vacinacao('S8','U37','2021-06-03','Johnson&Johnson',2,'False').
+vacinacao('S8','U37','2021-05-10','Sputnik V',1,'False').
+vacinacao('S8','U37','2021-06-03','Sputnik V',2,'False').
 vacinacao('S2','U38','2021-06-16','Moderna',1,'False').
 vacinacao('S2','U38','2021-07-04','Moderna',2,'False').
 vacinacao('S8','U39','2021-06-04','Moderna',1,'False').
 vacinacao('S8','U39','2021-06-24','Moderna',2,'False').
-vacinacao('S5','U40','2021-06-10','Johnson&Johnson',1,'False').
-vacinacao('S5','U40','2021-06-28','Johnson&Johnson',2,'False').
+vacinacao('S5','U40','2021-06-10','Sputnik V',1,'False').
+vacinacao('S5','U40','2021-06-28','Sputnik V',2,'False').
 vacinacao('S0','U41','2021-04-05','Pfizer',1,'False').
 vacinacao('S0','U41','2021-04-27','Pfizer',2,'False').
 vacinacao('S9','U42','2021-04-09','Moderna',1,'False').
@@ -223,24 +223,24 @@ vacinacao('S0','U43','2021-06-12','Astrazeneca',1,'False').
 vacinacao('S0','U43','2021-07-03','Astrazeneca',2,'False').
 vacinacao('S9','U44','2021-06-26','Pfizer',1,'False').
 vacinacao('S9','U44','2021-07-15','Pfizer',2,'False').
-vacinacao('S19','U45','2021-06-16','Johnson&Johnson',1,'False').
-vacinacao('S19','U45','2021-07-06','Johnson&Johnson',2,'False').
+vacinacao('S19','U45','2021-06-16','Sputnik V',1,'False').
+vacinacao('S19','U45','2021-07-06','Sputnik V',2,'False').
 vacinacao('S7','U46','2021-05-19','Moderna',1,'False').
 vacinacao('S7','U46','2021-06-09','Moderna',2,'False').
 vacinacao('S13','U47','2021-06-19','Astrazeneca',1,'False').
 vacinacao('S13','U47','2021-07-11','Astrazeneca',2,'False').
 vacinacao('S19','U48','2021-06-13','Pfizer',1,'False').
 vacinacao('S19','U48','2021-07-03','Pfizer',2,'False').
-vacinacao('S2','U49','2021-05-21','Johnson&Johnson',1,'False').
-vacinacao('S2','U49','2021-06-14','Johnson&Johnson',2,'False').
+vacinacao('S2','U49','2021-05-21','Sputnik V',1,'False').
+vacinacao('S2','U49','2021-06-14','Sputnik V',2,'False').
 vacinacao('S1','U50','2021-07-23','Moderna',1,'False').
 vacinacao('S1','U50','2021-08-10','Moderna',2,'False').
-vacinacao('S2','U51','2021-07-01','Johnson&Johnson',1,'False').
-vacinacao('S2','U51','2021-07-25','Johnson&Johnson',2,'False').
-vacinacao('S0','U52','2021-06-25','Johnson&Johnson',1,'False').
-vacinacao('S0','U52','2021-07-19','Johnson&Johnson',2,'False').
-vacinacao('S1','U53','2021-07-03','Johnson&Johnson',1,'False').
-vacinacao('S1','U53','2021-07-25','Johnson&Johnson',2,'False').
+vacinacao('S2','U51','2021-07-01','Sputnik V',1,'False').
+vacinacao('S2','U51','2021-07-25','Sputnik V',2,'False').
+vacinacao('S0','U52','2021-06-25','Sputnik V',1,'False').
+vacinacao('S0','U52','2021-07-19','Sputnik V',2,'False').
+vacinacao('S1','U53','2021-07-03','Sputnik V',1,'False').
+vacinacao('S1','U53','2021-07-25','Sputnik V',2,'False').
 vacinacao('S16','U54','2021-07-06','Pfizer',1,'False').
 vacinacao('S16','U54','2021-07-27','Pfizer',2,'False').
 vacinacao('S8','U55','2021-07-09','Pfizer',1,'False').
@@ -255,24 +255,24 @@ vacinacao('S11','U59','2021-06-05','Moderna',1,'False').
 vacinacao('S11','U59','2021-06-22','Moderna',2,'False').
 vacinacao('S15','U60','2021-05-05','Moderna',1,'False').
 vacinacao('S15','U60','2021-05-29','Moderna',2,'False').
-vacinacao('S4','U61','2021-06-15','Johnson&Johnson',1,'False').
-vacinacao('S4','U61','2021-07-04','Johnson&Johnson',2,'False').
+vacinacao('S4','U61','2021-06-15','Sputnik V',1,'False').
+vacinacao('S4','U61','2021-07-04','Sputnik V',2,'False').
 vacinacao('S19','U62','2021-02-21','Astrazeneca',1,'True').
 vacinacao('S19','U62','2021-03-14','Astrazeneca',2,'True').
-vacinacao('S15','U63','2021-04-24','Johnson&Johnson',1,'False').
-vacinacao('S15','U63','2021-05-17','Johnson&Johnson',2,'False').
-vacinacao('S3','U64','2021-06-04','Johnson&Johnson',1,'False').
-vacinacao('S3','U64','2021-06-25','Johnson&Johnson',2,'False').
+vacinacao('S15','U63','2021-04-24','Sputnik V',1,'False').
+vacinacao('S15','U63','2021-05-17','Sputnik V',2,'False').
+vacinacao('S3','U64','2021-06-04','Sputnik V',1,'False').
+vacinacao('S3','U64','2021-06-25','Sputnik V',2,'False').
 vacinacao('S9','U65','2021-07-08','Astrazeneca',1,'False').
 vacinacao('S9','U65','2021-08-01','Astrazeneca',2,'False').
 vacinacao('S7','U66','2021-07-01','Pfizer',1,'False').
 vacinacao('S7','U66','2021-07-21','Pfizer',2,'False').
-vacinacao('S5','U67','2021-07-22','Johnson&Johnson',1,'False').
-vacinacao('S5','U67','2021-08-11','Johnson&Johnson',2,'False').
-vacinacao('S11','U68','2021-04-26','Johnson&Johnson',1,'False').
-vacinacao('S11','U68','2021-05-13','Johnson&Johnson',2,'False').
-vacinacao('S16','U69','2021-07-06','Johnson&Johnson',1,'False').
-vacinacao('S16','U69','2021-07-24','Johnson&Johnson',2,'False').
+vacinacao('S5','U67','2021-07-22','Sputnik V',1,'False').
+vacinacao('S5','U67','2021-08-11','Sputnik V',2,'False').
+vacinacao('S11','U68','2021-04-26','Sputnik V',1,'False').
+vacinacao('S11','U68','2021-05-13','Sputnik V',2,'False').
+vacinacao('S16','U69','2021-07-06','Sputnik V',1,'False').
+vacinacao('S16','U69','2021-07-24','Sputnik V',2,'False').
 vacinacao('S13','U70','2021-06-09','Pfizer',1,'False').
 vacinacao('S13','U70','2021-06-30','Pfizer',2,'False').
 vacinacao('S2','U71','2021-07-10','Pfizer',1,'False').
@@ -305,14 +305,14 @@ vacinacao('S9','U84','2021-02-12','Pfizer',1,'True').
 vacinacao('S9','U84','2021-03-07','Pfizer',2,'True').
 vacinacao('S6','U85','2021-07-21','Moderna',1,'False').
 vacinacao('S6','U85','2021-08-09','Moderna',2,'False').
-vacinacao('S18','U86','2021-06-23','Johnson&Johnson',1,'False').
-vacinacao('S18','U86','2021-07-12','Johnson&Johnson',2,'False').
+vacinacao('S18','U86','2021-06-23','Sputnik V',1,'False').
+vacinacao('S18','U86','2021-07-12','Sputnik V',2,'False').
 vacinacao('S4','U87','2021-07-02','Pfizer',1,'False').
 vacinacao('S4','U87','2021-07-26','Pfizer',2,'False').
 vacinacao('S6','U88','2021-06-30','Moderna',1,'False').
 vacinacao('S6','U88','2021-07-22','Moderna',2,'False').
-vacinacao('S15','U89','2021-07-12','Johnson&Johnson',1,'False').
-vacinacao('S15','U89','2021-08-04','Johnson&Johnson',2,'False').
+vacinacao('S15','U89','2021-07-12','Sputnik V',1,'False').
+vacinacao('S15','U89','2021-08-04','Sputnik V',2,'False').
 vacinacao('S5','U90','2021-07-24','Astrazeneca',1,'False').
 vacinacao('S5','U90','2021-08-12','Astrazeneca',2,'False').
 vacinacao('S13','U91','2021-04-11','Astrazeneca',1,'False').
@@ -323,13 +323,18 @@ vacinacao('S4','U93','2021-06-09','Moderna',1,'False').
 vacinacao('S4','U93','2021-07-03','Moderna',2,'False').
 vacinacao('S2','U94','2021-06-28','Astrazeneca',1,'False').
 vacinacao('S2','U94','2021-07-16','Astrazeneca',2,'False').
-vacinacao('S9','U95','2021-07-13','Johnson&Johnson',1,'False').
-vacinacao('S9','U95','2021-07-31','Johnson&Johnson',2,'False').
+vacinacao('S9','U95','2021-07-13','Sputnik V',1,'False').
+vacinacao('S9','U95','2021-07-31','Sputnik V',2,'False').
 vacinacao('S6','U96','2021-07-14','Moderna',1,'False').
 vacinacao('S6','U96','2021-08-03','Moderna',2,'False').
 vacinacao('S14','U97','2021-06-11','Moderna',1,'False').
 vacinacao('S14','U97','2021-07-03','Moderna',2,'False').
-vacinacao('S15','U98','2021-07-10','Johnson&Johnson',1,'False').
-vacinacao('S15','U98','2021-07-27','Johnson&Johnson',2,'False').
+vacinacao('S15','U98','2021-07-10','Sputnik V',1,'False').
+vacinacao('S15','U98','2021-07-27','Sputnik V',2,'False').
 vacinacao('S17','U99','2021-07-15','Pfizer',1,'False').
 vacinacao('S17','U99','2021-08-03','Pfizer',2,'False').
+
+% FASE: IdFase, DataInicial, DataFinal
+fase(1,'2020-12-01','2021-03-31').
+fase(2,'2021-04-01','2021-08-31').
+fase(3,'2021-09-01','2021-12-31').
