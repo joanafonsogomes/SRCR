@@ -1,22 +1,31 @@
-% Auxiliares
-/*
-% Insere conhecimento na base de conhecimento
-novoConhecimento(T) :- solucoes(I, +T::I, Linv),
-                        insercao(T),
-                        teste(Linv).*/
+:- use_module(library(lists)).
+:- use_module(library(date)).
 
-% Verifica se a segunda data e anterior a primeira
-comparaDatas(datime(AH,MH,DH,,,_),data(AP,MP,DP)) :-
-    AP < AH;
-    (AP =:= AH, (MP < MH;
-                (MP =:= MH, DP < DH))).
+% ---------------------------------
+% FUNCOES AUXILIARES
+% ---------------------------------
 
-% Verifica se uma data e valida
-dataValida(data(A,M,D)) :- (pertence(M,[1,3,5,7,8,10,12]), D >= 1, D =< 31);
-                            (pertence(M,[4,6,9,11]), D >= 1, D =< 30);
-                            (M =:= 2, (mod(A,4) =:= 0, D >= 1, D =< 29);
-                            (D >= 1, D =< 28)).
+% Calcular a idade
+calcularIdade(IdU, R) :- utente(IdU,NSS,_,_,DNasc,_,_,_,_,_,_),
+                        split_string(DNasc, "-", "", Sp),
+                        nth0(0,Sp,Ano), nth0(1,Sp,Mes), nth0(2,Sp,Dia),
+                        get_date_time_value(year, AnoN), get_date_time_value(month, MesN), get_date_time_value(day, DiaN),
+                        atom_number(Ano, Year), atom_number(Mes, Month), atom_number(Dia, Day),
+                        atom_string(AnoN, YearN), atom_number(YearN, YearNN),
+                        atom_string(MesN, MonthN), atom_number(MonthN, MonthNN),
+                        atom_string(DiaN, DayN), atom_number(DayN, DayNN),
+                        Age is (YearNN - Year),
+                        (Month > MonthNN -> AgeN is Age-1 ;
+                        Month < MonthNN -> AgeN is Age ;
+                            (Day > DayNN -> AgeN is Age-1 ;
+                            AgeN is Age)),
+                        R = AgeN.
 
+% Get current date
+get_date_time_value(Key, Value) :-
+    get_time(Stamp),
+    stamp_date_time(Stamp, DateTime, local),
+    date_time_value(Key, DateTime, Value).
 % Verifica se um contrato ainda esta em vigor
 prazoExpirado(data(A,M,D), P) :- calculaPrazo(A,M,D,P,Prazo),
                                 datime(Hoje), !,
