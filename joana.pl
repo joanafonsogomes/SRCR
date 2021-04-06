@@ -1,3 +1,7 @@
+use_module(library(lists)).
+
+% ========= POSSIBLE AUXILIAR FUNC =========
+
 % apresenta todas as solucoes
 solucoes(T,Q,S) :- findall(T,Q,S).
 
@@ -12,7 +16,24 @@ removerElem( [X|L],Y,[X|NL] ) :- X \== Y, removerElem( L,Y,NL ).
 add_tail([],X,[X]).
 add_tail([H|T],X,[H|L]):-add_tail(T,X,L).
 
-% TESTE
+% ========== ASSIGNMENT ==========
+
+% Identificar pessoas nao vacinadas que sao candidatas em vacinacao (para uma fase em especifico)
+
+% Totalmente. F->Fase
+/*
+candidatosVacinacaoT(F,R) :- ( F = 1 -> 
+                            ( I-> )
+                            solucoes((IdU, NSS, G, N, DNasc, E, Telefone, M, Prof, Dc, IdC),utente((IdU, NSS, G, N, DNasc, E, Telefone, M, Prof, Dc, IdC)),R) ; 
+                            else_clause ),*/
+
+% Parcialmente. F==Fase
+% candidatosVacinacaoT(F,R) :- solucao()
+
+
+% =========== TESTES ===========
+
+
 % listarUtenteNum(Num,R) :- solucoes((a,b,Num,d,e,f,g,h,i,j,k,l,p),utente(a,b,Num,d,e,f,g,h,i,j,k,l,p),R).
 
 % utentes que tomaram uma certa vacina
@@ -28,11 +49,11 @@ utentesCandidatos(R) :- solucoes(IDU, vacinacao(ID,IDU,D,V,T,F), L),
 
 % ID dos utentes que são candidatos a vacinas e que ainda nao tomaram foram vacinados % ASSIGNMENT
 /*utentesNoToma(L,R) :- utentesNoToma1(H|T),
-                    utentesNoToma2(L),*/
+                    utentesNoToma2(L),
 
 utentesNoToma1(R) :- solucoes(IDU, vacinacao(ID,IDU,D,V,1,'False'), R). 
 
-utentesNoToma2(R) :- solucoes(IDU, vacinacao(ID,IDU,D,V,2,'False'), R). 
+utentesNoToma2(R) :- solucoes(IDU, vacinacao(ID,IDU,D,V,2,'False'), R). */
 
 % --------------------
 
