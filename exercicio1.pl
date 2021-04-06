@@ -1,11 +1,15 @@
+% Este ficheiro vai conter: as declarações iniciais | os invariantes | as funcionalidades.
 % ---------------------------------
 % SRCR TP1
 % ---------------------------------
 
 % -- INCLUDES --
 :- include('auxiliares.pl').
-:- include('baseconhecimento.pl').
 :- include('joana.pl').
+:- include('antonio.pl').
+:- include('invariantes.pl').
+:- include('baseconhecimento.pl').
+
 
 :- set_prolog_flag( discontiguous_warnings,off ).
 :- set_prolog_flag( single_var_warnings,off ).
