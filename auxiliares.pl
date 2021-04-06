@@ -6,7 +6,7 @@
 % ---------------------------------
 
 % Calcular a idade
-calcularIdade(IdU, R) :- utente(IdU,NSS,_,_,DNasc,_,_,_,_,_,_),
+calcularIdade(IdU,R) :- utente(IdU,_,_,_,DNasc,_,_,_,_,_,_),
                         split_string(DNasc, "-", "", Sp),
                         nth0(0,Sp,Ano), nth0(1,Sp,Mes), nth0(2,Sp,Dia),
                         get_date_time_value(year, AnoN), get_date_time_value(month, MesN), get_date_time_value(day, DiaN),
@@ -30,9 +30,6 @@ get_date_time_value(Key, Value) :-
 prazoExpirado(data(A,M,D), P) :- calculaPrazo(A,M,D,P,Prazo),
                                 datime(Hoje), !,
                                 comparaDatas(Hoje,Prazo).
-
-% Calcular idade %
-% teste
 
 % retorna uma lista de todos os ids dos utentes
 listaIdUtentes(L) :- findall(X,utente(X,A,B,C,D,E,F,G,H,I,J),L).
