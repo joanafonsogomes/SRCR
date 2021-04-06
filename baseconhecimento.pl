@@ -1,3 +1,4 @@
+% UTENTE: Idutente, Nº Segurança_Social, Genero, Nome, Data_Nasc, Email, Telefone, Morada, Profissão, [Doenças_Crónicas], IdCentro
 utente('U0','Romulo Mota','22337840788','M','1996-04-22','RomuloMota@outlook.com',962935227,'Rua Francisco Augusto Alvim 4700-004 Braga','Biologo',[],'C1').
 utente('U1','Goncalo Melo','65105592957','M','1991-09-18','GoncaloMelo1991@hotmail.com',938823950,'Travessa 1 de Maio 4700-008 Braga','Geriatra',[],'C2').
 utente('U2','Bianca Moura','84874182284','F','1958-10-30','BiancaMoura244@gmail.com',921591637,'Rua de Sao Rosendo ( Bispo de Dume ) Dume 4700-008 Braga','Personal trainer',[],'C3').
@@ -99,6 +100,7 @@ utente('U97','Carmerio Araujo','65989136423','M','1980-11-03','CarmerioAraujo@ou
 utente('U98','Horacio Pereira','13101300241','M','1970-02-11','HoracioPereira89@gmail.com',928548906,'Praca da Autarquia 4775-001 Cambeses','Engenheiro de materiais',[],'C1').
 utente('U99','Debora Mendes','39536881148','F','1963-11-06','DeboraMendes250@gmail.com',968445773,'Caminho do Carvalhedo 4700-005 Braga','Profissional de Facilities',[],'C4').
 
+% STAFF: IdStaff, Nome, Nº Segurança_Social, Email, IdCentro
 staff('S0','Leonardina Anjos','12287559265','LeonardinaAnjos49@outlook.com','C2').
 staff('S1','Fernando Guerreiro','28567061757','FernandoGuerreiro@outlook.com','C2').
 staff('S2','Idelia Paiva','61816783608','IdeliaPaiva@hotmail.com','C1').
@@ -120,11 +122,13 @@ staff('S17','Adonilo Coelho','57502712689','AdoniloCoelho@gmail.com','C1').
 staff('S18','Erika Assuncao','64622347121','ErikaAssuncao@hotmail.com','C3').
 staff('S19','Jabim Sa','86532268329','JabimSa@gmail.com','C1').
 
+% CENTROS DE SAUDE: IdCentro, Nome, Morada, Telefone, Email
 centro('C1','Centro de saude de Braga','Rua Paulo Vi 4700-004 Braga','219229219','suporte@debraga.com').
 centro('C2','Centro de saude do Caranda','Rua de Goa Azurem 4800-004 Guimaraes','246512282','suporte@docaranda.com').
 centro('C3','Centro de saude do Cavado','Rua de Sao Paulo 4700-004 Braga','233330348','suporte@docavado.com').
 centro('C4','Centro de saude Dr.Paulo Novais','Rua Francisco Ribeiro de Castro Azurem 4800-004 Guimaraes','219282688','suporte@drpaulonovais.com').
 
+% VACINACOES: IdStaff, IdUtente, Data, Vacina, Toma
 vacinacao('S11','U0','2021-06-05','Astrazeneca',1).
 vacinacao('S11','U0','2021-06-28','Astrazeneca',2).
 vacinacao('S10','U1','2021-06-08','Moderna',1).
@@ -326,5 +330,7 @@ vacinacao('S12','U98','2021-08-11','Pfizer',2).
 vacinacao('S13','U99','2021-06-29','Sputnik V',1).
 vacinacao('S13','U99','2021-07-18','Sputnik V',2).
 
+% FASE: IdFase, DataInicial, DataFinal
 fase('F1','2020-12-01','2021-03-31').
 fase('F2','2021-04-01','2021-08-31').
+fase('F3','2021-09-01','2021-12-31').
