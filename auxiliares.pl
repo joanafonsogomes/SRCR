@@ -24,3 +24,16 @@ prazoExpirado(data(A,M,D), P) :- calculaPrazo(A,M,D,P,Prazo),
 
 % Calcular idade %
 % teste
+
+% retorna uma lista de todos os ids dos utentes
+listaIdUtentes(L) :- findall(X,utente(X,A,B,C,D,E,F,G,H,I,J),L).
+
+% Intersecao entre 2 listas
+intersecao([], _, []).
+
+intersecao([H1|T1], L2, [H1|Res]) :-
+    member(H1, L2),
+    intersecao(T1, L2, Res).
+
+intersecao([_|T1], L2, Res) :-
+    intersecao(T1, L2, Res).
