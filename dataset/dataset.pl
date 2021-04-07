@@ -98,6 +98,11 @@ utente('U96','Delmiro Castro','14908941761','M','1969-03-05','DelmiroCastro@hotm
 utente('U97','Carmerio Araujo','65989136423','M','1980-11-03','CarmerioAraujo@outlook.com',966564116,'Largo de Sao Sebastiao 4700-008 Braga','Assistente pessoal',[],'C3').
 utente('U98','Horacio Pereira','13101300241','M','1970-02-11','HoracioPereira89@gmail.com',928548906,'Praca da Autarquia 4775-001 Cambeses','Engenheiro de materiais',[],'C1').
 utente('U99','Debora Mendes','39536881148','F','1963-11-06','DeboraMendes250@gmail.com',968445773,'Caminho do Carvalhedo 4700-005 Braga','Profissional de Facilities',[],'C4').
+utente('U100','Antonio Santos','39536881144','M','1999-07-22','a83700@alunos.uminho.com',968445772,'Caminho do Carvalhedo 4700-005 Braga','Vagabundo',[],'C4').
+utente('U101','Jorge Vieira','09536881144','M','1999-06-23','a84240@alunos.uminho.com',928445772,'Caminho do Carvalhedo 4700-005 Braga','Engenheiro Informatico',[],'C3').
+utente('U102','Joana Gomes','39533881144','F','1999-01-01','a84912@alunos.uminho.com',922445772,'Caminho do Carvalhedo 4700-005 Braga','Engenheiro Informatico (Mulher)',[],'C2').
+utente('U103','Ze Carlos Magalhaes','19536881144','M','1999-01-01','a85852@alunos.uminho.com',922645772,'Caminho do Carvalhedo 4700-005 Braga','Engenheiro Informatico',[],'C4').
+utente('U104','Paulo Pereira','59236281144','M','1999-01-01','a86475@alunos.uminho.com',922445222,'Caminho do Carvalhedo 4700-005 Braga','Professor de CP',[],'C2').
 
 staff('S0','Leonardina Anjos','12287559265','LeonardinaAnjos49@outlook.com','C2').
 staff('S1','Fernando Guerreiro','28567061757','FernandoGuerreiro@outlook.com','C2').
@@ -325,6 +330,18 @@ vacinacao('S12','U98','2021-07-21','Pfizer',1).
 vacinacao('S12','U98','2021-08-11','Pfizer',2).
 vacinacao('S13','U99','2021-06-29','Sputnik V',1).
 vacinacao('S13','U99','2021-07-18','Sputnik V',2).
+vacinacao('S13','U100','2021-01-01','Pfizer',1).
+vacinacao('S13','U100','2021-01-23','Pfizer',2).
+vacinacao('S2','U101','2021-10-01','Pfizer',1).
+vacinacao('S2','U101','2021-10-23','Pfizer',2).
+vacinacao('S4','U102','2021-10-01','Moderna',1).
+vacinacao('S4','U102','2021-10-23','Astrazeneca',2).
+vacinacao('S13','U103','2021-10-01','Sputnik V',1).
+vacinacao('S13','U103','2021-10-23','Sptunik V',2).
+vacinacao('S13','U103','2021-10-23','Sptunik V',2).
+vacinacao('S4','U104','2021-10-01','Moderna',1).
+vacinacao('S4','U104','2021-10-02','Moderna',2).
+
 
 fase('F1','2020-12-01','2021-03-31').
 fase('F2','2021-04-01','2021-08-31').
