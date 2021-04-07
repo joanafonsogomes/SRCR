@@ -1,5 +1,5 @@
 % UTENTE: Idutente, Nº Segurança_Social, Genero, Nome, Data_Nasc, Email, Telefone, Morada, Profissão, [Doenças_Crónicas], IdCentro
-utente('U1','Romulo Mota','22337840788','M','1996-04-22','RomuloMota@outlook.com',962935227,'Rua Francisco Augusto Alvim 4700-004 Braga','Biologo',[],'C1').
+utente('U0','Romulo Mota','22337840788','M','1996-04-22','RomuloMota@outlook.com',962935227,'Rua Francisco Augusto Alvim 4700-004 Braga','Biologo',[],'C1').
 utente('U1','Goncalo Melo','65105592957','M','1991-09-18','GoncaloMelo1991@hotmail.com',938823950,'Travessa 1 de Maio 4700-008 Braga','Geriatra',[],'C2').
 utente('U2','Bianca Moura','84874182284','F','1958-10-30','BiancaMoura244@gmail.com',921591637,'Rua de Sao Rosendo ( Bispo de Dume ) Dume 4700-008 Braga','Personal trainer',[],'C3').
 utente('U3','Vilar Nunes','05052988794','F','1976-02-17','VilarNunes1976@gmail.com',968452327,'Rua de Remelhe Dume 4700-008 Braga','Vigilante',[],'C3').
