@@ -7,6 +7,7 @@
 :- include('auxiliares.pl').
 :- include('joana.pl').
 :- include('antonio.pl').
+:- include('jorge.pl').
 :- include('invariantes.pl').
 :- include('baseconhecimento.pl').
 
