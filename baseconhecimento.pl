@@ -1,5 +1,5 @@
 % UTENTE: Idutente, Nº Segurança_Social, Genero, Nome, Data_Nasc, Email, Telefone, Morada, Profissão, [Doenças_Crónicas], IdCentro
-utente('U0','Romulo Mota','22337840788','M','1996-04-22','RomuloMota@outlook.com',962935227,'Rua Francisco Augusto Alvim 4700-004 Braga','Biologo',[],'C1').
+utente('U1','Romulo Mota','22337840788','M','1996-04-22','RomuloMota@outlook.com',962935227,'Rua Francisco Augusto Alvim 4700-004 Braga','Biologo',[],'C1').
 utente('U1','Goncalo Melo','65105592957','M','1991-09-18','GoncaloMelo1991@hotmail.com',938823950,'Travessa 1 de Maio 4700-008 Braga','Geriatra',[],'C2').
 utente('U2','Bianca Moura','84874182284','F','1958-10-30','BiancaMoura244@gmail.com',921591637,'Rua de Sao Rosendo ( Bispo de Dume ) Dume 4700-008 Braga','Personal trainer',[],'C3').
 utente('U3','Vilar Nunes','05052988794','F','1976-02-17','VilarNunes1976@gmail.com',968452327,'Rua de Remelhe Dume 4700-008 Braga','Vigilante',[],'C3').
@@ -257,10 +257,8 @@ vacinacao('S2','U71','2021-07-11','Pfizer',1).
 vacinacao('S2','U71','2021-07-29','Pfizer',2).
 vacinacao('S0','U72','2021-07-06','Sputnik V',1).
 vacinacao('S0','U72','2021-07-23','Sputnik V',2).
-vacinacao('S19','U73','2021-07-26','Sputnik V',1).
 vacinacao('S19','U73','2021-08-16','Sputnik V',2).
 vacinacao('S3','U74','2021-06-30','Astrazeneca',1).
-vacinacao('S3','U74','2021-07-17','Astrazeneca',2).
 vacinacao('S14','U75','2021-07-03','Astrazeneca',1).
 vacinacao('S14','U75','2021-07-23','Astrazeneca',2).
 vacinacao('S1','U76','2021-05-28','Moderna',1).
@@ -304,13 +302,11 @@ vacinacao('S17','U94','2021-06-20','Pfizer',2).
 vacinacao('S3','U95','2021-04-25','Pfizer',1).
 vacinacao('S3','U95','2021-05-17','Pfizer',2).
 vacinacao('S0','U96','2021-06-25','Sputnik V',1).
-vacinacao('S0','U96','2021-07-19','Sputnik V',2).
 vacinacao('S18','U97','2021-07-02','Pfizer',1).
 vacinacao('S18','U97','2021-07-24','Pfizer',2).
 vacinacao('S12','U98','2021-07-21','Pfizer',1).
 vacinacao('S12','U98','2021-08-11','Pfizer',2).
 vacinacao('S13','U99','2021-06-29','Sputnik V',1).
-vacinacao('S13','U99','2021-07-18','Sputnik V',2).
 
 % FASE: IdFase, DataInicial, DataFinal
 fase('F1','2020-12-01','2021-03-31').
