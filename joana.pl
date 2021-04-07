@@ -47,27 +47,30 @@ common_elements([_|T], L2) :-
 
 
 % -- Totalmente. F = Fase
-candidatosVacinacaoT(F,R) :- ( F = 1 ->
-                        solucoes(IdU,utente(IdU,_,_,_,DNasc,_,_,_,P,D,_),S),
+candidatosVacinacaoT(1,R) :- candidatosVacinacaoTAux(S),
                         findall(X,(member(X,S),calcularIdade(X,C), C>=80), I),
                         findall(X,(member(X,S),profissao1Fase(X)), Pr),
                         findall(X,(member(X,S),doencas1Fase(X),calcularIdade(X,C),C>=50), Do),
                         append(I,Pr,App), append(App,Do,App2),
-                        repetidos(App2,R) ;
-                        F = 2 ->
-                        solucoes(IdU,utente(IdU,_,_,_,DNasc,_,_,_,P,D,_),S),
+                        repetidos(App2,R).
+
+candidatosVacinacaoT(2,R) :- candidatosVacinacaoTAux(S),
                         findall(X,(member(X,S),calcularIdade(X,C),C>=65), I), 
                         findall(X,(member(X,S),doencas2Fase(X),calcularIdade(X,C),C>=50,C=<64), Do),
-                        append(I,Do,App), repetidos(App,R) ;
-                        solucoes(IdU,utente(IdU,_,_,_,DNasc,_,_,_,P,D,_),S),
+                        append(I,Do,App), repetidos(App,R).
+
+candidatosVacinacaoT(3,R) :- candidatosVacinacaoTAux(S),
                         findall(X,(member(X,S),calcularIdade(X,C), C>=80), I),
                         findall(X,(member(X,S),profissao1Fase(X)), Pr),
                         findall(X,(member(X,S),doencas1Fase(X),calcularIdade(X,C),C>=50), Do),
                         findall(X,(member(X,S),calcularIdade(X,C), C>=65), I2), 
                         findall(X,(member(X,S),doencas2Fase(X),calcularIdade(X,C), C>=50, C=<64), Do2),
                         append(I,Pr,App) , append(App,Do,App2), append(App2,I2,App3), append(App3,Do2,App4),
-                        repetidos(App4,R) ).
-                        % findall(X,(member(X,S),\+member(X,App5)), R) ).
+                        repetidos(App4,Rep),
+                        findall(X,(member(X,S),\+member(X,Rep)), R).
+
+candidatosVacinacaoT(A,R) :- \+ pertence(A,[1,2,3]) -> write('Fase invalida. As fases podem ser 1, 2 ou 3.'),
+                        fail.
 
 % utentes que ainda nao levaram nenhuma vacina
 candidatosVacinacaoTAux(R) :- % encontrar os ids de utentes candidatos
