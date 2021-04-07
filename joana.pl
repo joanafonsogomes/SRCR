@@ -46,7 +46,7 @@ common_elements([_|T], L2) :-
     common_elements(T, L2).
 
 
-% -- Totalmente. F = Fase
+% --- Totalmente ---
 candidatosVacinacaoT(1,R) :- candidatosVacinacaoTAux(S),
                         findall(X,(member(X,S),calcularIdade(X,C), C>=80), I),
                         findall(X,(member(X,S),profissao1Fase(X)), Pr),
@@ -57,16 +57,14 @@ candidatosVacinacaoT(1,R) :- candidatosVacinacaoTAux(S),
 candidatosVacinacaoT(2,R) :- candidatosVacinacaoTAux(S),
                         findall(X,(member(X,S),calcularIdade(X,C),C>=65), I), 
                         findall(X,(member(X,S),doencas2Fase(X),calcularIdade(X,C),C>=50,C=<64), Do),
-                        append(I,Do,App), repetidos(App,R).
+                        append(I,Do,App), repetidos(App,Rep),
+                        candidatosVacinacaoT(1,F1),
+                        findall(X,(member(X,Rep),\+member(X,F1)), R).
 
 candidatosVacinacaoT(3,R) :- candidatosVacinacaoTAux(S),
-                        findall(X,(member(X,S),calcularIdade(X,C), C>=80), I),
-                        findall(X,(member(X,S),profissao1Fase(X)), Pr),
-                        findall(X,(member(X,S),doencas1Fase(X),calcularIdade(X,C),C>=50), Do),
-                        findall(X,(member(X,S),calcularIdade(X,C), C>=65), I2), 
-                        findall(X,(member(X,S),doencas2Fase(X),calcularIdade(X,C), C>=50, C=<64), Do2),
-                        append(I,Pr,App) , append(App,Do,App2), append(App2,I2,App3), append(App3,Do2,App4),
-                        repetidos(App4,Rep),
+                        candidatosVacinacaoT(1,F1),
+                        candidatosVacinacaoT(2,F2),
+                        append(F1,F2,App), repetidos(App,Rep),
                         findall(X,(member(X,S),\+member(X,Rep)), R).
 
 candidatosVacinacaoT(A,R) :- \+ pertence(A,[1,2,3]) -> write('Fase invalida. As fases podem ser 1, 2 ou 3.'),
@@ -82,8 +80,40 @@ candidatosVacinacaoTAux(R) :- % encontrar os ids de utentes candidatos
                         findall(X,(member(X,V),\+member(X,W)),R).
                         
 
-% -- Parcialmente. F = Fase
-% candidatosVacinacaoT(F,R) :- solucao()
+% ---- Parcialmente ----
+
+candidatosVacinacaoP(1,R) :- candidatosVacinacaoPAux(S),
+                        findall(X,(member(X,S),calcularIdade(X,C), C>=80), I),
+                        findall(X,(member(X,S),profissao1Fase(X)), Pr),
+                        findall(X,(member(X,S),doencas1Fase(X),calcularIdade(X,C),C>=50), Do),
+                        append(I,Pr,App), append(App,Do,App2),
+                        repetidos(App2,R).
+
+candidatosVacinacaoP(2,R) :- candidatosVacinacaoPAux(S),
+                        findall(X,(member(X,S),calcularIdade(X,C),C>=65), I), 
+                        findall(X,(member(X,S),doencas2Fase(X),calcularIdade(X,C),C>=50,C=<64), Do),
+                        append(I,Do,App), repetidos(App,Rep),
+                        candidatosVacinacaoP(1,F1),
+                        findall(X,(member(X,Rep),\+member(X,F1)), R).
+
+candidatosVacinacaoP(3,R) :- candidatosVacinacaoPAux(S),
+                        candidatosVacinacaoP(1,F1),
+                        candidatosVacinacaoP(2,F2),
+                        append(F1,F2,App), repetidos(App,Rep),
+                        findall(X,(member(X,S),\+member(X,Rep)), R).
+
+candidatosVacinacaoP(A,R) :- \+ pertence(A,[1,2,3]) -> write('Fase invalida. As fases podem ser 1, 2 ou 3.'),
+                        fail.
+
+% utentes que so levaram a 1 vacina
+candidatosVacinacaoPAux(R) :- % encontrar os ids de utentes candidatos
+                        solucoes(IdU,utente(IdU,_,_,_,DNasc,_,_,_,P,D,_),V),
+                        % encontrar o id dos que fizeram a toma 1
+                        solucoes(IdU, vacinacao(_,IdU,_,_,1), T1),
+                        % encontrar o id dos que fizeram a toma 2
+                        solucoes(IdU, vacinacao(_,IdU,_,_,2), T2),
+                        % ver os que pertencem a uma e nao ao outro
+                        findall(X,(member(X,V),member(X,T1),\+member(X,T2)),R).
 
 
 % =========== TESTES ===========
