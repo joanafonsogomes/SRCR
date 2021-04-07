@@ -115,6 +115,15 @@ candidatosVacinacaoPAux(R) :- % encontrar os ids de utentes candidatos
                         % ver os que pertencem a uma e nao ao outro
                         findall(X,(member(X,V),member(X,T1),\+member(X,T2)),R).
 
+% =========== ASSIGNMENT JORGE ===========
+
+qualFaseJoana(IdU,R) :- calcularIdade(IdU,I),
+                        (I >= 80 -> R=1 ;
+                        I >= 50 , doencas1Fase(IdU) -> R=1 ;
+                        I >= 65 -> R = 2 ;
+                        I >= 50, I=<64, doencas2Fase(IdU) -> R=2 ;
+                        R = 3).
+
 
 % =========== TESTES ===========
 
