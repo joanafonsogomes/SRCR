@@ -1,23 +1,31 @@
 :- include('baseconhecimento.pl').
 :- include('auxiliares.pl').
 
+%doenças crónicas da fase 1
 doencasFase1(['Insuficiencia cardiaca', 'Doenca coronaria', 'Insuficiencia renal', 'DPOC']).
+
+%doenças crónicas da fase 1
 doencasFase2(['Diabetes','Neoplasia maligna ativa','Doenca renal cronica','Insuficiencia hepatica','Hipertensao arterial','Obesidade']).
 
+%verifica se um dado elemento existe numa lista
 membereq(X, [H|_]) :-
     X == H.
 membereq(X, [_|T]) :-
     membereq(X, T).
 
+%verfica se duas listas têm elementos em comum
 common_elements([H|_], L2) :-
     membereq(H, L2).
 common_elements([_|T], L2) :-
     common_elements(T, L2).
 
+%devolve a profissão do utente
 getProfissao(IDU,G) :- utente(IDU,_,_,_,_,_,_,_,G,_,_).
+
+%devolve a lista de doenças crónicas do utente
 getDoencas(IDU,D) :- utente(IDU,_,_,_,_,_,_,_,_,D,_).
 
-%teste(L1,R):- common_elements(doencasFase1)
+%Dado o id de um utente devolve qual a fase de vacinação a que pertence
 teste(IDU,R) :- doencasFase1(X),
                 doencasFase2(Y),
                 calcularIdade(IDU,Idade),
