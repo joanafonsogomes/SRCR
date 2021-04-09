@@ -1,4 +1,3 @@
-% UTENTE: Idutente, Nº Segurança_Social, Genero, Nome, Data_Nasc, Email, Telefone, Morada, Profissão, [Doenças_Crónicas], IdCentro
 utente('U0','Romulo Mota','22337840788','M','1996-04-22','RomuloMota@outlook.com',962935227,'Rua Francisco Augusto Alvim 4700-004 Braga','Biologo',[],'C1').
 utente('U1','Goncalo Melo','65105592957','M','1991-09-18','GoncaloMelo1991@hotmail.com',938823950,'Travessa 1 de Maio 4700-008 Braga','Geriatra',[],'C2').
 utente('U2','Bianca Moura','84874182284','F','1958-10-30','BiancaMoura244@gmail.com',921591637,'Rua de Sao Rosendo ( Bispo de Dume ) Dume 4700-008 Braga','Personal trainer',[],'C3').
@@ -45,7 +44,7 @@ utente('U42','Bricia Nascimento','67676986761','F','2011-08-11','BriciaNasciment
 utente('U43','Leocadia Freitas','51604631364','F','1954-10-08','LeocadiaFreitas@hotmail.com',929465172,'Cangosta do Ruivo Dume 4700-005 Braga','Auditor fiscal',[],'C4').
 utente('U44','Cesaltina Gaspar','74221775731','F','1973-10-20','CesaltinaGaspar@outlook.com',918321370,'Rua do Brasil 4775-001 Cambeses','Advogado',[],'C3').
 utente('U45','Delmiro Jesus','80502189538','M','2011-07-08','DelmiroJesus2011@outlook.com',931578562,'Rua Conego Insuelas Dume 4700-005 Braga','Desenvolvedor',['Doenca coronaria'],'C1').
-utente('U46','Biana Moreira','48946886509','F','1935-09-20','BianaMoreira@outlook.com',961221225,'Rua do Brasil 4775-001 Cambeses','Bancario',[],'C1').
+utente('U46','Biana Moreira','48946886509','F','1990-09-20','BianaMoreira@outlook.com',961221225,'Rua do Brasil 4775-001 Cambeses','Bancario',[],'C1').
 utente('U47','Eliana Antunes','94319794560','F','1951-01-14','ElianaAntunes130@hotmail.com',923081249,'Rua de Sao Lourenco da Ordem 4700-004 Braga','Mestre cervejeiro',[],'C4').
 utente('U48','Fiona Teixeira','72522541652','F','1999-11-11','FionaTeixeira@hotmail.com',923206228,'Travessa 1 de Maio Antas 4760-001 Vila Nova de Famalicao','Trader',[],'C4').
 utente('U49','Eda Fernandes','47005694161','F','1946-09-22','EdaFernandes54@gmail.com',911220373,'Avenida Rebelo Mesquita Antas 4760-001 Vila Nova de Famalicao','Editor de texto',[],'C2').
@@ -69,7 +68,7 @@ utente('U66','Domitilia Maia','13376306360','F','1994-07-05','DomitiliaMaia@outl
 utente('U67','Isidoro Pacheco','63787512555','M','1979-10-31','IsidoroPacheco@hotmail.com',968049748,'Rua do Real 4705-001 Arentim','Coach',[],'C1').
 utente('U68','Turgo Brito','99513767922','M','1969-03-16','TurgoBrito@outlook.com',933455173,'Rua Ferreira de Castro Azurem 4800-004 Guimaraes','Profissional de Saude',['Insuficiencia cardiaca'],'C4').
 utente('U69','Helio Coelho','85336251307','M','1977-11-14','HelioCoelho@outlook.com',925146413,'Largo de Sao Paulo 4700-004 Braga','Auxiliar de limpeza',[],'C4').
-utente('U70','Reginaldo Lima','27916959506','M','1941-03-02','ReginaldoLima2000@hotmail.com',925397987,'Rua Francisco Teixeira Azurem 4800-004 Guimaraes','Motorista',[],'C1').
+utente('U70','Reginaldo Lima','27916959506','M','2000-05-25','ReginaldoLima2000@hotmail.com',925397987,'Rua Francisco Teixeira Azurem 4800-004 Guimaraes','Motorista',[],'C1').
 utente('U71','Cristovao Torres','71980305446','M','2007-06-29','CristovaoTorres@outlook.com',929194515,'Praceta do Viajante Azurem 4800-004 Guimaraes','Assistente financeiro',[],'C1').
 utente('U72','Berto Fernandes','54572112374','M','1976-10-30','BertoFernandes@hotmail.com',920192141,'Rua Bernardim Ribeiro Dume 4700-004 Braga','Engenheiro de alimentos',[],'C2').
 utente('U73','Mileide Moreira','89739835122','F','2008-07-13','MileideMoreira@gmail.com',917821843,'Caminho do Carvalhedo 4700-005 Braga','Confeiteiro',[],'C1').
@@ -99,8 +98,12 @@ utente('U96','Delmiro Castro','14908941761','M','1969-03-05','DelmiroCastro@hotm
 utente('U97','Carmerio Araujo','65989136423','M','1980-11-03','CarmerioAraujo@outlook.com',966564116,'Largo de Sao Sebastiao 4700-008 Braga','Assistente pessoal',[],'C3').
 utente('U98','Horacio Pereira','13101300241','M','1970-02-11','HoracioPereira89@gmail.com',928548906,'Praca da Autarquia 4775-001 Cambeses','Engenheiro de materiais',[],'C1').
 utente('U99','Debora Mendes','39536881148','F','1963-11-06','DeboraMendes250@gmail.com',968445773,'Caminho do Carvalhedo 4700-005 Braga','Profissional de Facilities',[],'C4').
+utente('U100','Antonio Santos','39536881144','M','1999-07-22','a83700@alunos.uminho.com',968445772,'Caminho do Carvalhedo 4700-005 Braga','Vagabundo',[],'C4').
+utente('U101','Jorge Vieira','09536881144','M','1999-06-23','a84240@alunos.uminho.com',928445772,'Caminho do Carvalhedo 4700-005 Braga','Engenheiro Informatico',[],'C3').
+utente('U102','Joana Gomes','39533881144','F','1999-01-01','a84912@alunos.uminho.com',922445772,'Caminho do Carvalhedo 4700-005 Braga','Engenheiro Informatico (Mulher)',[],'C2').
+utente('U103','Ze Carlos Magalhaes','19536881144','M','1999-01-01','a85852@alunos.uminho.com',922645772,'Caminho do Carvalhedo 4700-005 Braga','Engenheiro Informatico',[],'C4').
+utente('U104','Paulo Pereira','59236281144','M','1999-01-01','a86475@alunos.uminho.com',922445222,'Caminho do Carvalhedo 4700-005 Braga','Professor de CP',[],'C2').
 
-% STAFF: IdStaff, Nome, Nº Segurança_Social, Email, IdCentro
 staff('S0','Leonardina Anjos','12287559265','LeonardinaAnjos49@outlook.com','C2').
 staff('S1','Fernando Guerreiro','28567061757','FernandoGuerreiro@outlook.com','C2').
 staff('S2','Idelia Paiva','61816783608','IdeliaPaiva@hotmail.com','C1').
@@ -122,18 +125,22 @@ staff('S17','Adonilo Coelho','57502712689','AdoniloCoelho@gmail.com','C1').
 staff('S18','Erika Assuncao','64622347121','ErikaAssuncao@hotmail.com','C3').
 staff('S19','Jabim Sa','86532268329','JabimSa@gmail.com','C1').
 
-% CENTROS DE SAUDE: IdCentro, Nome, Morada, Telefone, Email
 centro('C1','Centro de saude de Braga','Rua Paulo Vi 4700-004 Braga','219229219','suporte@debraga.com').
 centro('C2','Centro de saude do Caranda','Rua de Goa Azurem 4800-004 Guimaraes','246512282','suporte@docaranda.com').
 centro('C3','Centro de saude do Cavado','Rua de Sao Paulo 4700-004 Braga','233330348','suporte@docavado.com').
 centro('C4','Centro de saude Dr.Paulo Novais','Rua Francisco Ribeiro de Castro Azurem 4800-004 Guimaraes','219282688','suporte@drpaulonovais.com').
 
-% VACINACOES: IdStaff, IdUtente, Data, Vacina, Toma
 vacinacao('S11','U0','2021-06-05','Astrazeneca',1).
+vacinacao('S11','U0','2021-06-28','Astrazeneca',2).
 vacinacao('S10','U1','2021-06-08','Moderna',1).
+vacinacao('S10','U1','2021-06-30','Moderna',2).
 vacinacao('S15','U2','2021-07-30','Pfizer',1).
+vacinacao('S15','U2','2021-08-19','Pfizer',2).
 vacinacao('S5','U3','2021-07-07','Pfizer',1).
+vacinacao('S5','U3','2021-07-25','Pfizer',2).
 vacinacao('S0','U4','2021-04-03','Moderna',1).
+vacinacao('S0','U4','2021-04-24','Moderna',2).
+vacinacao('S3','U5','2021-06-08','Sputnik V',1).
 vacinacao('S3','U5','2021-06-27','Sputnik V',2).
 vacinacao('S4','U6','2021-07-05','Astrazeneca',1).
 vacinacao('S4','U6','2021-07-22','Astrazeneca',2).
@@ -193,6 +200,18 @@ vacinacao('S5','U33','2021-04-20','Moderna',1).
 vacinacao('S5','U33','2021-05-09','Moderna',2).
 vacinacao('S9','U34','2021-05-28','Moderna',1).
 vacinacao('S9','U34','2021-06-18','Moderna',2).
+vacinacao('S8','U35','2021-07-26','Astrazeneca',1).
+vacinacao('S8','U35','2021-08-13','Astrazeneca',2).
+vacinacao('S6','U36','2021-07-04','Pfizer',1).
+vacinacao('S6','U36','2021-07-24','Pfizer',2).
+vacinacao('S16','U37','2021-05-03','Pfizer',1).
+vacinacao('S16','U37','2021-05-23','Pfizer',2).
+vacinacao('S18','U38','2021-06-09','Pfizer',1).
+vacinacao('S18','U38','2021-07-01','Pfizer',2).
+vacinacao('S6','U39','2021-07-18','Pfizer',1).
+vacinacao('S6','U39','2021-08-07','Pfizer',2).
+vacinacao('S0','U40','2021-05-07','Astrazeneca',1).
+vacinacao('S0','U40','2021-05-26','Astrazeneca',2).
 vacinacao('S0','U41','2021-07-20','Astrazeneca',1).
 vacinacao('S0','U41','2021-08-13','Astrazeneca',2).
 vacinacao('S11','U42','2021-07-04','Sputnik V',1).
@@ -257,8 +276,10 @@ vacinacao('S2','U71','2021-07-11','Pfizer',1).
 vacinacao('S2','U71','2021-07-29','Pfizer',2).
 vacinacao('S0','U72','2021-07-06','Sputnik V',1).
 vacinacao('S0','U72','2021-07-23','Sputnik V',2).
+vacinacao('S19','U73','2021-07-26','Sputnik V',1).
 vacinacao('S19','U73','2021-08-16','Sputnik V',2).
 vacinacao('S3','U74','2021-06-30','Astrazeneca',1).
+vacinacao('S3','U74','2021-07-17','Astrazeneca',2).
 vacinacao('S14','U75','2021-07-03','Astrazeneca',1).
 vacinacao('S14','U75','2021-07-23','Astrazeneca',2).
 vacinacao('S1','U76','2021-05-28','Moderna',1).
@@ -302,13 +323,26 @@ vacinacao('S17','U94','2021-06-20','Pfizer',2).
 vacinacao('S3','U95','2021-04-25','Pfizer',1).
 vacinacao('S3','U95','2021-05-17','Pfizer',2).
 vacinacao('S0','U96','2021-06-25','Sputnik V',1).
+vacinacao('S0','U96','2021-07-19','Sputnik V',2).
 vacinacao('S18','U97','2021-07-02','Pfizer',1).
 vacinacao('S18','U97','2021-07-24','Pfizer',2).
 vacinacao('S12','U98','2021-07-21','Pfizer',1).
 vacinacao('S12','U98','2021-08-11','Pfizer',2).
 vacinacao('S13','U99','2021-06-29','Sputnik V',1).
+vacinacao('S13','U99','2021-07-18','Sputnik V',2).
+vacinacao('S13','U100','2021-01-01','Pfizer',1).
+vacinacao('S13','U100','2021-01-23','Pfizer',2).
+vacinacao('S2','U101','2021-10-01','Pfizer',1).
+vacinacao('S2','U101','2021-10-23','Pfizer',2).
+vacinacao('S4','U102','2021-10-01','Moderna',1).
+vacinacao('S4','U102','2021-10-23','Astrazeneca',2).
+vacinacao('S13','U103','2021-10-01','Sputnik V',1).
+vacinacao('S13','U103','2021-10-23','Sputnik V',2).
+vacinacao('S13','U103','2021-10-23','Sputnik V',2).
+vacinacao('S4','U104','2021-10-01','Moderna',1).
+vacinacao('S4','U104','2021-10-02','Moderna',2).
 
-% FASE: IdFase, DataInicial, DataFinal
+
 fase('F1','2020-12-01','2021-03-31').
 fase('F2','2021-04-01','2021-08-31').
 fase('F3','2021-09-01','2021-12-31').
