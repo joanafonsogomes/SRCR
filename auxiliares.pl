@@ -20,14 +20,18 @@ testaPredicados([]).
 testaPredicados([I|L]) :- I, testaPredicados(L).
 
 % Insere novo conhecimento na base de conhecimento
-novoConhecimento(T) :- solucoes(I, +T::I, Linv),
+novoConhecimento(T) :- solucoes(I, +T::I, L),
                insercao(T),
-               testaPredicados(Linv).
+               testaPredicados(L).
 
 % Retira conhecimento da base de conhecimento
-removeConhecimento(T) :- solucoes(I, -T::I, Linv),
+removeConhecimento(T) :- solucoes(I, -T::I, L),
                 remocao(T),
-                teste(Linv).
+                teste(L).
+
+% Vê se um genero é válido
+genderValido('M').
+genderValido('F').
 
 % Elimina elementos repetidos de uma lista 
 repetidos([],[]).
@@ -76,10 +80,6 @@ intersecao([H1|T1], L2, [H1|R]) :- member(H1, L2), intersecao(T1, L2, R).
 intersecao([_|T1], L2, R) :- intersecao(T1, L2, R).
 
 
-
-% Profissoes de utentes correspondentes a fase 1
-profissao1Fase(IdU) :- utente(IdU,_,_,_,_,_,_,_,P,_,_),
-                        P = 'Profissional de Saude'.
 
 % Doencas correspondentes a fase 1 (50 ou mais anos)
 doencas1Fase(IdU) :- utente(IdU,_,_,_,_,_,_,_,_,D,_),
