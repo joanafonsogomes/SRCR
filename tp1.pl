@@ -3,30 +3,8 @@
 % SRCR TP1
 % ---------------------------------
 
-%------------------
-% INVARIANTES
-%------------------
-
-%Só pode haver 1 utente por id TODO: Mudar para solucoes quando for implementado nas auxiliares
-+utente(Id,N,nS,G,DataNasc,C,Email,Tlm,M,P,D,IdC) :: (findall(Id, utente(Id,_,_,_,_,_,_,_,_,_,_,_), R),
-                            length(R, 1)).
-
-%Garantir que não posso eliminar um elemento se tiver vacinacoes marcadas
--utente(Id,N,nS,G,DataNasc,C,Email,Tlm,M,P,D,IdC) :: (findall(Id, vacinacao(_,Id,_,_,_), R),
-                            \+length(R, 0)).
-
-
--staff(Id,N,nS,Email,IdC) :: (findall(Id, vacinacao(Id,_,_,_,_), R),
-                            \+length(R, 0)).
-
-
--centro(Id,N,M,Tlm,Email) :: (findall(sId,staff(sId,_,_,_,Id),R),
-                            \+length(R, 0)).
-
-
 % -- INCLUDES --
 :- include('auxiliares.pl').
-:- include('dados.pl').
 
 
 :- set_prolog_flag( discontiguous_warnings,off ).
@@ -34,16 +12,30 @@
 :- set_prolog_flag( unknown,fail ).
 
 :- op(900,xfy,'::').
-:- dynamic utente/13.
+:- dynamic utente/11.
 :- dynamic staff/5.
 :- dynamic centro/5.
 :- dynamic vacinacao/6.
 
-% -- UTENTES --
-% Valido para a 1F?
+%------------------
+% INVARIANTES
+%------------------
+
+%Só pode haver 1 utente por id TODO: Mudar para solucoes quando for implementado nas auxiliares
++utente(Id,A,B,C,D,E,F,G,H,I,J) :: (solucoes(Id, utente(Id,_,_,_,_,_,_,_,_,_,_,_), R),
+                                     length(R, 1)).
+
+%Garantir que não posso eliminar um elemento se tiver vacinacoes marcadas
+-utente(Id,_,_,_,_,_,_,_,_,_,_) :: (findall(Id, vacinacao(_,Id,_,_,_), R),
+                            \+length(R, 0)).
 
 
-% Valido para a 2F?
+-staff(Id,_,_,_,_) :: (findall(Id, vacinacao(Id,_,_,_,_), R),
+                            \+length(R, 0)).
+
+
+-centro(Id,_,_,_,_) :: (findall(sId,staff(sId,_,_,_,Id),R),
+                            \+length(R, 0)).
 
 
 %------------------
@@ -51,7 +43,7 @@
 %------------------
 
 % UTENTE: Idutente, Nº Segurança_Social, Nome, Genero, Data_Nasc, Email, Telefone, Morada, Profissão, [Doenças_Crónicas], #CentroSaúde
-novoUtente(Id,NISS,N,G,Dn,E,Tlf,M,P,Dc,IdCs) :- novoConhecimento(utente(Id,NISS,Nome,G,Dn,E,Tlf,M,P,Dc,Cs)).
+novoUtente(Id,NISS,N,G,Dn,E,Tlf,M,P,Dc,IdCs) :- novoConhecimento(utente(Id,NISS,N,G,Dn,E,Tlf,M,P,Dc,IdCs)).
 
 % STAFF: IdStaff, IdCentro, Nome, Email
 novoStaff(Id,IdCs,N,E) :- novoConhecimento(staff(Id,IdCs,N,E)).
@@ -217,6 +209,7 @@ vacinacaoFaseErradaUtente(UId,X) :- (checkFaseUtente(UId,R1),
                                      (R1 \= R2 -> X = 0; X = 1). 
 
 
+%Ser vacinado 
 
 %Haver uma diferença de vacinas da toma 1 para a 2 (duas vacinas diferentes)
 diferente(R):-
@@ -239,6 +232,7 @@ tomouMaisDe2DosesAux([H|T],Acc,R) :- tomouMaisDe2DosesAux(T,[H|Acc],R).
 utentesRiscoSemVacinacao(R) :- candidatosVacinacaoT(1,L1), candidatosVacinacaoT(2,L2),
                                append(L1,L2,L3), repetidos(L3,R).
 
-
+%Import dos dados
+:- include('dados.pl').
 
 

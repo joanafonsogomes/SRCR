@@ -4,9 +4,30 @@
 % ---------------------------------
 % FUNCOES AUXILIARES
 % ---------------------------------
-
 % Apresenta todas as solucoes
 solucoes(T,Q,S) :- findall(T,Q,S).
+
+% Inserção de conhecimento
+insercao(Q) :- assert(Q).
+insercao(Q) :- retract(Q), !, fail.
+
+% Remoção de conhecimento
+remocao(Q) :- retract(Q).
+remocao(Q) :- assert(Q), !, fail.
+
+% Testa se todos os predicados são verdadeiros
+testaPredicados([]).
+testaPredicados([I|L]) :- I, testaPredicados(L).
+
+% Insere novo conhecimento na base de conhecimento
+novoConhecimento(T) :- solucoes(I, +T::I, Linv),
+               insercao(T),
+               testaPredicados(Linv).
+
+% Retira conhecimento da base de conhecimento
+removeConhecimento(T) :- solucoes(I, -T::I, Linv),
+                remocao(T),
+                teste(Linv).
 
 % Elimina elementos repetidos de uma lista 
 repetidos([],[]).
@@ -45,11 +66,6 @@ get_date_time_value(Key, Value) :-
     get_time(Stamp),
     stamp_date_time(Stamp, DateTime, local),
     date_time_value(Key, DateTime, Value).
-
-% Verifica se um contrato ainda esta em vigor
-prazoExpirado(data(A,M,D), P) :- calculaPrazo(A,M,D,P,Prazo),
-                                datime(Hoje), !,
-                                comparaDatas(Hoje,Prazo).
 
 % retorna uma lista de todos os ids dos utentes
 listaIdUtentes(L) :- findall(X,utente(X,_,_,_,_,_,_,_,_,_,_),L).
