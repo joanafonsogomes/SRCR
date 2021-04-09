@@ -48,8 +48,8 @@ get_date_time_value(Key, Value) :-
 
 % Verifica se um contrato ainda esta em vigor
 prazoExpirado(data(A,M,D), P) :- calculaPrazo(A,M,D,P,Prazo),
-                                 datime(Hoje), !,
-                                 comparaDatas(Hoje,Prazo).
+                                datime(Hoje), !,
+                                comparaDatas(Hoje,Prazo).
 
 % retorna uma lista de todos os ids dos utentes
 listaIdUtentes(L) :- findall(X,utente(X,_,_,_,_,_,_,_,_,_,_),L).
@@ -63,17 +63,17 @@ intersecao([_|T1], L2, R) :- intersecao(T1, L2, R).
 
 % Profissoes de utentes correspondentes a fase 1
 profissao1Fase(IdU) :- utente(IdU,_,_,_,_,_,_,_,P,_,_),
-                       P = 'Profissional de Saude'.
+                        P = 'Profissional de Saude'.
 
 % Doencas correspondentes a fase 1 (50 ou mais anos)
 doencas1Fase(IdU) :- utente(IdU,_,_,_,_,_,_,_,_,D,_),
-                     A = ['Insuficiencia renal','Doenca renal cronica','Doenca coronaria','DPOC'],
-                     temElementosComum(A,D).
+                    A = ['Insuficiencia renal','Doenca renal cronica','Doenca coronaria','DPOC'],
+                    temElementosComum(A,D).
 
 % Doencas correspondentes a fase 2 (50 a 64 anos)
 doencas2Fase(IdU) :- utente(IdU,_,_,_,_,_,_,_,_,D,_),
-                     A = ['Diabetes','Neoplasia maligna ativa','Doenca renal cronica','Insuficiencia hepatica','Hipertensao arterial','Obesidade'],
-                     temElementosComum(A,D).
+                    A = ['Diabetes','Neoplasia maligna ativa','Doenca renal cronica','Insuficiencia hepatica','Hipertensao arterial','Obesidade'],
+                    temElementosComum(A,D).
 
 
 nomeDoUtente(UId,X) :- utente(UId,X,_,_,_,_,_,_,_,_,_).
@@ -85,16 +85,16 @@ checkVacinado(UId,X,F) :- vacinacao(A,UId,B,C,F).
 vacinados(X) :- findall(UId,vacinacao(_,UId,_,_,_),X).
 
 
-% quantas vacinas recebeu
+% Quantas vacinas recebeu
 quantasVacinas(IDU, N) :- Id=IDU,findall(Id,vacinacao(_,Id,_,_,_),X),length(X,N).
 
-%parse de Data
+% Parse de Data
 parseData(K,A,M,D) :- split_string(K, "-", "", Sp),
                         nth0(0,Sp,Ano), nth0(1,Sp,Mes), nth0(2,Sp,Dia),
                         atom_number(Ano, Year), atom_number(Mes, Month), atom_number(Dia, Day),
                         (A is Year, M is Month, D is Day).
 
-%ve se data 1 é antes de data 2 (1 = True , 0 = False)
+% Ve se data 1 é antes de data 2 (1 = True , 0 = False)
 comparaDatas(A1,_,_,A2,_,_,0):- A1 > A2.
 comparaDatas(A1,M1,_,A2,M2,_,0):- M1 > M2, A1 >= A2.
 comparaDatas(A1,M1,D1,A2,M2,D2,0):- D1 > D2, A1 >= A2, M1 >= M2.
@@ -102,8 +102,25 @@ comparaDatas(_,_,_,_,_,_,1).
 
 comparaDatasStr(X1,X2,R):- parseData(X1,A1,M1,D1), parseData(X2,A2,M2,D2), comparaDatas(A1,M1,D1,A2,M2,D2,R).
 
-% check a fase pertencente a um Dia (vou dar meio hard-code porque estou com sono)
-checkFase(D,X):- fase(X,DI,DF), comparaDatasStr(D,DI,0), comparaDatasStr(D,DF,1). 
+fase1DataI(DI) :- fase('F1',DI,_).
+fase1DataF(DF) :- fase('F1',_,DF).
+fase2DataI(DI) :- fase('F2',DI,_).
+fase2DataF(DF) :- fase('F2',_,DF).
+fase3DataI(DI) :- fase('F3',DI,_).
+fase3DataF(DF) :- fase('F3',_,DF).
+
+% Verifica a que fase pertence um certo dia
+checkFase(D,R):- fase1DataI(DI1), comparaDatasStr(D,DI1,A1),
+                fase1DataF(DF1), comparaDatasStr(D,DF1,A2),
+                fase2DataI(DI2), comparaDatasStr(D,DI2,A3),
+                fase2DataF(DF2), comparaDatasStr(D,DF2,A4),
+                fase3DataI(DI3), comparaDatasStr(D,DI3,A5),
+                fase3DataF(DF3), comparaDatasStr(D,DF3,A6),
+                ((A1==0,A2==1) -> R is 1 ;
+                (A3==0,A4==1) -> R is 2 ;
+                (A5==0,A6==1) -> R is 3 ;
+                write('Nenhuma fase correspondente a esta data.')).
+
 
 
 
