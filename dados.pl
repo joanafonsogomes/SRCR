@@ -1,5 +1,5 @@
-utente('U0','Romulo Mota','22337840788','M','1996-04-22','RomuloMota@outlook.com',962935227,'Rua Francisco Augusto Alvim 4700-004 Braga','Biologo',[],'C1').
-utente('U1','Goncalo Melo','65105592957','M','1991-09-18','GoncaloMelo1991@hotmail.com',938823950,'Travessa 1 de Maio 4700-008 Braga','Geriatra',[],'C2').
+utente('U0','Romulo Mota','22337840788','M','1936-04-22','RomuloMota@outlook.com',962935227,'Rua Francisco Augusto Alvim 4700-004 Braga','Biologo',[],'C1').
+utente('U1','Goncalo Melo','65105592957','M','1931-09-18','GoncaloMelo1991@hotmail.com',938823950,'Travessa 1 de Maio 4700-008 Braga','Geriatra',[],'C2').
 utente('U2','Bianca Moura','84874182284','F','1958-10-30','BiancaMoura244@gmail.com',921591637,'Rua de Sao Rosendo ( Bispo de Dume ) Dume 4700-008 Braga','Personal trainer',[],'C3').
 utente('U3','Vilar Nunes','05052988794','F','1976-02-17','VilarNunes1976@gmail.com',968452327,'Rua de Remelhe Dume 4700-008 Braga','Vigilante',[],'C3').
 utente('U4','Cinderela Nogueira','50775228700','F','1950-12-08','CinderelaNogueira@outlook.com',924781129,'Rua Paulo Vi 4700-004 Braga','Auxiliar de limpeza',[],'C2').
@@ -130,8 +130,6 @@ centro('C2','Centro de saude do Caranda','Rua de Goa Azurem 4800-004 Guimaraes',
 centro('C3','Centro de saude do Cavado','Rua de Sao Paulo 4700-004 Braga','233330348','suporte@docavado.com').
 centro('C4','Centro de saude Dr.Paulo Novais','Rua Francisco Ribeiro de Castro Azurem 4800-004 Guimaraes','219282688','suporte@drpaulonovais.com').
 
-vacinacao('S11','U0','2021-06-05','Astrazeneca',1).
-vacinacao('S11','U0','2021-06-28','Astrazeneca',2).
 vacinacao('S10','U1','2021-06-08','Moderna',1).
 vacinacao('S10','U1','2021-06-30','Moderna',2).
 vacinacao('S15','U2','2021-07-30','Pfizer',1).
@@ -146,8 +144,8 @@ vacinacao('S4','U6','2021-07-05','Astrazeneca',1).
 vacinacao('S4','U6','2021-07-22','Astrazeneca',2).
 vacinacao('S0','U7','2021-06-15','Astrazeneca',1).
 vacinacao('S0','U7','2021-07-02','Astrazeneca',2).
-vacinacao('S10','U8','2021-07-21','Sputnik V',1).
-vacinacao('S10','U8','2021-08-08','Sputnik V',2).
+vacinacao('S10','U8','2021-11-21','Sputnik V',1).
+vacinacao('S10','U8','2021-12-08','Sputnik V',2).
 vacinacao('S10','U9','2021-07-05','Pfizer',1).
 vacinacao('S10','U9','2021-07-27','Pfizer',2).
 vacinacao('S0','U10','2021-07-21','Sputnik V',1).
@@ -345,4 +343,4 @@ vacinacao('S4','U104','2021-10-02','Moderna',2).
 
 fase('F1','2020-12-01','2021-03-31').
 fase('F2','2021-04-01','2021-08-31').
-fase('F3','2021-09-01','2021-12-31').
+fase('F3','2021-09-01','9999-12-31').
