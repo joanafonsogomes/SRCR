@@ -52,9 +52,24 @@
 %Os utentes têm de ter um ID de centro existente
 +utente(_,_,_,_,_,_,_,_,_,_,IdC) :: centro(IdC,_,_,_,_).
 
+%Garantir  que  utentes  com  IDs  diferentes  tˆem diferente  informacao 
++utente(Id,N,NSS,G,DN,E,TLF,M,P,D,IDC) :: (solucoes((Id,NSS,E,TLF), utente(_,_,NSS,_,_,E,TLF,_,_,_,_), R), 
+                                            length(R,1)).
+
+%Garantir  que  centros  com  IDs  diferentes  tˆem diferente  informacao 
++centro(Id,N,_,T,E) :: (solucoes((Id,N,T,E), centro(_,N,_,T,E), R), 
+                                            length(R,1)).
+
+%Garantir  que  centros  com  IDs  diferentes  tˆem diferente  informacao 
++staff(Id,_,SS,T,C) :: (solucoes((SS,T,C), staff(_,_,SS,T,C), R), 
+                                            length(R,1)).
+
 %Garantir que não posso eliminar um elemento se tiver vacinacoes marcadas
 -utente(Id,_,_,_,_,_,_,_,_,_,_) :: (findall(Id, vacinacao(_,Id,_,_,_), R),
                             \+length(R, 0)).
+
+%Adicionar uma vacina ̧c ̃ao da toma 2 requer que a toma 1 j ́a esteja na base de conhecimento:
++vacinacao(S,U,_,_,2) :: vacinacao(S,U,_,_,1).
 
 % Garantir que o género do utente é 'M' ou 'F'
 +utente(_,_,_,G,_,_,_,_,_,_,_) :: generoValido(G).
@@ -74,15 +89,19 @@
 
 % UTENTE: Idutente, Nº Segurança_Social, Nome, Genero, Data_Nasc, Email, Telefone, Morada, Profissão, [Doenças_Crónicas], #CentroSaúde
 novoUtente(Id,N,NISS,G,Dn,E,Tlf,M,P,Dc,IdCs) :- novoConhecimento(utente(Id,N,NISS,G,Dn,E,Tlf,M,P,Dc,IdCs)).
+removeUtente(Id) :- removeConhecimento(utente(Id,_,_,_,_,_,_,_,_,_,_)).
 
 % STAFF: IdStaff, IdCentro, Nome, Email
-novoStaff(Id,IdCs,N,E) :- novoConhecimento(staff(Id,IdCs,N,E)).
+novoStaff(Id,NSS,IdCs,N,E) :- novoConhecimento(staff(Id,NSS,IdCs,N,E)).
+removeStaff(Id) :- removeConhecimento(staff(Id,_,_,_,_)).
 
 % CENTROS DE SAUDE: IdCentro, Nome, Morada, Telefone, Email
 novoCentro(Id,IdCs,N,M,Tlf,E) :- novoConhecimento(centro(Id,IdCs,N,M,Tlf,E)).
+removeCentro(Id) :- removeConhecimento(centro(Id,_,_,_,_,_)).
 
 % VACINAÇÕES: IdStaff, IdUtente, Data, Vacina, Toma
 novaVacinacao(IdS,IdU,D,V,T) :- novoConhecimento(vacinacao(IdS,IdU,D,V,T)).
+novaVacinacao(IdS,T) :- removeConhecimento(vacinacao(IdS,_,_,_,T)).
 
 %------------------
 % FUNCIONALIDADES
