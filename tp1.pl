@@ -22,28 +22,28 @@
 %------------------
 
 % Garantir que o ID de cada utente é único:
-+utente(Id,A,B,C,D,E,F,G,H,I,J) :: (solucoes(Id, utente(Id,_,_,_,_,_,_,_,_,_,_,_), R),
++utente(Id,_,_,_,_,_,_,_,_,_,_) :: (solucoes(Id, utente(Id,_,_,_,_,_,_,_,_,_,_,_), R),
                                      length(R, 1)).
 
 % Garantir que o ID de cada centro é único:
-+centro(Id,A,B,C,D) :: (solucoes(Id, centro(Id,_,_,_,_), R),
++centro(Id,_,_,_,_) :: (solucoes(Id, centro(Id,_,_,_,_), R),
                                      length(R, 1)).
 
 % Garantir que o ID de cada staff é único:
-+staff(Id,A,B,C) :: (solucoes(Id, staff(Id,_,_,_), R),
++staff(Id,_,_,_) :: (solucoes(Id, staff(Id,_,_,_), R),
                                      length(R, 1)).
 
 % Garantir que não há vacinações repetidas:
-+vacinacao(A,B,C,D,E) :: (solucoes(Id, vacinacao(A,B,C,D,E), R),
++vacinacao(Id,B,C,D,E) :: (solucoes(Id, vacinacao(Id,B,C,D,E), R),
                                      length(R, 1)).
 
 % Garantir que o ID de cada fase é único:
-+fase(Id,A,B) :: (solucoes(Id, fase(Id,_,_), R),
++fase(Id,_,_) :: (solucoes(Id, fase(Id,_,_), R),
                                      length(R, 1)).
 
 % Garantir que não posso eliminar um elemento se tiver vacinacoes marcadas
 %Só pode haver 1 utente por id TODO: Mudar para solucoes quando for implementado nas auxiliares
-+utente(Id,A,B,C,D,E,F,G,H,I,J) :: (findall(Id, utente(Id,_,_,_,_,_,_,_,_,_,_,_), R),
++utente(Id,_,_,_,_,_,_,_,_,_,_) :: (findall(Id, utente(Id,_,_,_,_,_,_,_,_,_,_,_), R),
                                      length(R, 1)).
 
 %Os utentes só podem ser do sexo masculino ou feminino
@@ -130,7 +130,7 @@ candidatosVacinacaoT(3,R) :- % utentes que ainda nao tomaram nenhuma vacina
                         findall(X,(member(X,S),\+member(X,Rep)), R).
 
 % Input de fase indevido
-candidatosVacinacaoT(A,R) :- \+ pertence(A,[1,2,3]) -> write('Fase invalida. As fases podem ser 1, 2 ou 3.'),
+candidatosVacinacaoT(A,_) :- \+ pertence(A,[1,2,3]) -> write('Fase invalida. As fases podem ser 1, 2 ou 3.'),
                           fail.
 
 % Só tomaram a primeira dose
@@ -173,7 +173,7 @@ candidatosVacinacaoP(3,R) :- % utentes que so tomaram a dose 1
                         findall(X,(member(X,S),\+member(X,Rep)), R).
 
 % Input de fase indevido
-candidatosVacinacaoP(A,R) :- \+ pertence(A,[1,2,3]) -> write('Fase invalida. As fases podem ser 1, 2 ou 3.'),
+candidatosVacinacaoP(A,_) :- \+ pertence(A,[1,2,3]) -> write('Fase invalida. As fases podem ser 1, 2 ou 3.'),
                         fail.
 
 %---------------------------------------------
@@ -196,12 +196,12 @@ naoVacinados(R) :- listaIdUtentes(X),
                    naoVacinadosAux(X,[],R).
 
 naoVacinadosAux([],Acc,Acc).
-naoVacinadosAux([H|T],Acc,R) :- (checkVacinado(H,Acc, 1); checkVacinado(H,Acc, 2)), naoVacinadosAux(T,Acc,R).
+naoVacinadosAux([H|T],Acc,R) :- (checkVacinado(H,1); checkVacinado(H,2)), naoVacinadosAux(T,Acc,R).
 naoVacinadosAux([H|T],Acc,R) :- naoVacinadosAux(T,[H|Acc],R).
 
 
 vacinadosSoUmaDose(R) :- % encontrar os ids de utentes candidatos
-                        solucoes(IdU,utente(IdU,_,_,_,DNasc,_,_,_,P,D,_),V),
+                        solucoes(IdU,utente(IdU,_,_,_,_,_,_,_,_,_,_),V),
                         % encontrar o id dos que fizeram a toma 1
                         solucoes(IdU, vacinacao(_,IdU,_,_,1), T1),
                         % encontrar o id dos que fizeram a toma 2

@@ -42,7 +42,7 @@ removerElem([X|L],X,NL) :- removerElem(L,X,NL).
 removerElem([X|L],Y,[X|NL]) :- X \== Y, removerElem(L,Y,NL).
 
 % Verifica se um elemento pertence a uma lista
-pertence(A,[A|XS]).
+pertence(A,[A|_]).
 pertence(A,[_|XS]) :- pertence(A,XS).
 
 % Verifica se duas listas têm elementos em comum
@@ -96,7 +96,7 @@ nomeDoUtente(UId,X) :- utente(UId,X,_,_,_,_,_,_,_,_,_).
 
 
 % Verifica se um elemento esta vacinado numa certa fase
-checkVacinado(UId,X,F) :- vacinacao(A,UId,B,C,F).
+checkVacinado(UId,F) :- vacinacao(_,UId,_,_,F).
 
 vacinados(X) :- findall(UId,vacinacao(_,UId,_,_,_),X).
 
