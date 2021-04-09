@@ -100,7 +100,7 @@ utente('U98','Horacio Pereira','13101300241','M','1970-02-11','HoracioPereira89@
 utente('U99','Debora Mendes','39536881148','F','1963-11-06','DeboraMendes250@gmail.com',968445773,'Caminho do Carvalhedo 4700-005 Braga','Profissional de Facilities',[],'C4').
 utente('U100','Antonio Santos','39536881144','M','1999-07-22','a83700@alunos.uminho.com',968445772,'Caminho do Carvalhedo 4700-005 Braga','Vagabundo',[],'C4').
 utente('U101','Jorge Vieira','09536881144','M','1999-06-23','a84240@alunos.uminho.com',928445772,'Caminho do Carvalhedo 4700-005 Braga','Engenheiro Informatico',[],'C3').
-utente('U102','Joana Gomes','39533881144','F','1999-01-01','a84912@alunos.uminho.com',922445772,'Caminho do Carvalhedo 4700-005 Braga','Engenheiro Informatico (Mulher)',[],'C2').
+utente('U102','Joana Gomes','39533881144','F','1999-01-01','a84912@alunos.uminho.com',922445772,'Caminho do Carvalhedo 4700-005 Braga','Engenheiro Informatico',[],'C2').
 utente('U103','Ze Carlos Magalhaes','19536881144','M','1999-01-01','a85852@alunos.uminho.com',922645772,'Caminho do Carvalhedo 4700-005 Braga','Engenheiro Informatico',[],'C4').
 utente('U104','Paulo Pereira','59236281144','M','1999-01-01','a86475@alunos.uminho.com',922445222,'Caminho do Carvalhedo 4700-005 Braga','Professor de CP',[],'C2').
 
