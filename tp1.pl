@@ -21,11 +21,27 @@
 % INVARIANTES
 %------------------
 
-%Só pode haver 1 utente por id TODO: Mudar para solucoes quando for implementado nas auxiliares
+% Garantir que o ID de cada utente é único:
 +utente(Id,A,B,C,D,E,F,G,H,I,J) :: (solucoes(Id, utente(Id,_,_,_,_,_,_,_,_,_,_,_), R),
                                      length(R, 1)).
 
-%Garantir que não posso eliminar um elemento se tiver vacinacoes marcadas
+% Garantir que o ID de cada centro é único:
++centro(Id,A,B,C,D) :: (solucoes(Id, centro(Id,_,_,_,_), R),
+                                     length(R, 1)).
+
+% Garantir que o ID de cada staff é único:
++staff(Id,A,B,C) :: (solucoes(Id, staff(Id,_,_,_), R),
+                                     length(R, 1)).
+
+% Garantir que não há vacinações repetidas:
++vacinacao(A,B,C,D,E) :: (solucoes(Id, vacinacao(A,B,C,D,E), R),
+                                     length(R, 1)).
+
+% Garantir que o ID de cada fase é único:
++fase(Id,A,B) :: (solucoes(Id, fase(Id,_,_), R),
+                                     length(R, 1)).
+
+% Garantir que não posso eliminar um elemento se tiver vacinacoes marcadas
 -utente(Id,_,_,_,_,_,_,_,_,_,_) :: (findall(Id, vacinacao(_,Id,_,_,_), R),
                             \+length(R, 0)).
 
