@@ -101,7 +101,7 @@ removeCentro(Id) :- removeConhecimento(centro(Id,_,_,_,_,_)).
 
 % VACINAÇÕES: IdStaff, IdUtente, Data, Vacina, Toma
 novaVacinacao(IdS,IdU,D,V,T) :- novoConhecimento(vacinacao(IdS,IdU,D,V,T)).
-novaVacinacao(IdS,T) :- removeConhecimento(vacinacao(IdS,_,_,_,T)).
+removeVacinacao(IdS,T) :- removeConhecimento(vacinacao(IdS,_,_,_,T)).
 
 %------------------
 % FUNCIONALIDADES
