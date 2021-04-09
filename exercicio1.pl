@@ -210,9 +210,6 @@ vacinadosDuasDoses(R) :- solucoes(UId,vacinacao(A,UId,B,C,1),L1),
 %Ser vacinado numa fase que não lhe corresponde
 
 
-%Ser vacinado numa data que não lhe corresponde (tanto na dose 1 como na dose 2)
-
-
 %Haver uma diferença de vacinas da toma 1 para a 2 (duas vacinas diferentes)
 diferente(R):-
     solucoes(U_ID,vacinaDiferente(U_ID),R).
@@ -227,7 +224,7 @@ tomouMaisDe2Doses(R) :- listaIdUtentes(X),
                    		tomouMaisDe2DosesAux(X,[],R).
 
 tomouMaisDe2DosesAux([],Acc,Acc).
-tomouMaisDe2DosesAux([H|T],Acc,R) :- (quantasVacinas(IDU, N), N<2), tomouMaisDe2DosesAux(T,Acc,R).
+tomouMaisDe2DosesAux([H|T],Acc,R) :- (quantasVacinas(H, N), N<3), tomouMaisDe2DosesAux(T,Acc,R).
 tomouMaisDe2DosesAux([H|T],Acc,R) :- tomouMaisDe2DosesAux(T,[H|Acc],R).
 
 
