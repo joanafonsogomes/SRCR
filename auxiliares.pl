@@ -119,7 +119,11 @@ checkFase(D,R):- fase1DataI(DI1), comparaDatasStr(D,DI1,A1),
                 ((A1==0,A2==1) -> R is 1 ;
                 (A3==0,A4==1) -> R is 2 ;
                 (A5==0,A6==1) -> R is 3 ;
-                write('Nenhuma fase correspondente a esta data.')).
+                R is 0).
+
+%Verifica em fase é que um Utente foi vacinado
+checkFaseUtente(UId,R):- vacinacao(_,UId,D,_,1), checkFase(D,R).
+
 
 
 
