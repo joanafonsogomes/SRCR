@@ -22,8 +22,14 @@
 %------------------
 
 %Só pode haver 1 utente por id TODO: Mudar para solucoes quando for implementado nas auxiliares
-+utente(Id,A,B,C,D,E,F,G,H,I,J) :: (solucoes(Id, utente(Id,_,_,_,_,_,_,_,_,_,_,_), R),
++utente(Id,A,B,C,D,E,F,G,H,I,J) :: (findall(Id, utente(Id,_,_,_,_,_,_,_,_,_,_,_), R),
                                      length(R, 1)).
+
+%Os utentes só podem ser do sexo masculino ou feminino
++utente(_,_,_,G,_,_,_,_,_,_,_) :: genderValido(G).
+
+%Os utentes têm de ter um ID de centro existente
++utente(_,_,_,_,_,_,_,_,_,_,IdC) :: centro(IdC,_,_,_,_).
 
 %Garantir que não posso eliminar um elemento se tiver vacinacoes marcadas
 -utente(Id,_,_,_,_,_,_,_,_,_,_) :: (findall(Id, vacinacao(_,Id,_,_,_), R),
@@ -43,7 +49,7 @@
 %------------------
 
 % UTENTE: Idutente, Nº Segurança_Social, Nome, Genero, Data_Nasc, Email, Telefone, Morada, Profissão, [Doenças_Crónicas], #CentroSaúde
-novoUtente(Id,NISS,N,G,Dn,E,Tlf,M,P,Dc,IdCs) :- novoConhecimento(utente(Id,NISS,N,G,Dn,E,Tlf,M,P,Dc,IdCs)).
+novoUtente(Id,N,NISS,G,Dn,E,Tlf,M,P,Dc,IdCs) :- novoConhecimento(utente(Id,N,NISS,G,Dn,E,Tlf,M,P,Dc,IdCs)).
 
 % STAFF: IdStaff, IdCentro, Nome, Email
 novoStaff(Id,IdCs,N,E) :- novoConhecimento(staff(Id,IdCs,N,E)).
@@ -150,19 +156,12 @@ candidatosVacinacaoP(A,R) :- \+ pertence(A,[1,2,3]) -> write('Fase invalida. As 
 
 % Permitir a definição de fases de vacinação, definindo critérios de inclusão de utentes nas diferentes fases
 
-doencasFase1(['Insuficiencia cardiaca', 'Doenca coronaria', 'Insuficiencia renal', 'DPOC']).
-doencasFase2(['Diabetes','Neoplasia maligna ativa','Doenca renal cronica','Insuficiencia hepatica','Hipertensao arterial','Obesidade']).
-
 profissao(IDU,G) :- utente(IDU,_,_,_,_,_,_,_,G,_,_).
-doencas(IDU,D) :- utente(IDU,_,_,_,_,_,_,_,_,D,_).
 
-pertenceAFase(IDU,R) :- doencasFase1(X),
-                doencasFase2(Y),
+pertenceAFase(IDU,R) :- profissao(IDU,Prof), 
                 calcularIdade(IDU,Idade),
-                profissao(IDU,Prof),
-                doencas(IDU,Doencas),
-                (((temElementosComum(Doencas,X), Idade >= 50); Idade >= 80; Prof == 'Profissional de Saude') -> R is 1;
-                ((temElementosComum(Doencas,Y), Idade >= 50, Idade =< 64); Idade >= 65) -> R is 2;
+                (((doencas1Fase(IDU), Idade >= 50); Idade >= 80; Prof == 'Profissional de Saude') -> R is 1;
+                ((doencas2Fase(IDU), Idade >= 50, Idade =< 64); Idade >= 65) -> R is 2;
                 R is 3).
 
 %---------------------------------------------
