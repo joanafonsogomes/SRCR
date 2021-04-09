@@ -140,8 +140,9 @@ checkFase(D,R):- fase1DataI(DI1), comparaDatasStr(D,DI1,A1),
 %Verifica em fase é que um Utente foi vacinado
 checkFaseUtente(UId,R):- vacinacao(_,UId,D,_,1), checkFase(D,R).
 
-
-
+%valida o género
+generoValido('M').
+generoValido('F').
 
 
 
