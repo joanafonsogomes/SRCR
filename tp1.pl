@@ -30,7 +30,7 @@
                             \+length(R, 0)).
 
 % Garantir que o género do utente é 'M' ou 'F'
-+utente(_,_,_,G,_,_) :: generoValido(G).
++utente(_,_,_,G,_,_,_,_,_,_,_) :: generoValido(G).
 
 -staff(Id,_,_,_,_) :: (findall(Id, vacinacao(Id,_,_,_,_), R),
                             \+length(R, 0)).
