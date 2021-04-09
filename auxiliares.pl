@@ -27,7 +27,7 @@ novoConhecimento(T) :- solucoes(I, +T::I, L),
 % Retira conhecimento da base de conhecimento
 removeConhecimento(T) :- solucoes(I, -T::I, L),
                 remocao(T),
-                teste(L).
+                testaPredicados(L).
 
 % Vê se um genero é válido
 genderValido('M').

@@ -66,7 +66,12 @@
 -centro(Id,_,_,_,_) :: (findall(sId,staff(sId,_,_,_,Id),R),
                             \+length(R, 0)).
 
+%Garantir que não há sobreposição de fases
++fase('F1',DI,DF) :: fase('F2',DI2,DF2),comparaDatasStr(DF,DI2).
++fase('F2',DI,DF) :: fase('F3',DI2,DF2),comparaDatasStr(DF,DI2).
 
+%Garantir que o inicio de uma fase seja antes do fim da mesma
++fase(_,DI,DF) :: comparaDatasStr(DI,DF).
 %------------------
 % REGISTRAR utentes, staff, centros de saude e vacinações
 %------------------
