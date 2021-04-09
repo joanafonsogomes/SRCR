@@ -21,7 +21,6 @@
 % INVARIANTES
 %------------------
 
-<<<<<<< HEAD
 % Garantir que o ID de cada utente é único:
 +utente(Id,A,B,C,D,E,F,G,H,I,J) :: (solucoes(Id, utente(Id,_,_,_,_,_,_,_,_,_,_,_), R),
                                      length(R, 1)).
@@ -43,7 +42,6 @@
                                      length(R, 1)).
 
 % Garantir que não posso eliminar um elemento se tiver vacinacoes marcadas
-=======
 %Só pode haver 1 utente por id TODO: Mudar para solucoes quando for implementado nas auxiliares
 +utente(Id,A,B,C,D,E,F,G,H,I,J) :: (findall(Id, utente(Id,_,_,_,_,_,_,_,_,_,_,_), R),
                                      length(R, 1)).
@@ -55,7 +53,6 @@
 +utente(_,_,_,_,_,_,_,_,_,_,IdC) :: centro(IdC,_,_,_,_).
 
 %Garantir que não posso eliminar um elemento se tiver vacinacoes marcadas
->>>>>>> main
 -utente(Id,_,_,_,_,_,_,_,_,_,_) :: (findall(Id, vacinacao(_,Id,_,_,_), R),
                             \+length(R, 0)).
 
