@@ -11,18 +11,18 @@
 :- set_prolog_flag( single_var_warnings,off ).
 :- set_prolog_flag( unknown,fail ).
 
-:- op(900,xfy,'::').
+
 :- dynamic utente/11.
 :- dynamic staff/5.
 :- dynamic centro/5.
-:- dynamic vacinacao/6.
+:- dynamic vacinacao/5.
 
 %------------------
 % INVARIANTES
 %------------------
 
 % Garantir que o ID de cada utente é único:
-+utente(Id,_,_,_,_,_,_,_,_,_,_) :: (solucoes(Id, utente(Id,_,_,_,_,_,_,_,_,_,_,_), R),
++utente(Id,_,_,_,_,_,_,_,_,_,_) :: (solucoes(Id, utente(Id,_,_,_,_,_,_,_,_,_,_), R),
                                      length(R, 1)).
 
 % Garantir que o ID de cada centro é único:
@@ -40,12 +40,6 @@
 % Garantir que o ID de cada fase é único:
 +fase(Id,_,_) :: (solucoes(Id, fase(Id,_,_), R),
                                      length(R, 1)).
-
-% Garantir que não posso eliminar um elemento se tiver vacinacoes marcadas
-%Só pode haver 1 utente por id TODO: Mudar para solucoes quando for implementado nas auxiliares
-+utente(Id,_,_,_,_,_,_,_,_,_,_) :: (findall(Id, utente(Id,_,_,_,_,_,_,_,_,_,_,_), R),
-                                     length(R, 1)).
-
 %Os utentes só podem ser do sexo masculino ou feminino
 +utente(_,_,_,G,_,_,_,_,_,_,_) :: genderValido(G).
 
@@ -66,7 +60,7 @@
 
 %Garantir que não posso eliminar um elemento se tiver vacinacoes marcadas
 -utente(Id,_,_,_,_,_,_,_,_,_,_) :: (findall(Id, vacinacao(_,Id,_,_,_), R),
-                            \+length(R, 0)).
+                                    length(R, 0)).
 
 %Adicionar uma vacina ̧c ̃ao da toma 2 requer que a toma 1 j ́a esteja na base de conhecimento:
 +vacinacao(S,U,_,_,2) :: vacinacao(S,U,_,_,1).
@@ -75,11 +69,11 @@
 +utente(_,_,_,G,_,_,_,_,_,_,_) :: generoValido(G).
 
 -staff(Id,_,_,_,_) :: (findall(Id, vacinacao(Id,_,_,_,_), R),
-                            \+length(R, 0)).
+                        length(R, 0)).
 
 
 -centro(Id,_,_,_,_) :: (findall(sId,staff(sId,_,_,_,Id),R),
-                            \+length(R, 0)).
+                        length(R, 0)).
 
 %Garantir que o inicio de uma fase seja antes do fim da mesma
 +fase(_,DI,DF) :: comparaDatasStr(DI,DF).
@@ -96,12 +90,12 @@ novoStaff(Id,NSS,IdCs,N,E) :- novoConhecimento(staff(Id,NSS,IdCs,N,E)).
 removeStaff(Id) :- removeConhecimento(staff(Id,_,_,_,_)).
 
 % CENTROS DE SAUDE: IdCentro, Nome, Morada, Telefone, Email
-novoCentro(Id,IdCs,N,M,Tlf,E) :- novoConhecimento(centro(Id,IdCs,N,M,Tlf,E)).
-removeCentro(Id) :- removeConhecimento(centro(Id,_,_,_,_,_)).
+novoCentro(Id,N,M,Tlf,E) :- novoConhecimento(centro(Id,N,M,Tlf,E)).
+removeCentro(Id) :- removeConhecimento(centro(Id,_,_,_,_)).
 
 % VACINAÇÕES: IdStaff, IdUtente, Data, Vacina, Toma
 novaVacinacao(IdS,IdU,D,V,T) :- novoConhecimento(vacinacao(IdS,IdU,D,V,T)).
-removeVacinacao(IdS,T) :- removeConhecimento(vacinacao(IdS,_,_,_,T)).
+removeVacinacao(IdU,T) :- removeConhecimento(vacinacao(_,IdU,_,_,T)).
 
 %------------------
 % FUNCIONALIDADES

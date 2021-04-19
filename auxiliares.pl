@@ -1,6 +1,9 @@
 :- use_module(library(lists)).
 :- use_module(library(date)).
 
+
+:- op(900,xfy,'::').
+
 % ---------------------------------
 % FUNCOES AUXILIARES
 % ---------------------------------
