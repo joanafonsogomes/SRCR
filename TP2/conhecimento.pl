@@ -21,7 +21,6 @@ utente('U15','Indro Leal','45346361911','M','1949-07-08','IndroLeal1949@gmail.co
 utente('U17','Dinarda Matias','29224473940','F','1974-10-09','DinardaMatias1974@outlook.com',915914158,'Largo do Rego Dume 4700-008 Braga','DevOps',[],'C4').
 utente('U18','Marcilene Goncalves','77919813012','M','1989-12-04','MarcileneGoncalves305@hotmail.com',924527670,'Rua do Carvalhal Dume 4700-005 Braga','Perito criminal',['Doenca coronaria'],'C1').
 utente('U19','Milena Vicente','39280061650','F','2004-06-04','MilenaVicente@gmail.com',969590100,'Travessa General Humberto Delgado Antas 4760-001 Vila Nova de Famalicao','Jovem Aprendiz',[],'C3').
-utente('U20','Delmiro Lopes','36606379205','M','1956-05-23','DelmiroLopes103@outlook.com',927819307,'Rua Monte de Baixo 4705-001 Arentim','Cerimonialista',[],'C3').
 utente('U22','Heliodora Marques','08984526417','F','1963-02-10','HeliodoraMarques393@gmail.com',931974714,'Calcada de Gondomar 4705-001 Arentim','Radialista',[],'C2').
 utente('U23','Alexia Oliveira','71895649370','F','1978-05-23','AlexiaOliveira@gmail.com',919122593,'Rua da Igreja Velha 4705-001 Arentim','Embaixador',[],'C1').
 utente('U24','Milena Lima','44309762734','F','2006-12-31','MilenaLima145@hotmail.com',911200424,'Rua de Cabanas Dume 4700-004 Braga','Operador de telemarketing',[],'C1').
@@ -46,3 +45,8 @@ utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hotmail.com
 utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hotmail.com',916779510,'Rua do Brasil 4775-001 Cambeses','Eletricista',[],'C2').
 
 % Conhecimento Imperfeito Interdito
+utente('U20','Delmiro Lopes','36606379205','M','1956-05-23','DelmiroLopes103@outlook.com',927819307,'Rua Monte de Baixo 4705-001 Arentim','Cerimonialista',[],'C3').
+exececao(utente(Id,N,NSS,G,Dn,E,T,M,P,D,Cs)) :- utente(Id,N,NSS,G,Dn,email_impossivel,T,M,P,D,Cs).
+nulointerdito(email_impossivel).
++utente(Id,N,NSS,G,Dn,E,T,M,P,D,Cs) ::  (solucoes(Id,N,NSS,G,Dn,E,T,M,P,D,Cs), utente('U20','Delmiro Lopes','36606379205','M','1956-05-23',email_impossivel,927819307,'Rua Monte de Baixo 4705-001 Arentim','Cerimonialista',[],'C3'), nao(nulointerdito(email_impossivel))), R), 
+                                        comprimento(R,0)).
