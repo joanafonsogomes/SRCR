@@ -18,7 +18,6 @@ utente('U9','Tiburcio Guerreiro','08519097436','M','1978-03-16','TiburcioGuerrei
 utente('U10','Jansenio Figueiredo','02069412938','M','1983-02-02','JansenioFigueiredo218@outlook.com',914112112,'Avenida do Cavado Dume 4700-008 Braga','Comissario de bordo',[],'C2').
 utente('U11','Florisbela Carvalho','38557360298','F','1969-02-01','FlorisbelaCarvalho1969@gmail.com',910843987,'Rua Dona Teresa Aldao 4800-004 Guimaraes','Tecnico em edificacoes',[],'C4').
 utente('U12','Biana Andrade','03294496759','F','1982-05-02','BianaAndrade@hotmail.com',932477556,'Rua de Sao Martinho Dume 4700-008 Braga','Padeiro',[],'C1').
-utente('U13','Adelia Amaral','41527730111','F','1944-09-26','AdeliaAmaral@hotmail.com',910419566,'Rua Doutor Joao Afonso Almeida Azurem 4800-004 Guimaraes','Bioquimico',[],'C2').
 utente('U14','Tatiano Carvalho','39247286162','M','1960-12-30','TatianoCarvalho@outlook.com',921622230,'Praceta do Viajante Azurem 4800-004 Guimaraes','Biologo',[],'C3').
 utente('U15','Indro Leal','45346361911','M','1949-07-08','IndroLeal1949@gmail.com',929206797,'Rua de Sao Lourenco da Ordem 4700-004 Braga','Webmaster',[],'C1').
 utente('U17','Dinarda Matias','29224473940','F','1974-10-09','DinardaMatias1974@outlook.com',915914158,'Largo do Rego Dume 4700-008 Braga','DevOps',[],'C4').
@@ -37,3 +36,11 @@ utente('U25','Taisa Tavares','48015001236','F','2007-01-26','TaisaTavares@gmail.
 
 % ----- Conhecimento Imperfeito -----
 
+% Conhecimento Imperfeito Incerto
+utente('U13','Adelia Amaral','41527730111','F','1944-09-26',email_desconhecido,910419566,'Rua Doutor Joao Afonso Almeida Azurem 4800-004 Guimaraes','Bioquimico',[],'C2').
+excecao(utente(Id, N, G, DN, E, T, M, P, DC, IdCentro)) :- utente(Id, N, G, DN, email_desconhecido, T, M, P, DC, IdCentro)
+
+% Conhecimento Imperfeito Impreciso
+
+
+% Conhecimento Imperfeito Interdito
