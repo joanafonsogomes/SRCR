@@ -11,13 +11,11 @@ utente('U2','Bianca Moura','84874182284','F','1958-10-30','BiancaMoura244@gmail.
 utente('U3','Vilar Nunes','05052988794','F','1976-02-17','VilarNunes1976@gmail.com',968452327,'Rua de Remelhe Dume 4700-008 Braga','Vigilante',[],'C3').
 utente('U4','Cinderela Nogueira','50775228700','F','1950-12-08','CinderelaNogueira@outlook.com',924781129,'Rua Paulo Vi 4700-004 Braga','Auxiliar de limpeza',[],'C2').
 utente('U5','Apolo Amaral','39446661300','M','1980-05-06','ApoloAmaral@hotmail.com',926158761,'Avenida dos Descobrimentos Antas 4760-001 Vila Nova de Famalicao','Reporter',['Insuficiencia hepatica'],'C3').
-utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hotmail.com',966727220,'Rua do Brasil 4775-001 Cambeses','Eletricista',[],'C2').
 utente('U7','Afonsino Torres','82144830813','M','1992-12-24','AfonsinoTorres@gmail.com',911799897,'Rua Jose Albino Costa e Silva Azurem 4800-004 Guimaraes','Profissional de Saude',[],'C2').
 utente('U8','Aldo Castro','89885876143','M','1980-04-16','AldoCastro388@hotmail.com',962967073,'Rua Doutor Jose Regio Dume 4700-004 Braga','Programador',[],'C2').
 utente('U9','Tiburcio Guerreiro','08519097436','M','1978-03-16','TiburcioGuerreiro342@outlook.com',936810784,'Rua do Cortinhal 4775-001 Cambeses','Militar',['Obesidade'],'C2').
 utente('U10','Jansenio Figueiredo','02069412938','M','1983-02-02','JansenioFigueiredo218@outlook.com',914112112,'Avenida do Cavado Dume 4700-008 Braga','Comissario de bordo',[],'C2').
 utente('U11','Florisbela Carvalho','38557360298','F','1969-02-01','FlorisbelaCarvalho1969@gmail.com',910843987,'Rua Dona Teresa Aldao 4800-004 Guimaraes','Tecnico em edificacoes',[],'C4').
-utente('U12','Biana Andrade','03294496759','F','1982-05-02','BianaAndrade@hotmail.com',932477556,'Rua de Sao Martinho Dume 4700-008 Braga','Padeiro',[],'C1').
 utente('U14','Tatiano Carvalho','39247286162','M','1960-12-30','TatianoCarvalho@outlook.com',921622230,'Praceta do Viajante Azurem 4800-004 Guimaraes','Biologo',[],'C3').
 utente('U15','Indro Leal','45346361911','M','1949-07-08','IndroLeal1949@gmail.com',929206797,'Rua de Sao Lourenco da Ordem 4700-004 Braga','Webmaster',[],'C1').
 utente('U17','Dinarda Matias','29224473940','F','1974-10-09','DinardaMatias1974@outlook.com',915914158,'Largo do Rego Dume 4700-008 Braga','DevOps',[],'C4').
@@ -41,6 +39,10 @@ utente('U13','Adelia Amaral','41527730111','F','1944-09-26',email_desconhecido,9
 excecao(utente(Id, N, G, DN, E, T, M, P, DC, IdCentro)) :- utente(Id, N, G, DN, email_desconhecido, T, M, P, DC, IdCentro)
 
 % Conhecimento Imperfeito Impreciso
+utente('U12','Biana Andrade','03294496759','F','1982-05-02','BianaAndrade@hotmail.com',932477556,'Rua de Sao Martinho Dume 4700-008 Braga','Padeiro',[],'C1').
+utente('U12','Biana Andrade','03294496759','F','1982-05-02','BianaAndrade@hotmail.com',932477556,'Rua do Monte 4700-009 Braga','Padeiro',[],'C1').
 
+utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hotmail.com',966727220,'Rua do Brasil 4775-001 Cambeses','Eletricista',[],'C2').
+utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hotmail.com',916779510,'Rua do Brasil 4775-001 Cambeses','Eletricista',[],'C2').
 
 % Conhecimento Imperfeito Interdito
