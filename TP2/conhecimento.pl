@@ -26,6 +26,64 @@ utente('U23','Alexia Oliveira','71895649370','F','1978-05-23','AlexiaOliveira@gm
 utente('U24','Milena Lima','44309762734','F','2006-12-31','MilenaLima145@hotmail.com',911200424,'Rua de Cabanas Dume 4700-004 Braga','Operador de telemarketing',[],'C1').
 utente('U25','Taisa Tavares','48015001236','F','2007-01-26','TaisaTavares@gmail.com',923954996,'Rua da Gloria Azurem 4800-004 Guimaraes','Mecanico de carro',[],'C3').
 
+centro('C1','Centro de saude de Braga','Rua Paulo Vi 4700-004 Braga','219229219','suporte@debraga.com').
+centro('C2','Centro de saude do Caranda','Rua de Goa Azurem 4800-004 Guimaraes','246512282','suporte@docaranda.com').
+centro('C3','Centro de saude do Cavado','Rua de Sao Paulo 4700-004 Braga','233330348','suporte@docavado.com').
+centro('C4','Centro de saude Dr.Paulo Novais','Rua Francisco Ribeiro de Castro Azurem 4800-004 Guimaraes','219282688','suporte@drpaulonovais.com').
+
+vacinacao('S11','U0','2021-06-05','Astrazeneca',1).
+vacinacao('S11','U0','2021-06-28','Astrazeneca',2).
+vacinacao('S10','U1','2021-06-08','Moderna',1).
+vacinacao('S10','U1','2021-06-30','Moderna',2).
+vacinacao('S15','U2','2021-07-30','Pfizer',1).
+vacinacao('S15','U2','2021-08-19','Pfizer',2).
+vacinacao('S5','U3','2021-07-07','Pfizer',1).
+vacinacao('S5','U3','2021-07-25','Pfizer',2).
+vacinacao('S0','U4','2021-04-03','Moderna',1).
+vacinacao('S0','U4','2021-04-24','Moderna',2).
+vacinacao('S3','U5','2021-06-08','Sputnik V',1).
+vacinacao('S3','U5','2021-06-27','Sputnik V',2).
+vacinacao('S4','U6','2021-07-05','Astrazeneca',1).
+vacinacao('S4','U6','2021-07-22','Astrazeneca',2).
+vacinacao('S0','U7','2021-06-15','Astrazeneca',1).
+vacinacao('S0','U7','2021-07-02','Astrazeneca',2).
+vacinacao('S10','U8','2021-07-21','Sputnik V',1).
+vacinacao('S10','U8','2021-08-08','Sputnik V',2).
+vacinacao('S10','U9','2021-07-05','Pfizer',1).
+vacinacao('S10','U9','2021-07-27','Pfizer',2).
+vacinacao('S0','U10','2021-07-21','Sputnik V',1).
+vacinacao('S0','U10','2021-08-13','Sputnik V',2).
+vacinacao('S7','U11','2021-06-19','Pfizer',1).
+vacinacao('S7','U11','2021-07-07','Pfizer',2).
+vacinacao('S2','U12','2021-07-16','Moderna',1).
+vacinacao('S2','U12','2021-08-05','Moderna',2).
+vacinacao('S4','U13','2021-05-11','Astrazeneca',1).
+vacinacao('S4','U13','2021-05-30','Astrazeneca',2).
+vacinacao('S5','U14','2021-06-30','Sputnik V',1).
+vacinacao('S5','U14','2021-07-23','Sputnik V',2).
+vacinacao('S17','U15','2021-04-11','Pfizer',1).
+vacinacao('S17','U15','2021-05-04','Pfizer',2).
+vacinacao('S9','U16','2021-07-12','Astrazeneca',1).
+vacinacao('S9','U16','2021-08-01','Astrazeneca',2).
+vacinacao('S13','U17','2021-07-27','Pfizer',1).
+vacinacao('S13','U17','2021-08-17','Pfizer',2).
+vacinacao('S12','U18','2021-07-23','Sputnik V',1).
+vacinacao('S12','U18','2021-08-15','Sputnik V',2).
+vacinacao('S8','U19','2021-07-13','Pfizer',1).
+vacinacao('S8','U19','2021-07-30','Pfizer',2).
+vacinacao('S15','U20','2021-07-30','Sputnik V',1).
+vacinacao('S15','U20','2021-08-16','Sputnik V',2).
+vacinacao('S3','U21','2021-07-07','Pfizer',1).
+vacinacao('S3','U21','2021-07-27','Pfizer',2).
+vacinacao('S1','U22','2021-06-04','Sputnik V',1).
+vacinacao('S1','U22','2021-06-25','Sputnik V',2).
+vacinacao('S12','U23','2021-06-07','Pfizer',1).
+vacinacao('S12','U23','2021-06-28','Pfizer',2).
+vacinacao('S17','U24','2021-07-03','Astrazeneca',1).
+vacinacao('S17','U24','2021-07-26','Astrazeneca',2).
+vacinacao('S15','U25','2021-06-16','Moderna',1).
+vacinacao('S15','U25','2021-07-04','Moderna',2).
+
 % Conhecimento Perfeito Negativo (Negacao Forte)
 - utente('U16','Gino Campos','21515788464','M','2004-03-23','GinoCampos@gmail.com',920820869,'Lugar da Ordem 4700-008 Braga','Piloto de aviao',[],'C4').
 - utente('U21','Rodrigo Matos','90131842525','M','1996-06-04','RodrigoMatos@gmail.com',930344386,'Largo da Confeiteira Dume 4700-005 Braga','Cientista de dados',[],'C3').
