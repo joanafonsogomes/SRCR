@@ -44,8 +44,6 @@ vacinacao('S5','U3','2021-07-07','Pfizer',1).
 vacinacao('S5','U3','2021-07-25','Pfizer',2).
 vacinacao('S0','U4','2021-04-03','Moderna',1).
 vacinacao('S0','U4','2021-04-24','Moderna',2).
-vacinacao('S3','U5','2021-06-08','Sputnik V',1).
-vacinacao('S3','U5','2021-06-27','Sputnik V',2).
 vacinacao('S0','U7','2021-06-15','Astrazeneca',1).
 vacinacao('S0','U7','2021-07-02','Astrazeneca',2).
 vacinacao('S10','U8','2021-07-21','Sputnik V',1).
@@ -54,8 +52,6 @@ vacinacao('S10','U9','2021-07-05','Pfizer',1).
 vacinacao('S10','U9','2021-07-27','Pfizer',2).
 vacinacao('S0','U10','2021-07-21','Sputnik V',1).
 vacinacao('S0','U10','2021-08-13','Sputnik V',2).
-vacinacao('S7','U11','2021-06-19','Pfizer',1).
-vacinacao('S7','U11','2021-07-07','Pfizer',2).
 vacinacao('S2','U12','2021-07-16','Moderna',1).
 vacinacao('S2','U12','2021-08-05','Moderna',2).
 vacinacao('S4','U13','2021-05-11','Astrazeneca',1).
@@ -63,10 +59,6 @@ vacinacao('S4','U13','2021-05-30','Astrazeneca',2).
 vacinacao('S5','U14','2021-06-30','Sputnik V',1).
 vacinacao('S5','U14','2021-07-23','Sputnik V',2).
 vacinacao('S3','U17','2021-07-27','Pfizer',1).
-vacinacao('S9','U20','2021-07-30','Sputnik V',1).
-vacinacao('S1','U22','2021-06-04','Sputnik V',1).
-vacinacao('S1','U22','2021-06-25','Sputnik V',2).
-vacinacao('S10','U23','2021-06-07','Pfizer',1).
 
 % Conhecimento Perfeito Negativo (Negacao Forte)
 -utente('U16','Gino Campos','21515788464','M','2004-03-23','GinoCampos@gmail.com',920820869,'Lugar da Ordem 4700-008 Braga','Piloto de aviao',[],'C4').
@@ -76,6 +68,9 @@ vacinacao('S10','U23','2021-06-07','Pfizer',1).
 -staff('S8','Dominico Goncalves','65543192708','DominicoGoncalves@hotmail.com','C1').
 
 -centro('C3','Centro de saude do Cavado','Rua de Sao Paulo 4700-004 Braga','233330348','suporte@docavado.com').
+
+-vacinacao('S3','U5','2021-06-08','Sputnik V',1).
+-vacinacao('S7','U11','2021-06-19','Pfizer',1).
 
 % ----- Conhecimento Imperfeito -----
 
