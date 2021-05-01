@@ -104,7 +104,7 @@ excecao(utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hot
 
 % Conhecimento Imperfeito Interdito
 utente('U20','Delmiro Lopes','36606379205','M','1956-05-23','DelmiroLopes103@outlook.com',927819307,'Rua Monte de Baixo 4705-001 Arentim','Cerimonialista',[],'C3').
-exececao(utente(Id,N,NSS,G,Dn,E,T,M,P,D,Cs)) :- utente(Id,N,NSS,G,Dn,email_impossivel,T,M,P,D,Cs).
+excecao(utente(Id,N,NSS,G,Dn,E,T,M,P,D,Cs)) :- utente(Id,N,NSS,G,Dn,email_impossivel,T,M,P,D,Cs).
 nulointerdito(email_impossivel).
 +utente(Id,N,NSS,G,Dn,E,T,M,P,D,Cs) ::  (solucoes(Id,N,NSS,G,Dn,E,T,M,P,D,Cs), utente('U20','Delmiro Lopes','36606379205','M','1956-05-23',email_impossivel,927819307,'Rua Monte de Baixo 4705-001 Arentim','Cerimonialista',[],'C3'), nao(nulointerdito(email_impossivel))), R), 
                                         comprimento(R,0)).
