@@ -17,3 +17,11 @@ testaPredicados([I|L]) :- I, testaPredicados(L).
 % ----- Conhecimento Perfeito -----
 
 % Conhecimento Perfeito Positivo
+
+% ...
+
+% Conhecimento Perfeito Negativo
+
+evolucaoC(T,neg) :- solucoes(I, +(-T)::I, L),
+                insercao(-T),
+                testaPredicados(L)
