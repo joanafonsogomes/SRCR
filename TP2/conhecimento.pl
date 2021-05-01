@@ -96,11 +96,11 @@ utente('U13','Adelia Amaral','41527730111','F','1944-09-26',email_desconhecido,9
 excecao(utente(Id, N, G, DN, E, T, M, P, DC, IdCentro)) :- utente(Id, N, G, DN, email_desconhecido, T, M, P, DC, IdCentro)
 
 % Conhecimento Imperfeito Impreciso
-utente('U12','Biana Andrade','03294496759','F','1982-05-02','BianaAndrade@hotmail.com',932477556,'Rua de Sao Martinho Dume 4700-008 Braga','Padeiro',[],'C1').
-utente('U12','Biana Andrade','03294496759','F','1982-05-02','BianaAndrade@hotmail.com',932477556,'Rua do Monte 4700-009 Braga','Padeiro',[],'C1').
+excecao(utente('U12','Biana Andrade','03294496759','F','1982-05-02','BianaAndrade@hotmail.com',932477556,'Rua de Sao Martinho Dume 4700-008 Braga','Padeiro',[],'C1')).
+excecao(utente('U12','Biana Andrade','03294496759','F','1982-05-02','BianaAndrade@hotmail.com',932477556,'Rua do Monte 4700-009 Braga','Padeiro',[],'C1')).
 
-utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hotmail.com',966727220,'Rua do Brasil 4775-001 Cambeses','Eletricista',[],'C2').
-utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hotmail.com',916779510,'Rua do Brasil 4775-001 Cambeses','Eletricista',[],'C2').
+excecao(utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hotmail.com',966727220,'Rua do Brasil 4775-001 Cambeses','Eletricista',[],'C2')).
+excecao(utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hotmail.com',916779510,'Rua do Brasil 4775-001 Cambeses','Eletricista',[],'C2')).
 
 % Conhecimento Imperfeito Interdito
 utente('U20','Delmiro Lopes','36606379205','M','1956-05-23','DelmiroLopes103@outlook.com',927819307,'Rua Monte de Baixo 4705-001 Arentim','Cerimonialista',[],'C3').
