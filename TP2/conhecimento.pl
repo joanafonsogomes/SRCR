@@ -21,18 +21,24 @@ utente('U15','Indro Leal','45346361911','M','1949-07-08','IndroLeal1949@gmail.co
 utente('U17','Dinarda Matias','29224473940','F','1974-10-09','DinardaMatias1974@outlook.com',915914158,'Largo do Rego Dume 4700-008 Braga','DevOps',[],'C4').
 utente('U18','Marcilene Goncalves','77919813012','M','1989-12-04','MarcileneGoncalves305@hotmail.com',924527670,'Rua do Carvalhal Dume 4700-005 Braga','Perito criminal',['Doenca coronaria'],'C1').
 utente('U19','Milena Vicente','39280061650','F','2004-06-04','MilenaVicente@gmail.com',969590100,'Travessa General Humberto Delgado Antas 4760-001 Vila Nova de Famalicao','Jovem Aprendiz',[],'C3').
-utente('U22','Heliodora Marques','08984526417','F','1963-02-10','HeliodoraMarques393@gmail.com',931974714,'Calcada de Gondomar 4705-001 Arentim','Radialista',[],'C2').
-utente('U23','Alexia Oliveira','71895649370','F','1978-05-23','AlexiaOliveira@gmail.com',919122593,'Rua da Igreja Velha 4705-001 Arentim','Embaixador',[],'C1').
-utente('U24','Milena Lima','44309762734','F','2006-12-31','MilenaLima145@hotmail.com',911200424,'Rua de Cabanas Dume 4700-004 Braga','Operador de telemarketing',[],'C1').
-utente('U25','Taisa Tavares','48015001236','F','2007-01-26','TaisaTavares@gmail.com',923954996,'Rua da Gloria Azurem 4800-004 Guimaraes','Mecanico de carro',[],'C3').
+
+staff('S0','Leonardina Anjos','12287559265','LeonardinaAnjos49@outlook.com','C2').
+staff('S1','Fernando Guerreiro','28567061757','FernandoGuerreiro@outlook.com','C2').
+staff('S2','Idelia Paiva','61816783608','IdeliaPaiva@hotmail.com','C1').
+staff('S3','Bianca Baptista','55616211371','BiancaBaptista@hotmail.com','C3').
+staff('S4','Conceicao Lopes','21645651780','ConceicaoLopes2@outlook.com','C2').
+staff('S5','Isandro Azevedo','41601362411','IsandroAzevedo107@gmail.com','C3').
+staff('S6','Almiro Soares','65199252818','AlmiroSoares1991@gmail.com','C2').
+staff('S7','Juliao Abreu','54101439180','JuliaoAbreu@gmail.com','C4').
+staff('S8','Dominico Goncalves','65543192708','DominicoGoncalves@hotmail.com','C3').
+staff('S9','Tatiana Faria','59173595792','TatianaFaria1958@outlook.com','C4').
+staff('S10','Juliano Campos','62975266565','JulianoCampos1991@hotmail.com','C2').
 
 centro('C1','Centro de saude de Braga','Rua Paulo Vi 4700-004 Braga','219229219','suporte@debraga.com').
 centro('C2','Centro de saude do Caranda','Rua de Goa Azurem 4800-004 Guimaraes','246512282','suporte@docaranda.com').
 centro('C3','Centro de saude do Cavado','Rua de Sao Paulo 4700-004 Braga','233330348','suporte@docavado.com').
 centro('C4','Centro de saude Dr.Paulo Novais','Rua Francisco Ribeiro de Castro Azurem 4800-004 Guimaraes','219282688','suporte@drpaulonovais.com').
 
-vacinacao('S11','U0','2021-06-05','Astrazeneca',1).
-vacinacao('S11','U0','2021-06-28','Astrazeneca',2).
 vacinacao('S10','U1','2021-06-08','Moderna',1).
 vacinacao('S10','U1','2021-06-30','Moderna',2).
 vacinacao('S15','U2','2021-07-30','Pfizer',1).
@@ -61,20 +67,10 @@ vacinacao('S4','U13','2021-05-11','Astrazeneca',1).
 vacinacao('S4','U13','2021-05-30','Astrazeneca',2).
 vacinacao('S5','U14','2021-06-30','Sputnik V',1).
 vacinacao('S5','U14','2021-07-23','Sputnik V',2).
-vacinacao('S17','U15','2021-04-11','Pfizer',1).
-vacinacao('S17','U15','2021-05-04','Pfizer',2).
-vacinacao('S9','U16','2021-07-12','Astrazeneca',1).
-vacinacao('S9','U16','2021-08-01','Astrazeneca',2).
-vacinacao('S13','U17','2021-07-27','Pfizer',1).
-vacinacao('S13','U17','2021-08-17','Pfizer',2).
-vacinacao('S12','U18','2021-07-23','Sputnik V',1).
-vacinacao('S12','U18','2021-08-15','Sputnik V',2).
+vacinacao('S3','U17','2021-07-27','Pfizer',1).
 vacinacao('S8','U19','2021-07-13','Pfizer',1).
 vacinacao('S8','U19','2021-07-30','Pfizer',2).
-vacinacao('S15','U20','2021-07-30','Sputnik V',1).
-vacinacao('S15','U20','2021-08-16','Sputnik V',2).
-vacinacao('S3','U21','2021-07-07','Pfizer',1).
-vacinacao('S3','U21','2021-07-27','Pfizer',2).
+vacinacao('S9','U20','2021-07-30','Sputnik V',1).
 vacinacao('S1','U22','2021-06-04','Sputnik V',1).
 vacinacao('S1','U22','2021-06-25','Sputnik V',2).
 vacinacao('S12','U23','2021-06-07','Pfizer',1).
@@ -85,8 +81,8 @@ vacinacao('S15','U25','2021-06-16','Moderna',1).
 vacinacao('S15','U25','2021-07-04','Moderna',2).
 
 % Conhecimento Perfeito Negativo (Negacao Forte)
-- utente('U16','Gino Campos','21515788464','M','2004-03-23','GinoCampos@gmail.com',920820869,'Lugar da Ordem 4700-008 Braga','Piloto de aviao',[],'C4').
-- utente('U21','Rodrigo Matos','90131842525','M','1996-06-04','RodrigoMatos@gmail.com',930344386,'Largo da Confeiteira Dume 4700-005 Braga','Cientista de dados',[],'C3').
+-utente('U16','Gino Campos','21515788464','M','2004-03-23','GinoCampos@gmail.com',920820869,'Lugar da Ordem 4700-008 Braga','Piloto de aviao',[],'C4').
+-utente('U21','Rodrigo Matos','90131842525','M','1996-06-04','RodrigoMatos@gmail.com',930344386,'Largo da Confeiteira Dume 4700-005 Braga','Cientista de dados',[],'C3').
 
 
 % ----- Conhecimento Imperfeito -----
