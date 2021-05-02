@@ -149,7 +149,7 @@ nulointerdito(email_impossivel).
 
 % STAFF    
 
-% Memebro do Staff com ID S5 cujo email e impossivel de saber
+% Membro do Staff com ID S5 cujo email e impossivel de saber
 staff('S5','Isandro Azevedo','41601362411','IsandroAzevedo107@gmail.com','C1').
 excecao(utente(Id,N,Nss,E,Cs)) :- utente(Id,N,Nss,email_impossivel,Cs).
 nulointerdito(email_impossivel).
