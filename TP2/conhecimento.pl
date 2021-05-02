@@ -17,7 +17,6 @@
 % #IdUtente, Nome, Nr Utente, Genero, Data Nascimento, Email, Telefone, Morada, Profissao, [Doencas Cronicas], #IdCentroSaude
 utente('U0','Romulo Mota','22337840788','M','1936-04-22','RomuloMota@outlook.com',962935227,'Rua Francisco Augusto Alvim 4700-004 Braga','Biologo',[],'C1').
 utente('U1','Goncalo Melo','65105592957','M','1931-09-18','GoncaloMelo1991@hotmail.com',938823950,'Travessa 1 de Maio 4700-008 Braga','Geriatra',[],'C2').
-utente('U2','Bianca Moura','84874182284','F','1958-10-30','BiancaMoura244@gmail.com',921591637,'Rua de Sao Rosendo ( Bispo de Dume ) Dume 4700-008 Braga','Personal trainer',[],'C2').
 utente('U5','Apolo Amaral','39446661300','M','1980-05-06','ApoloAmaral@hotmail.com',926158761,'Avenida da Liberdade 4760-001 Vila Nova de Famalicao','Reporter',['Insuficiencia hepatica'],'C2').
 utente('U7','Afonsino Torres','82144830813','M','1992-12-24','AfonsinoTorres@gmail.com',911799897,'Rua Jose Albino Costa e Silva Azurem 4800-004 Guimaraes','Profissional de Saude',[],'C2').
 utente('U8','Aldo Castro','89885876143','M','1980-04-16','AldoCastro388@hotmail.com',962967073,'Rua Doutor Jose Regio Dume 4700-004 Braga','Programador',[],'C2').
@@ -126,13 +125,20 @@ excecao(utente('U12','Biana Andrade','03294496759','F','1982-05-02','BianaAndrad
 excecao(utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hotmail.com',966727220,'Rua do Brasil 4775-001 Cambeses','Eletricista',[],'C2')).
 excecao(utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hotmail.com',916779510,'Rua do Brasil 4775-001 Cambeses','Eletricista',[],'C2')).
 
+% Utente com ID U2 com dois emails possiveis
+excecao(utente('U2','Bianca Moura','84874182284','F','1958-10-30','BiancaMoura244@gmail.com',921591637,'Rua de Sao Rosendo ( Bispo de Dume ) Dume 4700-008 Braga','Personal trainer',[],'C2')).
+excecao(utente('U2','Bianca Moura','84874182284','F','1958-10-30','BiancaMoura299@gmail.com',921591637,'Rua de Sao Rosendo ( Bispo de Dume ) Dume 4700-008 Braga','Personal trainer',[],'C2')).
+
 % Utente com ID U3 com genero desconhecido (pode ser masculino ou feminino)
 excecao(utente('U3','Vilar Nunes','05052988794','M','1976-02-17','VilarNunes1976@gmail.com',968452327,'Rua de Remelhe Dume 4700-008 Braga','Vigilante',[],'C1')).
 excecao(utente('U3','Vilar Nunes','05052988794','F','1976-02-17','VilarNunes1976@gmail.com',968452327,'Rua de Remelhe Dume 4700-008 Braga','Vigilante',[],'C1')).
 
 % STAFF
+excecao(staff('S6','Almiro Soares','65199252818','AlmiroSoares1991@gmail.com','C2')).
+excecao(staff('S6','Almiro Soares','65199252818','AlmiroSoares@gmail.com','C2')).
 
-% Todo !!
+
+staff('S6','Almiro Soares','65199252818','AlmiroSoares1991@gmail.com','C2').
 
 % - Conhecimento Imperfeito Interdito -
 
