@@ -2,12 +2,19 @@
 % Conhecimento
 % ---------------------------------
 
+:- set_prolog_flag(discontiguous_warnings,off).
+:- set_prolog_flag(single_var_warnings,off).
+:- set_prolog_flag(unknown,fail).
+
+:- op(900,xfy,'::').
+:- op(1100,xfy,'??').
+
 % ----- Conhecimento Perfeito -----
 
 % - Conhecimento Perfeito Positivo -
 
 % utente
-% #IdUtente, Nr Seguranca Social, Nome, Genero, Data Nascimento, Email, Telefone, Morada, Profissao, [Doencas Cronicas], #IdCentroSaude
+% #IdUtente, Nome, Nr Seguranca Social, Genero, Data Nascimento, Email, Telefone, Morada, Profissao, [Doencas Cronicas], #IdCentroSaude
 utente('U0','Romulo Mota','22337840788','M','1936-04-22','RomuloMota@outlook.com',962935227,'Rua Francisco Augusto Alvim 4700-004 Braga','Biologo',[],'C1').
 utente('U1','Goncalo Melo','65105592957','M','1931-09-18','GoncaloMelo1991@hotmail.com',938823950,'Travessa 1 de Maio 4700-008 Braga','Geriatra',[],'C2').
 utente('U2','Bianca Moura','84874182284','F','1958-10-30','BiancaMoura244@gmail.com',921591637,'Rua de Sao Rosendo ( Bispo de Dume ) Dume 4700-008 Braga','Personal trainer',[],'C2').
@@ -91,7 +98,7 @@ fase('F3','2021-09-01','9999-12-31').
 
 % - Conhecimento Imperfeito Incerto -
 utente('U13','Adelia Amaral','41527730111','F','1944-09-26',email_desconhecido,910419566,'Rua Doutor Joao Afonso Almeida Azurem 4800-004 Guimaraes','Bioquimico',[],'C2').
-excecao(utente(Id, N, G, DN, E, T, M, P, DC, IdCentro)) :- utente(Id, N, G, DN, email_desconhecido, T, M, P, DC, IdCentro)
+excecao(utente(Id,N,NSS,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,NSS,G,DN,email_desconhecido,T,M,P,DC,IdCentro).
 
 % - Conhecimento Imperfeito Impreciso -
 excecao(utente('U12','Biana Andrade','03294496759','F','1982-05-02','BianaAndrade@hotmail.com',932477556,'Rua de Sao Martinho Dume 4700-008 Braga','Padeiro',[],'C1')).
@@ -101,10 +108,8 @@ excecao(utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hot
 excecao(utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hotmail.com',916779510,'Rua do Brasil 4775-001 Cambeses','Eletricista',[],'C2')).
 
 % - Conhecimento Imperfeito Interdito -
-utente('U20','Delmiro Lopes','36606379205','M','1956-05-23',email_desconhecido,927819307,'Rua Monte de Baixo 4705-001 Arentim','Cerimonialista',[],'C1').
+utente('U20','Delmiro Lopes','36606379205','M','1956-05-23',email_impossivel,927819307,'Rua Monte de Baixo 4705-001 Arentim','Cerimonialista',[],'C1').
 excecao(utente(Id,N,NSS,G,Dn,E,T,M,P,D,Cs)) :- utente(Id,N,NSS,G,Dn,email_impossivel,T,M,P,D,Cs).
 nulointerdito(email_impossivel).
-+utente(Id,N,NSS,G,Dn,E,T,M,P,D,Cs) ::  (solucoes(Id,N,NSS,G,Dn,E,T,M,P,D,Cs), utente('U20','Delmiro Lopes','36606379205','M','1956-05-23',email_impossivel,927819307,'Rua Monte de Baixo 4705-001 Arentim','Cerimonialista',[],'C1'), nao(nulointerdito(email_impossivel))), R), 
-                                        comprimento(R,0)).
-
-
++utente(Id,N,NSS,G,Dn,E,T,M,P,D,Cs) :: (solucoes((Id,N,NSS,G,Dn,E,T,M,P,D,Cs), (utente('U20','Delmiro Lopes','36606379205','M','1956-05-23',email_impossivel,927819307,'Rua Monte de Baixo 4705-001 Arentim','Cerimonialista',[],'C1'), nao(nulointerdito(email_impossivel))), R),
+                                        length(R,0)).
