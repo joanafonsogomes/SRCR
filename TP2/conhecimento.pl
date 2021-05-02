@@ -94,26 +94,48 @@ fase('F3','2021-09-01','9999-12-31').
 % ----- Conhecimento Imperfeito -----
 
 % - Conhecimento Imperfeito Incerto -
+
+% UTENTE 
+
+% Utente com ID U13 do qual nao se sabe o email 
 utente('U13','Adelia Amaral','41527730111','F','1944-09-26',email_desconhecido,910419566,'Rua Doutor Joao Afonso Almeida Azurem 4800-004 Guimaraes','Bioquimico',[],'C2').
 excecao(utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,Nu,G,DN,email_desconhecido,T,M,P,DC,IdCentro).
 
+% Utente com ID U4 do qual nao se sabe o telefone
 utente('U4','Cinderela Nogueira','50775228700','F','1950-12-08','CinderelaNogueira@outlook.com',tlf_desconhecido,'Rua Paulo Vi 4700-004 Braga','Auxiliar de limpeza',[],'C2').
 excecao(utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,Nu,G,DN,E,tlf_desconhecido,M,P,DC,IdCentro).
 
+% Utente com ID U10 do qual nao se sabe a morada
 utente('U10','Jansenio Figueiredo','02069412938','M','1983-02-02','JansenioFigueiredo218@outlook.com',914112112,morada_desconhecida,'Comissario de bordo',[],'C2').
 excecao(utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,Nu,G,DN,E,T,morada_desconhecida,P,DC,IdCentro).
 
+% STAFF
+
+% Staff com ID S9 do qual nao se sabe a morada
 staff('S9','Tatiana Faria','59173595792',email_desconhecido,'C4').
 excecao(staff(Id,IdC,N,E)) :- staff(Id,IdC,N,email_desconhecido).
 
 % - Conhecimento Imperfeito Impreciso -
+
+% UTENTE
+
+% Utente com ID U12 com duas moradas possiveis
 excecao(utente('U12','Biana Andrade','03294496759','F','1982-05-02','BianaAndrade@hotmail.com',932477556,'Rua de Sao Martinho Dume 4700-008 Braga','Padeiro',[],'C1')).
 excecao(utente('U12','Biana Andrade','03294496759','F','1982-05-02','BianaAndrade@hotmail.com',932477556,'Rua do Monte 4700-009 Braga','Padeiro',[],'C1')).
 
+% Utente com ID U6 com dois telefones possiveis
 excecao(utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hotmail.com',966727220,'Rua do Brasil 4775-001 Cambeses','Eletricista',[],'C2')).
 excecao(utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hotmail.com',916779510,'Rua do Brasil 4775-001 Cambeses','Eletricista',[],'C2')).
 
+% STAFF
+
+% Todo !!
+
 % - Conhecimento Imperfeito Interdito -
+
+% UTENTE
+
+% Utente com ID U20 cujo email e impossivel de saber
 utente('U20','Delmiro Lopes','36606379205','M','1956-05-23',email_impossivel,927819307,'Rua Monte de Baixo 4705-001 Arentim','Cerimonialista',[],'C1').
 excecao(utente(Id,N,Nu,G,Dn,E,T,M,P,D,Cs)) :- utente(Id,N,Nu,G,Dn,email_impossivel,T,M,P,D,Cs).
 nulointerdito(email_impossivel).
