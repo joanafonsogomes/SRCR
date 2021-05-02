@@ -17,7 +17,7 @@ not( Questao ).
 +(-T) :: not(T).
 
 %Garante que não há exceções repetidas (mudar nome caso não chamemos excecao)
-+(excecao(T)) :: solucoes(T,excecao(T),R),                
++(excecao(T)) :: (solucoes(T,excecao(T),R),                
                  length(R,1)).
 
 %INVARIANTES ESPECIFICOS%
