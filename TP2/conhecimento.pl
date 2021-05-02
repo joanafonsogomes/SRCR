@@ -29,13 +29,11 @@ utente('U18','Marcilene Goncalves','77919813012','M','1989-12-04','MarcileneGonc
 utente('U19','Milena Vicente','39280061650','F','2004-06-04','MilenaVicente@gmail.com',969590100,'Travessa General Humberto Delgado 4760-001 Vila Nova de Famalicao','Jovem Aprendiz',[],'C2').
 
 % staff
-% #IdStaff, IdCentroSaude, Nome, Email
+% #IdStaff, Nome, NSS, Email, IdCentroSaude
 staff('S0','Leonardina Anjos','12287559265','LeonardinaAnjos49@outlook.com','C2').
 staff('S1','Fernando Guerreiro','28567061757','FernandoGuerreiro@outlook.com','C2').
 staff('S2','Idelia Paiva','61816783608','IdeliaPaiva@hotmail.com','C1').
 staff('S3','Bianca Baptista','55616211371','BiancaBaptista@hotmail.com','C2').
-staff('S5','Isandro Azevedo','41601362411','IsandroAzevedo107@gmail.com','C1').
-staff('S6','Almiro Soares','65199252818','AlmiroSoares1991@gmail.com','C2').
 staff('S7','Juliao Abreu','54101439180','JuliaoAbreu@gmail.com','C4').
 staff('S10','Juliano Campos','62975266565','JulianoCampos1991@hotmail.com','C2').
 
@@ -109,7 +107,7 @@ excecao(utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,Nu,G,DN,E,T,mor
 
 % STAFF
 
-% Staff com ID S9 do qual nao se sabe a morada
+% Membro do staff com ID S9 do qual nao se sabe a morada
 staff('S9','Tatiana Faria','59173595792',email_desconhecido,'C4').
 excecao(staff(Id,IdC,N,E)) :- staff(Id,IdC,N,email_desconhecido).
 
@@ -134,11 +132,9 @@ excecao(utente('U3','Vilar Nunes','05052988794','M','1976-02-17','VilarNunes1976
 excecao(utente('U3','Vilar Nunes','05052988794','F','1976-02-17','VilarNunes1976@gmail.com',968452327,'Rua de Remelhe Dume 4700-008 Braga','Vigilante',[],'C1')).
 
 % STAFF
+% Membro do staff com ID S6 com dois emails possiveis
 excecao(staff('S6','Almiro Soares','65199252818','AlmiroSoares1991@gmail.com','C2')).
 excecao(staff('S6','Almiro Soares','65199252818','AlmiroSoares@gmail.com','C2')).
-
-
-staff('S6','Almiro Soares','65199252818','AlmiroSoares1991@gmail.com','C2').
 
 % - Conhecimento Imperfeito Interdito -
 
@@ -149,4 +145,13 @@ utente('U20','Delmiro Lopes','36606379205','M','1956-05-23',email_impossivel,927
 excecao(utente(Id,N,Nu,G,Dn,E,T,M,P,D,Cs)) :- utente(Id,N,Nu,G,Dn,email_impossivel,T,M,P,D,Cs).
 nulointerdito(email_impossivel).
 +utente(Id,N,Nu,G,Dn,E,T,M,P,D,Cs) :: (solucoes((Id,N,Nu,G,Dn,E,T,M,P,D,Cs), (utente('U20','Delmiro Lopes','36606379205','M','1956-05-23',email_impossivel,927819307,'Rua Monte de Baixo 4705-001 Arentim','Cerimonialista',[],'C1'), nao(nulointerdito(email_impossivel))), R),
+                                        length(R,0)).
+
+% STAFF    
+
+% Memebro do Staff com ID S5 cujo email e impossivel de saber
+staff('S5','Isandro Azevedo','41601362411','IsandroAzevedo107@gmail.com','C1').
+excecao(utente(Id,N,Nss,E,Cs)) :- utente(Id,N,Nss,email_impossivel,Cs).
+nulointerdito(email_impossivel).
++staff('S5','Isandro Azevedo','41601362411','IsandroAzevedo107@gmail.com','C1') :: (solucoes((Id,N,Nss,E,Cs), (staff('S5','Isandro Azevedo','41601362411','IsandroAzevedo107@gmail.com','C1'), nao(nulointerdito(email_impossivel))), R),
                                         length(R,0)).
