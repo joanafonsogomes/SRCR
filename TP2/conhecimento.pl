@@ -19,12 +19,10 @@ utente('U0','Romulo Mota','22337840788','M','1936-04-22','RomuloMota@outlook.com
 utente('U1','Goncalo Melo','65105592957','M','1931-09-18','GoncaloMelo1991@hotmail.com',938823950,'Travessa 1 de Maio 4700-008 Braga','Geriatra',[],'C2').
 utente('U2','Bianca Moura','84874182284','F','1958-10-30','BiancaMoura244@gmail.com',921591637,'Rua de Sao Rosendo ( Bispo de Dume ) Dume 4700-008 Braga','Personal trainer',[],'C2').
 utente('U3','Vilar Nunes','05052988794','F','1976-02-17','VilarNunes1976@gmail.com',968452327,'Rua de Remelhe Dume 4700-008 Braga','Vigilante',[],'C1').
-utente('U4','Cinderela Nogueira','50775228700','F','1950-12-08','CinderelaNogueira@outlook.com',924781129,'Rua Paulo Vi 4700-004 Braga','Auxiliar de limpeza',[],'C2').
 utente('U5','Apolo Amaral','39446661300','M','1980-05-06','ApoloAmaral@hotmail.com',926158761,'Avenida da Liberdade 4760-001 Vila Nova de Famalicao','Reporter',['Insuficiencia hepatica'],'C2').
 utente('U7','Afonsino Torres','82144830813','M','1992-12-24','AfonsinoTorres@gmail.com',911799897,'Rua Jose Albino Costa e Silva Azurem 4800-004 Guimaraes','Profissional de Saude',[],'C2').
 utente('U8','Aldo Castro','89885876143','M','1980-04-16','AldoCastro388@hotmail.com',962967073,'Rua Doutor Jose Regio Dume 4700-004 Braga','Programador',[],'C2').
 utente('U9','Tiburcio Guerreiro','08519097436','M','1978-03-16','TiburcioGuerreiro342@outlook.com',936810784,'Rua do Cortinhal 4775-001 Cambeses','Militar',['Obesidade'],'C2').
-utente('U10','Jansenio Figueiredo','02069412938','M','1983-02-02','JansenioFigueiredo218@outlook.com',914112112,'Avenida do Cavado Dume 4700-008 Braga','Comissario de bordo',[],'C2').
 utente('U11','Florisbela Carvalho','38557360298','F','1969-02-01','FlorisbelaCarvalho1969@gmail.com',910843987,'Rua Dona Teresa Aldao 4800-004 Guimaraes','Tecnico em edificacoes',[],'C4').
 utente('U14','Tatiano Carvalho','39247286162','M','1960-12-30','TatianoCarvalho@outlook.com',921622230,'Praceta do Viajante Azurem 4800-004 Guimaraes','Biologo',[],'C2').
 utente('U15','Indro Leal','45346361911','M','1949-07-08','IndroLeal1949@gmail.com',929206797,'Rua de Sao Lourenco da Ordem 4700-004 Braga','Webmaster',[],'C1').
@@ -99,6 +97,12 @@ fase('F3','2021-09-01','9999-12-31').
 % - Conhecimento Imperfeito Incerto -
 utente('U13','Adelia Amaral','41527730111','F','1944-09-26',email_desconhecido,910419566,'Rua Doutor Joao Afonso Almeida Azurem 4800-004 Guimaraes','Bioquimico',[],'C2').
 excecao(utente(Id,N,NSS,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,NSS,G,DN,email_desconhecido,T,M,P,DC,IdCentro).
+
+utente('U4','Cinderela Nogueira','50775228700','F','1950-12-08','CinderelaNogueira@outlook.com',tlf_desconhecido,'Rua Paulo Vi 4700-004 Braga','Auxiliar de limpeza',[],'C2').
+excecao(utente(Id,N,NSS,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,NSS,G,DN,E,tlf_desconhecido,M,P,DC,IdCentro).
+
+utente('U10','Jansenio Figueiredo','02069412938','M','1983-02-02','JansenioFigueiredo218@outlook.com',914112112,morada_desconhecida,'Comissario de bordo',[],'C2').
+excecao(utente(Id,N,NSS,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,NSS,G,DN,E,T,morada_desconhecida,P,DC,IdCentro).
 
 % - Conhecimento Imperfeito Impreciso -
 excecao(utente('U12','Biana Andrade','03294496759','F','1982-05-02','BianaAndrade@hotmail.com',932477556,'Rua de Sao Martinho Dume 4700-008 Braga','Padeiro',[],'C1')).
