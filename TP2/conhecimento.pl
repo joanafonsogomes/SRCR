@@ -9,6 +9,16 @@
 :- op(900,xfy,'::').
 :- op(1100,xfy,'??').
 
+:- dynamic '-'/1.
+:- dynamic utente/11.
+:- dynamic staff/5.
+:- dynamic centro/5.
+:- dynamic vacinacao/5.
+:- dynamic fase/3.
+
+:- dynamic excecao/1.
+:- dynamic nulointerdito/1.
+
 % ----- Conhecimento Perfeito -----
 
 % - Conhecimento Perfeito Positivo -
