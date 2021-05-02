@@ -6,7 +6,7 @@
 
 evolucaoC(T) :- solucoes(I, +T::I, L),
                 insercao(T),
-                testaPredicados(L)
+                testaPredicados(L).
 
 solucoes(T,Q,S) :- findall(T,Q,S).
 
@@ -22,7 +22,7 @@ testaPredicados([I|L]) :- I, testaPredicados(L).
 
 evolucaoC(T,neg) :- solucoes(I, +(-T)::I, L),
                 insercao(-T),
-                testaPredicados(L)
+                testaPredicados(L).
 
 % ----- Conhecimento Imperfeito -----
 
