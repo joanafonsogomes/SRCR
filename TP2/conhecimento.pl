@@ -14,7 +14,7 @@
 % - Conhecimento Perfeito Positivo -
 
 % utente
-% #IdUtente, Nome, Nr Seguranca Social, Genero, Data Nascimento, Email, Telefone, Morada, Profissao, [Doencas Cronicas], #IdCentroSaude
+% #IdUtente, Nome, Nr Utente, Genero, Data Nascimento, Email, Telefone, Morada, Profissao, [Doencas Cronicas], #IdCentroSaude
 utente('U0','Romulo Mota','22337840788','M','1936-04-22','RomuloMota@outlook.com',962935227,'Rua Francisco Augusto Alvim 4700-004 Braga','Biologo',[],'C1').
 utente('U1','Goncalo Melo','65105592957','M','1931-09-18','GoncaloMelo1991@hotmail.com',938823950,'Travessa 1 de Maio 4700-008 Braga','Geriatra',[],'C2').
 utente('U2','Bianca Moura','84874182284','F','1958-10-30','BiancaMoura244@gmail.com',921591637,'Rua de Sao Rosendo ( Bispo de Dume ) Dume 4700-008 Braga','Personal trainer',[],'C2').
@@ -95,13 +95,13 @@ fase('F3','2021-09-01','9999-12-31').
 
 % - Conhecimento Imperfeito Incerto -
 utente('U13','Adelia Amaral','41527730111','F','1944-09-26',email_desconhecido,910419566,'Rua Doutor Joao Afonso Almeida Azurem 4800-004 Guimaraes','Bioquimico',[],'C2').
-excecao(utente(Id,N,NSS,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,NSS,G,DN,email_desconhecido,T,M,P,DC,IdCentro).
+excecao(utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,Nu,G,DN,email_desconhecido,T,M,P,DC,IdCentro).
 
 utente('U4','Cinderela Nogueira','50775228700','F','1950-12-08','CinderelaNogueira@outlook.com',tlf_desconhecido,'Rua Paulo Vi 4700-004 Braga','Auxiliar de limpeza',[],'C2').
-excecao(utente(Id,N,NSS,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,NSS,G,DN,E,tlf_desconhecido,M,P,DC,IdCentro).
+excecao(utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,Nu,G,DN,E,tlf_desconhecido,M,P,DC,IdCentro).
 
 utente('U10','Jansenio Figueiredo','02069412938','M','1983-02-02','JansenioFigueiredo218@outlook.com',914112112,morada_desconhecida,'Comissario de bordo',[],'C2').
-excecao(utente(Id,N,NSS,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,NSS,G,DN,E,T,morada_desconhecida,P,DC,IdCentro).
+excecao(utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,Nu,G,DN,E,T,morada_desconhecida,P,DC,IdCentro).
 
 staff('S9','Tatiana Faria','59173595792',email_desconhecido,'C4').
 excecao(staff(Id,IdC,N,E)) :- staff(Id,IdC,N,email_desconhecido).
@@ -115,7 +115,7 @@ excecao(utente('U6','Zelia Abreu','94334540382','F','1995-06-19','ZeliaAbreu@hot
 
 % - Conhecimento Imperfeito Interdito -
 utente('U20','Delmiro Lopes','36606379205','M','1956-05-23',email_impossivel,927819307,'Rua Monte de Baixo 4705-001 Arentim','Cerimonialista',[],'C1').
-excecao(utente(Id,N,NSS,G,Dn,E,T,M,P,D,Cs)) :- utente(Id,N,NSS,G,Dn,email_impossivel,T,M,P,D,Cs).
+excecao(utente(Id,N,Nu,G,Dn,E,T,M,P,D,Cs)) :- utente(Id,N,Nu,G,Dn,email_impossivel,T,M,P,D,Cs).
 nulointerdito(email_impossivel).
-+utente(Id,N,NSS,G,Dn,E,T,M,P,D,Cs) :: (solucoes((Id,N,NSS,G,Dn,E,T,M,P,D,Cs), (utente('U20','Delmiro Lopes','36606379205','M','1956-05-23',email_impossivel,927819307,'Rua Monte de Baixo 4705-001 Arentim','Cerimonialista',[],'C1'), nao(nulointerdito(email_impossivel))), R),
++utente(Id,N,Nu,G,Dn,E,T,M,P,D,Cs) :: (solucoes((Id,N,Nu,G,Dn,E,T,M,P,D,Cs), (utente('U20','Delmiro Lopes','36606379205','M','1956-05-23',email_impossivel,927819307,'Rua Monte de Baixo 4705-001 Arentim','Cerimonialista',[],'C1'), nao(nulointerdito(email_impossivel))), R),
                                         length(R,0)).
