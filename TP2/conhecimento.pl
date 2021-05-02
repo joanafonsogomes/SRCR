@@ -39,7 +39,6 @@ staff('S3','Bianca Baptista','55616211371','BiancaBaptista@hotmail.com','C2').
 staff('S5','Isandro Azevedo','41601362411','IsandroAzevedo107@gmail.com','C1').
 staff('S6','Almiro Soares','65199252818','AlmiroSoares1991@gmail.com','C2').
 staff('S7','Juliao Abreu','54101439180','JuliaoAbreu@gmail.com','C4').
-staff('S9','Tatiana Faria','59173595792','TatianaFaria1958@outlook.com','C4').
 staff('S10','Juliano Campos','62975266565','JulianoCampos1991@hotmail.com','C2').
 
 % centro
@@ -103,6 +102,9 @@ excecao(utente(Id,N,NSS,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,NSS,G,DN,E,tlf
 
 utente('U10','Jansenio Figueiredo','02069412938','M','1983-02-02','JansenioFigueiredo218@outlook.com',914112112,morada_desconhecida,'Comissario de bordo',[],'C2').
 excecao(utente(Id,N,NSS,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,NSS,G,DN,E,T,morada_desconhecida,P,DC,IdCentro).
+
+staff('S9','Tatiana Faria','59173595792',email_desconhecido,'C4').
+excecao(staff(Id,IdC,N,E)) :- staff(Id,IdC,N,email_desconhecido).
 
 % - Conhecimento Imperfeito Impreciso -
 excecao(utente('U12','Biana Andrade','03294496759','F','1982-05-02','BianaAndrade@hotmail.com',932477556,'Rua de Sao Martinho Dume 4700-008 Braga','Padeiro',[],'C1')).
