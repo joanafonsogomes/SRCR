@@ -79,3 +79,18 @@ comprimento([_|T],R) :- comprimento(T,N), R is N+1.
 % Extensão do metapredicado nao
 nao(Questao) :- Questao, !, fail.
 nao(_).
+
+% Remoção de conhecimento
+remocao(Q) :- retract(Q).
+remocao(Q) :- assert(Q), !, fail.
+
+% Procura todas as soluções de uma questão
+solucoes(T,Q,S) :- findall(T,Q,S).
+
+% Inserção de conhecimento
+insercao(Q) :- assert(Q).
+insercao(Q) :- retract(Q), !, fail.
+
+% Testa todos os predicados numa lista
+testaPredicados([]).
+testaPredicados([I|L]) :- I, testaPredicados(L).

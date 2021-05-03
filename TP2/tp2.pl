@@ -34,6 +34,8 @@
 :- discontiguous (::)/2.
 :- discontiguous evolucaoC/2.
 :- discontiguous evolucaoC/4.
+:- discontiguous involucaoC/2.
+:- discontiguous involucaoC/4.
 
 % ------- Carregar predicados -------
 
@@ -88,7 +90,7 @@ conjuncao(desconhecido, desconhecido, desconhecido).
 
 % Extensao do predicado siConjuncao que dado uma lista de questões
 % obtém como resposta a conjunção das várias respostas das questões.  
-siConjuncao([],R).
+siConjuncao([],_).
 siConjuncao([Q],R) :- si(Q, R).
 siConjuncao([Q|Qs], R) :- si(Q, R1), 
                           siConjuncao(Qs,R2),
@@ -104,7 +106,7 @@ disjuncao(desconhecido, desconhecido, desconhecido).
 
 % Extensao do predicado siDisjuncao que dado uma lista de questões
 % obtém como resposta a disjunção das várias respostas das questões.  
-siDisjuncao([],R).
+siDisjuncao([],_).
 siDisjuncao([Q],R) :- si(Q, R).
 siDisjuncao([Q|Qs], R) :- si(Q, R1), 
                           siDisjuncao(Qs,R2),
