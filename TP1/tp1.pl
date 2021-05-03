@@ -50,11 +50,11 @@
 +utente(Id,N,NSS,G,DN,E,TLF,M,P,D,IDC) :: (solucoes((Id,NSS,E,TLF), utente(_,_,NSS,_,_,E,TLF,_,_,_,_), R), 
                                             length(R,1)).
 
-%Garantir  que  centros  com  IDs  diferentes  tˆem diferente  informacao 
+%Garantir  que  centros  com  IDs  diferentes  têm diferente  informacao 
 +centro(Id,N,_,T,E) :: (solucoes((Id,N,T,E), centro(_,N,_,T,E), R), 
                                             length(R,1)).
 
-%Garantir  que  centros  com  IDs  diferentes  tˆem diferente  informacao 
+%Garantir  que  staff  com  IDs  diferentes  têm diferente  informacao 
 +staff(Id,_,SS,T,C) :: (solucoes((SS,T,C), staff(_,_,SS,T,C), R), 
                                             length(R,1)).
 

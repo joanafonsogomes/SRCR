@@ -5,7 +5,7 @@
 % FUNCOES AUXILIARES
 % ---------------------------------
 
-% Calcular a idade
+% Precidado para cacular a idade
 calcularIdade(IdU,R) :- utente(IdU,_,_,_,DNasc,_,_,_,_,_,_),
                         split_string(DNasc, "-", "", Sp),
                         nth0(0,Sp,Ano), nth0(1,Sp,Mes), nth0(2,Sp,Dia),
@@ -27,7 +27,7 @@ get_date_time_value(Key, Value) :-
     stamp_date_time(Stamp, DateTime, local),
     date_time_value(Key, DateTime, Value).
 
-% retorna uma lista de todos os ids dos utentes
+% Predicar para obter a lista de todos os Ids dos utentes
 listaIdUtentes(L) :- findall(X,utente(X,_,_,_,_,_,_,_,_,_,_),L).
 
 % Intersecao entre duas listas
@@ -41,7 +41,7 @@ parseData(K,A,M,D) :- split_string(K, "-", "", Sp),
                         atom_number(Ano, Year), atom_number(Mes, Month), atom_number(Dia, Day),
                         (A is Year, M is Month, D is Day).
 
-% Ve se data 1 é antes de data 2 (1 = True , 0 = False)
+% Verifica se data 1 é antes de data 2 (1 = True , 0 = False)
 comparaDatas(A1,_,_,A2,_,_,0):- A1 > A2.
 comparaDatas(A1,M1,_,A2,M2,_,0):- M1 > M2, A1 >= A2.
 comparaDatas(A1,M1,D1,A2,M2,D2,0):- D1 > D2, A1 >= A2, M1 >= M2.
@@ -68,16 +68,14 @@ checkFase(D,R):- fase1DataI(DI1), comparaDatasStr(D,DI1,A1),
                 (A5==0,A6==1) -> R is 3 ;
                 R is 0).
 
-%valida o género
+% Valida o género
 generoValido('M').
 generoValido('F').
 
-%Comprimento de uma lista
+% Comprimento de uma lista
 comprimento([],0).
 comprimento([_|T],R) :- comprimento(T,N), R is N+1.
 
-
-
-
-
-
+% Extensão do metapredicado nao
+nao(Questao) :- Questao, !, fail.
+nao(Questao).
