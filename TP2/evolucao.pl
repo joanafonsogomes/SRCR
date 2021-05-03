@@ -42,21 +42,30 @@ evolucaoC(T,conheNeg) :- solucoes(I, +(-T)::I, L),
 
 % Evolucao do Conhecimento Imperfeito Incerto
 
+% UTENTE
+
+% Inserir Conhecimento Perfeito Incerto para utente com email desconhecido
 evolucaoC(utente(Id,N,Nu,G,DN,email_desconhecido,T,M,P,DC,IdCentro), utente, conheImpInc, email) :-
-    evolucao(utente(Id,N,Nu,G,DN,email_desconhecido,T,M,P,DC,IdCentro)),
+    evolucaoC(utente(Id,N,Nu,G,DN,email_desconhecido,T,M,P,DC,IdCentro)),
     insercao((excecao(utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,Nu,G,DN,email_desconhecido,T,M,P,DC,IdCentro))).
 
-% Utente com ID U13 do qual nao se sabe o email 
-utente('U13','Adelia Amaral','41527730111','F','1944-09-26',email_desconhecido,910419566,'Rua Doutor Joao Afonso Almeida Azurem 4800-004 Guimaraes','Bioquimico',[],'C2').
-excecao(utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,Nu,G,DN,email_desconhecido,T,M,P,DC,IdCentro).
+% Inserir Conhecimento Perfeito Incerto para utente com telefone desconhecido
+evolucaoC(utente(Id,N,Nu,G,DN,E,tlf_desconhecido,M,P,DC,IdCentro), utente, conheImpInc, tlf) :-
+    evolucaoC(utente(Id,N,Nu,G,DN,E,tlf_desconhecido,M,P,DC,IdCentro)),
+    insercao((excecao(utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,Nu,G,DN,E,tlf_desconhecido,M,P,DC,IdCentro))).
 
-% Utente com ID U4 do qual nao se sabe o telefone
-utente('U4','Cinderela Nogueira','50775228700','F','1950-12-08','CinderelaNogueira@outlook.com',tlf_desconhecido,'Rua Paulo Vi 4700-004 Braga','Auxiliar de limpeza',[],'C2').
-excecao(utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,Nu,G,DN,E,tlf_desconhecido,M,P,DC,IdCentro).
+% Inserir Conhecimento Perfeito Incerto para utente com morada desconhecida
+evolucaoC(utente(Id,N,Nu,G,DN,E,T,morada_desconhecida,P,DC,IdCentro), utente, conheImpInc, morada) :-
+    evolucaoC(utente(Id,N,Nu,G,DN,E,T,morada_desconhecida,P,DC,IdCentro)),
+    insercao((excecao(utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,Nu,G,DN,E,T,morada_desconhecida,P,DC,IdCentro))).
 
-% Utente com ID U10 do qual nao se sabe a morada
-utente('U10','Jansenio Figueiredo','02069412938','M','1983-02-02','JansenioFigueiredo218@outlook.com',914112112,morada_desconhecida,'Comissario de bordo',[],'C2').
-excecao(utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro)) :- utente(Id,N,Nu,G,DN,E,T,morada_desconhecida,P,DC,IdCentro).
+% STAFF
+
+% Inserir Conhecimento Perfeito Incerto para membro do staff com email desconhecido
+evolucaoC(staff(Id,IdC,N,email_desconhecido), staff, conheImpInc, email) :-
+    evolucaoC(staff(Id,IdC,N,email_desconhecido)),
+    insercao((excecao(staff(Id,IdC,N,E)) :- staff(Id,IdC,N,email_desconhecido))).
+
 
 
 
