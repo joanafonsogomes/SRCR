@@ -88,7 +88,8 @@ conjuncao(desconhecido, desconhecido, desconhecido).
 
 % Extensao do predicado siConjuncao que dado uma lista de questões
 % obtém como resposta a conjunção das várias respostas das questões.  
-siConjuncao([],verdadeiro).
+siConjuncao([],R).
+siConjuncao([Q],R) :- si(Q, R).
 siConjuncao([Q|Qs], R) :- si(Q, R1), 
                           siConjuncao(Qs,R2),
                           conjuncao(R1,R2,R).
@@ -103,7 +104,8 @@ disjuncao(desconhecido, desconhecido, desconhecido).
 
 % Extensao do predicado siDisjuncao que dado uma lista de questões
 % obtém como resposta a disjunção das várias respostas das questões.  
-siDisjuncao([],verdadeiro).
+siDisjuncao([],R).
+siDisjuncao([Q],R) :- si(Q, R).
 siDisjuncao([Q|Qs], R) :- si(Q, R1), 
                           siDisjuncao(Qs,R2),
                           disjuncao(R1,R2,R).
