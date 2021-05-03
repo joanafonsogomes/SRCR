@@ -63,17 +63,24 @@
 +(-staff(Id,_,_,_)) :: (solucoes(Id, -staff(Id,_,_,_), R),
                             comprimento(R, 1)).
 
-%Garantir que  funcionarios  com  IDs  diferentes  tˆem diferente  informacao 
+% Garantir que  funcionarios  com  IDs  diferentes  têm diferente  informacao 
 +staff(_,_,SS,T,C) :: (solucoes((SS,T,C), staff(_,_,SS,T,C), R), 
                             comprimento(R,1)).
 +(-staff(_,_,SS,T,C)) :: (solucoes((SS,T,C), -staff(_,_,SS,T,C), R), 
                             comprimento(R,1)).
 
+% Garantir que o staff trabalha num centro existente:
++staff(_,_,_,C) :: centro(C,_,_,_,_).
++(-staff(_,_,_,C)) :: centro(C,_,_,_,_).
 
 % --- Centro
 
-% Garantir que não posso eliminar um centro se tiver vacinacoes marcadas
+% Garantir que não posso eliminar um centro se tiver staff a trabalhar
 -centro(Id,_,_,_,_) :: (findall(sId,staff(sId,_,_,_,Id),R),
+                     comprimento(R, 0)).
+
+% Garantir que não posso eliminar um centro se utentes marcados
+-centro(Id,_,_,_,_) :: (findall(UId,utente(UId,_,_,_,_,_,_,_,_,_,Id),R),
                      comprimento(R, 0)).
 
 % Garantir que o ID de cada centro é único:
@@ -94,22 +101,27 @@
 % Garantir que não há vacinações repetidas
 +vacinacao(Id,B,C,D,E) :: (solucoes(Id, vacinacao(Id,B,C,D,E), R),
                      comprimento(R, 1)).
++(-vacinacao(Id,B,C,D,E)) :: (solucoes(Id, -vacinacao(Id,B,C,D,E), R),
+                     comprimento(R, 1)).
 
 % Adicionar uma vacinaçao da toma 2 requer que a 
 % toma 1 ja esteja na base de conhecimento 
 % e que ambas as doses sejam do mesmo tipo
 +vacinacao(_,U,_,V,2) :: vacinacao(_,U,_,V,1).
++(-vacinacao(_,U,_,V,2)) :: vacinacao(_,U,_,V,1).
 
 % Garantir que a vacinação é efetuada num utente que esteja na base de conhecimento
 +vacinacao(_,U,_,_,_) :: utente(U,_,_,_,_,_,_,_,_,_,_).
++(-vacinacao(_,U,_,_,_)) :: utente(U,_,_,_,_,_,_,_,_,_,_).
 
 % Garantir que a vacinação é efetuada por um membro da staff que esteja na base de conhecimento
 +vacinacao(S,_,_,_,_) :: staff(S,_,_,_,_).
++(-vacinacao(S,_,_,_,_)) :: staff(S,_,_,_,_).
 
 % Garantir que a vacinação é efetuada por um membro da staff
 % que trabalhe no centro onde o utente está escrito
 +vacinacao(S,U,_,_,_) :: (staff(S,_,_,_,C), utente(U,_,_,_,_,_,_,_,_,_,C)).
-
++(-vacinacao(S,U,_,_,_)) :: (staff(S,_,_,_,C), utente(U,_,_,_,_,_,_,_,_,_,C)).
 
 % --- Fase
 
