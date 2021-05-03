@@ -2,7 +2,8 @@
 % Involução de Conhecimento
 % ---------------------------------
 
-% ----- Evolucao Conhecimento Perfeito -----
+
+% ----- Involucao Conhecimento Perfeito -----
 
 % Remover conhecimento
 involucaoC(T) :- solucoes(I, -T::I, Linv),
@@ -14,13 +15,13 @@ remocao(Q) :- assert(Q), !, fail.
 
 % ----------------------------------------------
 
-% Conhecimento Perfeito Positivo
+% Involucao do Conhecimento Perfeito Positivo
 
 % ( involucaoC )
 
 % ----------------------------------------------
 
-% Conhecimento Perfeito Negativo
+% Involucao do Conhecimento Perfeito Negativo
 
 involucaoC(T, negativo) :- solucoes(I, -(-T)::I, Linv),
                         remocao(-T),
@@ -28,7 +29,7 @@ involucaoC(T, negativo) :- solucoes(I, -(-T)::I, Linv),
 
 % ----- Involucao do Conhecimento Imperfeito -----
 
-% Evolucao do Conhecimento Imperfeito Incerto
+% Involucao do Conhecimento Imperfeito Incerto
 
 % UTENTE
 
@@ -79,6 +80,6 @@ involucaoC(utente(Id,N,Nu,G,DN,email_impossivel,T,M,P,DC,IdCentro), utente, conh
 % Retirar Conhecimento Imperfeito Interdito para membro do staff com email impossivel de saber
 involucaoC(staff(Id,IdC,N,email_impossivel), staff, conheImpInt, email) :-
     involucaoC(staff(Id,IdC,N,email_impossivel)),
-    remocao((excecao(staff((Id,IdC,N,E)) :-
+    remocao((excecaoC(staff((Id,IdC,N,E))) :-
                 staff(Id,IdC,N,email_impossivel))),
     remocao((nulointerdito(email_impossivel))).
