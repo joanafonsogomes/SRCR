@@ -32,6 +32,8 @@
 :- discontiguous excecao/1.
 :- discontiguous nulointerdito/1.
 :- discontiguous (::)/2.
+:- discontiguous evolucaoC/2.
+:- discontiguous evolucaoC/4.
 
 % ------- Carregar predicados -------
 
