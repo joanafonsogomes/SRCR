@@ -44,7 +44,7 @@
 :- include('invariantes.pl').
 
 
-% -- PMF para Utente, Staff e Fase --
+% -- PMF para Utente, Staff, Vacinação e Fase --
 
 -utente(Id, NSS, N, G, DN, E, T, M, P, DC, IdCentro) :-
     nao(utente(Id, NSS, N, G, DN, E, T, M, P, DC, IdCentro)),
@@ -53,6 +53,10 @@
 -staff(Id, IdCentro, N, E) :-
     nao(staff(Id, IdCentro, N, E)),
     nao(excecao(staff(Id, IdCentro, N, E))).
+
+-vacinacao(IdStaff, IdUtente, D, V, T) :-
+    nao(vacinacao(IdStaff, IdUtente, D, V, T)),
+    nao(excecao(vacinacao(IdStaff, IdUtente, D, V, T))).
     
 -fase(Id, DI, DF) :-
     nao(fase(Id, DI, DF)),
