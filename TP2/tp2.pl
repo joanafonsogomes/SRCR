@@ -60,7 +60,46 @@
 
 % ----- Sistema de Inferência ------
 
+% Extensao do meta-predicado si
+% que responde a uma única questão
 si(Q, verdadeiro) :- Q.
 si(Q, falso) :- -Q.
 si(Q, desconhecido) :- nao(Q),
                        nao(-Q).
+
+% extensão do meta predicado siLista que dada uma lista de questões
+% responde às várias colocando as respostas numa lista
+siLista([], []).
+siLista([Q|Qs], R) :- si(Q, X),
+                      siLista(Qs, Y),
+                      R = [X|Y].
+
+% % Extensao do predicado conjuncao 
+conjuncao(verdadeiro, verdadeiro, verdadeiro).
+conjuncao(falso, _, falso).
+conjuncao(_, falso, falso).
+conjuncao(verdadeiro, desconhecido, desconhecido).
+conjuncao(desconhecido, verdadeiro, desconhecido).
+conjuncao(desconhecido, desconhecido, desconhecido).
+
+% Extensao do predicado siConjuncao que dado uma lista de questões
+% obtém como resposta a conjunção das várias respostas das questões.  
+siConjuncao([],verdadeiro).
+siConjuncao([Q|Qs], R) :- si(Q, R1), 
+                          siConjuncao(Qs,R2),
+                          conjuncao(R1,R2,R).
+
+% Extensao do predicado disjuncao 
+disjuncao(verdadeiro, _, verdadeiro).
+disjuncao(_, verdadeiro, verdadeiro).
+disjuncao(falso, falso, falso).
+disjuncao(falso, desconhecido, desconhecido).
+disjuncao(desconhecido, falso, desconhecido).
+disjuncao(desconhecido, desconhecido, desconhecido).
+
+% Extensao do predicado siDisjuncao que dado uma lista de questões
+% obtém como resposta a disjunção das várias respostas das questões.  
+siDisjuncao([],verdadeiro).
+siDisjuncao([Q|Qs], R) :- si(Q, R1), 
+                          siDisjuncao(Qs,R2),
+                          disjuncao(R1,R2,R).
