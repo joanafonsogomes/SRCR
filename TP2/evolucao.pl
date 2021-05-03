@@ -4,6 +4,7 @@
 
 % ----- Evolucao Conhecimento Perfeito -----
 
+% Inserir conhecimento
 evolucaoC(T) :- solucoes(I, +T::I, L),
                 insercao(T),
                 testaPredicados(L).
@@ -49,7 +50,7 @@ evolucaoC(T,conheNeg) :- solucoes(I, +(-T)::I, L),
 % UTENTE
 
 % Inserir Conhecimento Perfeito Incerto para utente com email desconhecido
-evolucaoC(utente(Id,N,Nu,G,DN,email_desconhecido,T,M,P,DC,IdCentro), utente, conheImpInc, email) :- evolucaoC(utente(Id,N,Nu,G,DN,email_desconhecido,T,M,P,DC,IdCentro)),
+evolucaoC(utente(   ), utente, conheImpInc, email) :- evolucaoC(utente(Id,N,Nu,G,DN,email_desconhecido,T,M,P,DC,IdCentro)),
                                                                                                     insercao((excecao(utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro)) :- 
                                                                                                         utente(Id,N,Nu,G,DN,email_desconhecido,T,M,P,DC,IdCentro))).
 
@@ -96,7 +97,7 @@ evolucaoC(utente(Id,N,Nu,G,DN,email_impossivel,T,M,P,DC,IdCentro), utente, conhe
 % STAFF
 
 % Inserir Conhecimento Imperfeito Interdito para membro do staff com email impossivel de saber
-evolucaoC(staff(Id,IdC,N,email_impossivel), utente, conheImpInt, email) :-
+evolucaoC(staff(Id,IdC,N,email_impossivel), staff, conheImpInt, email) :-
     evolucaoC(staff(Id,IdC,N,email_impossivel)),
     insercao((excecaoC(staff((Id,IdC,N,E))) :-
                 staff(Id,IdC,N,email_impossivel))),
