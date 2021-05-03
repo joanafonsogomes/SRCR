@@ -148,4 +148,4 @@ staff('S5','Isandro Azevedo','41601362411','IsandroAzevedo107@gmail.com','C1').
 excecao(utente(Id,N,Nss,E,Cs)) :- utente(Id,N,Nss,email_impossivel,Cs).
 nulointerdito(email_impossivel).
 +staff('S5','Isandro Azevedo','41601362411','IsandroAzevedo107@gmail.com','C1') :: (solucoes((Id,N,Nss,E,Cs), (staff('S5','Isandro Azevedo','41601362411','IsandroAzevedo107@gmail.com','C1'), nao(nulointerdito(email_impossivel))), R),
-                                        length(R,0)).
+                                        length(R,0)).   
