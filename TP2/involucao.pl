@@ -7,7 +7,7 @@
 
 % Remover conhecimento
 involucaoC(T) :- solucoes(I, -T::I, Linv),
-                removeConhecimento(T),
+                remocao(T),
                 testaPredicados(Linv).
 
 % ----------------------------------------------

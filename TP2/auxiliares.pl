@@ -1,5 +1,6 @@
 :- use_module(library(lists)).
 :- use_module(library(date)).
+:- use_module(library(listing)).
 
 % ---------------------------------
 % FUNCOES AUXILIARES
