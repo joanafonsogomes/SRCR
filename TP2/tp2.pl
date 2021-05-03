@@ -22,6 +22,19 @@
 :- dynamic excecao/1.
 :- dynamic nulointerdito/1.
 
+:- discontiguous '-'/1.
+:- discontiguous utente/11.
+:- discontiguous staff/5.
+:- discontiguous centro/5.
+:- discontiguous vacinacao/5.
+:- discontiguous fase/3.
+
+:- discontiguous excecao/1.
+:- discontiguous nulointerdito/1.
+:- discontiguous (::)/2.
+:- discontiguous evolucaoC/2.
+:- discontiguous evolucaoC/4.
+
 % ------- Carregar predicados -------
 
 :- include('conhecimento.pl').
@@ -29,6 +42,7 @@
 :- include('involucao.pl').
 :- include('auxiliares.pl').
 :- include('invariantes.pl').
+
 
 % -- PMF para Utente, Staff e Fase --
 

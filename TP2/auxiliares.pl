@@ -78,4 +78,4 @@ comprimento([_|T],R) :- comprimento(T,N), R is N+1.
 
 % Extensão do metapredicado nao
 nao(Questao) :- Questao, !, fail.
-nao(Questao).
+nao(_).
