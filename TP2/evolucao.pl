@@ -21,17 +21,14 @@ testaPredicados([I|L]) :- I, testaPredicados(L).
 % UTENTE: Idutente, Nº Segurança_Social, Nome, Genero, Data_Nasc, Email, Telefone, Morada, Profissão, [Doenças_Crónicas], #CentroSaúde
 novoUtente(Id,N,NISS,G,Dn,E,Tlf,M,P,Dc,IdCs) :- evolucaoC(utente(Id,N,NISS,G,Dn,E,Tlf,M,P,Dc,IdCs)).
 
-% STAFF: IdStaff, IdCentro, Nome, Email
-novoStaff(Id,NSS,IdCs,N,E) :- evolucaoC(staff(Id,NSS,IdCs,N,E)).
+% STAFF: IdStaff, Nome, NSS, Email, IdCentroSaude
+novoStaff(Id,N,NSS,E,Cs) :- evolucaoC(staff(Id,N,NSS,E,Cs)).
 
 % CENTROS DE SAUDE: IdCentro, Nome, Morada, Telefone, Email
 novoCentro(Id,N,M,Tlf,E) :- evolucaoC(centro(Id,N,M,Tlf,E)).
 
 % VACINAÇÕES: IdStaff, IdUtente, Data, Vacina, Toma
 novaVacinacao(IdS,IdU,D,V,T) :- evolucaoC(vacinacao(IdS,IdU,D,V,T)).
-
-
-
 
 
 
