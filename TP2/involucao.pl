@@ -6,9 +6,9 @@
 % ----- Involucao Conhecimento Perfeito -----
 
 % Remover conhecimento
-involucaoC(T) :- solucoes(I, -T::I, Linv),
+involucaoC(T) :- solucoes(I, -T::I, L),
                 remocao(T),
-                testaPredicados(Linv).
+                testaPredicados(L).
 
 % ----------------------------------------------
 
@@ -20,9 +20,9 @@ involucaoC(T) :- solucoes(I, -T::I, Linv),
 
 % Involucao do Conhecimento Perfeito Negativo
 
-involucaoC(T, negativo) :- solucoes(I, -(-T)::I, Linv),
+involucaoC(T,conheNeg) :- solucoes(I, -(-T)::I, L),
                         remocao(-T),
-                        testaPredicados(Linv).
+                        testaPredicados(L).
 
 % ----- Involucao do Conhecimento Imperfeito -----
 
