@@ -74,17 +74,30 @@ evolucaoC(staff(Id,IdC,N,email_desconhecido), staff, conheImpInc, email) :- evol
 
 % Evolucao do Conhecimento Imperfeito Impreciso
 
-% UTENTE
-
-% Inserir Conhecimento Perfeito Incerto para utente com email desconhecido
-
 % Inserir Conhecimento Imperfeito Impreciso 
+
 evolucaoC(T, conheImpImp) :- solucoes(I, +(excecao(T))::I, Lint),
                             insercao(excecao(T)),
                             testaPredicados(Lint).
 
-% STAFF
-
 % ----------------------------------------------
 
 % Evolucao do Conhecimento Imperfeito Interdito
+
+% UTENTE
+
+% Inserir Conhecimento Imperfeito Interdito para utente com email impossivel de saber
+evolucaoC(utente(Id,N,Nu,G,DN,email_impossivel,T,M,P,DC,IdCentro), utente, conheImpInt, email) :-
+    evolucao(utente(Id,N,Nu,G,DN,email_impossivel,T,M,P,DC,IdCentro)),
+    insercao((excecao(utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro)) :-
+                utente(Id,N,Nu,G,DN,email_impossivel,T,M,P,DC,IdCentro))),
+    insercao((nulointerdito(email_impossivel))).
+
+% STAFF
+
+% Inserir Conhecimento Imperfeito Interdito para membro do staff com email impossivel de saber
+evolucaoC(staff(Id,IdC,N,email_impossivel), utente, conheImpInt, email) :-
+    evolucaoC(staff(Id,IdC,N,email_impossivel)),
+    insercao((excecaoC(staff((Id,IdC,N,E))) :-
+                staff(Id,IdC,N,email_impossivel))),
+    insercao((nulointerdito(email_impossivel))).
