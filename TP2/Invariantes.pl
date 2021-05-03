@@ -76,8 +76,6 @@
 -centro(Id,_,_,_,_) :: (findall(sId,staff(sId,_,_,_,Id),R),
                      comprimento(R, 0)).
 
-%CONHECIMENTO PERFEITO POSITIVO%
-
 % Garantir que o ID de cada centro é único:
 +centro(Id,_,_,_,_) :: (solucoes(Id, centro(Id,_,_,_,_), R),
                      comprimento(R, 1)).
@@ -90,7 +88,7 @@
 +(-centro(Id,N,_,T,E)) :: (solucoes((Id,N,T,E), -centro(_,N,_,T,E), R), 
                      comprimento(R,1)).
 
-            
+
 % --- Vacinação
 
 % Garantir que não há vacinações repetidas
