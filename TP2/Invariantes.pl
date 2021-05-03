@@ -19,8 +19,7 @@
 
 % Garante que não há exceções repetidas
 +(excecao(T)) :: (solucoes(T,excecao(T),R),                
-                 comprimento(R,1)).
- 
+                     comprimento(R,1)).
 
 % --- Invariantes Estruturais e Referenciais ---
 
@@ -28,7 +27,7 @@
 
 % Garantir que não se pode eliminar um utente que tenha vacinacoes marcadas
 -utente(Id,_,_,_,_,_,_,_,_,_,_) :: (findall(Id, vacinacao(_,Id,_,_,_), R),
-                                    comprimento(R, 0)).
+                                   comprimento(R, 0)).
 
 % Garantir que o ID de cada utente é único:
 +utente(Id,_,_,_,_,_,_,_,_,_,_) :: (solucoes(Id, utente(Id,_,_,_,_,_,_,_,_,_,_), R),
@@ -50,12 +49,16 @@
 +utente(_,_,_,G,_,_,_,_,_,_,_) :: generoValido(G).
 +(-utente(_,_,_,G,_,_,_,_,_,_,_)) :: genderValido(G).
 
+% Impedir a inserção de conhecimento perfeito positivo de utentes com email impossivel de saber - Conhecimento Imperfeito Interdito
++utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro) :: (solucoes((Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro), (utente(Id,N,Nu,G,DN,E,T,M,P,DC,IdCentro), nulointerdito(E)), R),
+                                          comprimento(R,0)).
+
 
 % --- Staff
 
 % Garantir que não posso eliminar um funcionario se tiver vacinacoes marcadas
 -staff(Id,_,_,_,_) :: (findall(Id, vacinacao(Id,_,_,_,_), R),
-                        comprimento(R, 0)).
+                     comprimento(R, 0)).
 
 % Garantir que o ID de cada staff é único:
 +staff(Id,_,_,_) :: (solucoes(Id, staff(Id,_,_,_), R),
@@ -65,9 +68,14 @@
 
 % Garantir que  funcionarios  com  IDs  diferentes  têm diferente  informacao 
 +staff(_,_,SS,T,C) :: (solucoes((SS,T,C), staff(_,_,SS,T,C), R), 
-                            comprimento(R,1)).
+                     comprimento(R,1)).
+
 +(-staff(_,_,SS,T,C)) :: (solucoes((SS,T,C), -staff(_,_,SS,T,C), R), 
-                            comprimento(R,1)).
+                     comprimento(R,1)).
+
+% Impedir a inserção de conhecimento perfeito positivo de membros do staff com email impossivel de saber - Conhecimento Imperfeito Interdito
++staff(Id,IdC,N,E) :: (solucoes((Id,IdC,N,E), (staff(Id,IdC,N,E), nulointerdito(E)), R),
+                     comprimento(R,0)).
 
 % Garantir que o staff trabalha num centro existente:
 +staff(_,_,_,C) :: centro(C,_,_,_,_).

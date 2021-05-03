@@ -13,7 +13,7 @@ evolucaoC(T) :- solucoes(I, +T::I, L),
 
 % Conhecimento Perfeito Positivo
 
-% (usar o evolucaoC)
+% ( usar o evolucaoC )
 
 % ----------------------------------------------
 
@@ -71,7 +71,7 @@ evolucaoC(T, conheImpImp) :- solucoes(I, +(excecao(T))::I, Lint),
 
 % Inserir Conhecimento Imperfeito Interdito para utente com email impossivel de saber
 evolucaoC(utente(Id,N,Nu,G,DN,email_impossivel,T,M,P,DC,IdCentro), utente, conheImpInt, email) :-
-    evolucao(utente(Id,N,Nu,G,DN,email_impossivel,T,M,P,DC,IdCentro)),
+    evolucaoC(utente(Id,N,Nu,G,DN,email_impossivel,T,M,P,DC,IdCentro)),
     insercao((excecao(utente(Id,N,Nu,G,DN,_,T,M,P,DC,IdCentro)) :-
                 utente(Id,N,Nu,G,DN,email_impossivel,T,M,P,DC,IdCentro))),
     insercao((nulointerdito(email_impossivel))).
