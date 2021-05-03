@@ -98,12 +98,6 @@
 
 % --- Vacinação
 
-% Garantir que não há vacinações repetidas
-+vacinacao(Id,B,C,D,E) :: (solucoes(Id, vacinacao(Id,B,C,D,E), R),
-                     comprimento(R, 1)).
-+(-vacinacao(Id,B,C,D,E)) :: (solucoes(Id, -vacinacao(Id,B,C,D,E), R),
-                     comprimento(R, 1)).
-
 % Adicionar uma vacinaçao da toma 2 requer que a 
 % toma 1 ja esteja na base de conhecimento 
 % e que ambas as doses sejam do mesmo tipo
