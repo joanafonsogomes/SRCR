@@ -1,9 +1,8 @@
-# SRCR-20-21
-Trabalho Pratico SRCR 
+# SRCR
 
-# Links
-https://www.notion.so/TP2-2daaa17cfad24c6a8c44aa77e9017602
+Artificial Intelligence group assignments on **Logic Programming**.
 
-https://www.overleaf.com/3129638787cjprdbrxgzyc
+---
 
-https://github.com/catarinamachado/SRCR/blob/master/Relatorio_exercicio1.pdf
+**TP1:** Graded 18/20
+**TP2:** Graded 18/20
